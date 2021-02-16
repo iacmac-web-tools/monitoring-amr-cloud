@@ -1,0 +1,1413 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AMRcloud. Monitoring – Практическое руководство по мониторингу антибиотикорезистентности с использованием платформы AMRcloud</title><link>https://monitoring.amrcloud.net/docs/</link><description>Recent content in Практическое руководство по мониторингу антибиотикорезистентности с использованием платформы AMRcloud on AMRcloud. Monitoring</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://monitoring.amrcloud.net/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Предисловие</title><link>https://monitoring.amrcloud.net/docs/pre/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/pre/</guid><description>
+&lt;blockquote class="blockquote text-right">
+&lt;p class="mb-0">«Автор пишет только половину книги: другую половину пишет читатель»&lt;/p>
+&lt;div class="blockquote-footer">&lt;cite title="Джозеф Конрад">Джозеф Конрад&lt;/cite>&lt;/div>
+&lt;/blockquote>
+&lt;p>На протяжении последних десятилетий наблюдается неуклонный рост и распространение антибиотикорезистентности (АР) среди микроорганизмов различных видов
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#1">
+&lt;abbr title="Tillotson G.S., Zinner S.H. Burden of antimicrobial resistance in an era of decreasing susceptibility. Expert Rev Anti Infect Ther. 2017;15(7):663–676." class="initialism">[1]&lt;/abbr>
+&lt;/a>. По некоторым прогнозам, при сохраняющихся тенденциях к 2050 г. в результате АР возбудителей инфекций смертность достигнет показателей до 10 млн в год, а потери мирового ВВП составят около 100 трлн долларов США. Для предотвращения дальнейшего увеличения количества устойчивых микроорганизмов был разработан целый ряд инициатив различного уровня
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#2">
+&lt;abbr title="Козлов Р.С., Голуб А.В. Остановить темпы роста антибиотикорезистентности микроорганизмов сегодня – дать шанс на выживание человечества завтра. Клиническая микробиология и антимикробная химиотерапия. 2019;21(4):310–315." class="initialism">[2]&lt;/abbr>
+&lt;/a>. Так, в 2015 г. Всемирной ассамблеей здравоохранения был принят Глобальный план действий по борьбе с устойчивостью к антимикробным препаратам (АМП)
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#3">
+&lt;abbr title="Всемирная организация здравоохранения. Глобальный план действий по борьбе с устойчивостью к противомикробным препаратам. Geneva, Switzerland; 2016." class="initialism">[3]&lt;/abbr>
+&lt;/a>, а в РФ, 25.09.2017 г. издано Распоряжение Правительства РФ № 2045-р «О Стратегии предупреждения распространения антимикробной резистентности в РФ на период до 2030 г.»
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#4">
+&lt;abbr title="Распоряжение правительства Российской Федерации от 25 Сентября 2017 г. № 2045-р «Стратегия предупреждения распространения антимикробной резистентности в Российской Федерации на период до 2030 года»." class="initialism">[4]&lt;/abbr>
+&lt;/a>.&lt;/p>
+&lt;p>Наряду с разработкой новых АМП, ключевым подходом для решения проблемы АР является рациональное использование существующих препаратов
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#5">
+&lt;abbr title="Michael C.A., Dominey-Howes D., Labbate M. The antimicrobial resistance crisis: causes, consequences, and management. Front public Heal. 2014;2:145." class="initialism">[5]&lt;/abbr>
+&lt;/a>. Соблюдение общих принципов использования АМП (в том числе выбор оптимального препарата с учетом его активности, дозы, кратности и пути введения) лежит в основе рациональной антимикробной терапии. Получение актуальной информации по активности АМП невозможно без постоянного наблюдения за динамикой чувствительности к ним возбудителей и своевременного анализа получаемых данных
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#6">
+&lt;abbr title="Tacconelli E., Sifakis F., Harbarth S., Schrijver R., van Mourik M., Voss A., et al. Surveillance for control of antimicrobial resistance. Lancet Infect Dis. 2018;18(3):e99–106." class="initialism">[6]&lt;/abbr>
+&lt;/a>.  Для выполнения этой задачи разрабатываются системы мониторинга АР различного уровня.&lt;/p>
+&lt;p>Инициатором научно-исследовательских проектов по мониторингу АР на территории РФ являлся основатель НИИ антимикробной химиотерапии (НИИ АХ) и Межрегиональной ассоциации по клинической микробиологии и антимикробной химиотерапии (МАКМАХ), д.м.н., профессор, член-корреспондент РАМН Леонид Соломонович Страчунский (1952-2005)
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#7">
+&lt;abbr title="Stratchounski L.S., Dekhnich A.V., Kretchikov V.A., Edelstain I.A., Narezkina A.D., Afinogenov G.E., et al. Antimicrobial resistance of nosocomial strains of Staphylococcus aureus in Russia: results of a prospective study. J Chemother. 2005;17(1):54–60." class="initialism">[7]&lt;/abbr>
+&lt;/a>
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#8">
+&lt;abbr title="Stratchounski L.S., Kozlov R.S., Appelbaum P.C., Kretchikova O.I., KosowskaShick K. Antimicrobial resistance of nasopharyngeal pneumococci from children from day-care centres and orphanages in Russia: results of a unique prospective multicentre study. Clin Microbiol Infect. 2006;12(9):853–866." class="initialism">[8]&lt;/abbr>
+&lt;/a>
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#9">
+&lt;abbr title="Stratchounski L.S., Kretchikova O.I., Kozlov R.S., Reshedko G.K., Stetsiouk O.U., Tarasova G.D., et al. Antimicrobial resistance of Streptococcus pneumoniae isolated from healthy children in day-care centers: results of a multicenter study in Russia. Pediatr Infect Dis J. 2000;19(3):196–200." class="initialism">[9]&lt;/abbr>
+&lt;/a>. В настоящее время на базе НИИ АХ и МАКМАХ в рамках многоцентровых проспективных исследований продолжается всестороннее изучение возбудителей инфекций, включая механизмы приобретения резистентности и особенности их распространения
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#2">
+&lt;abbr title="Козлов Р.С., Голуб А.В. Остановить темпы роста антибиотикорезистентности микроорганизмов сегодня – дать шанс на выживание человечества завтра. Клиническая микробиология и антимикробная химиотерапия. 2019;21(4):310–315." class="initialism">[2]&lt;/abbr>
+&lt;/a>. Эти данные лежат в основе системы мониторинга национального уровня, открытой онлайн-платформы анализа данных по резистентности к антимикробным препаратам – AMRmap (&lt;a href="https://amrmap.ru/">https://amrmap.ru/&lt;/a>)
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#10">
+&lt;abbr title="Кузьменков А.Ю., Трушин И.В., Авраменко А.А., Эйдельштейн М.В., Дехнич А.В., Козлов Р.С. AMRmap: Интернет-платформа мониторинга антибиотикорезистентности. Клиническая микробиология и антимикробная химиотерапия. 2017;19(2):84–90." class="initialism">[10]&lt;/abbr>
+&lt;/a>.&lt;/p>
+&lt;p>Несмотря на несомненные преимущества системы мониторинга, включающей широкий перечень субъектов РФ, такой уровень представления данных может быть использован преимущественно в качестве справочной информации, поскольку для каждой медицинской организации характерны свои индивидуальные показатели в области АР (распределение возбудителей, чувствительность к АМП, клинико-эпидемиологические данные).&lt;/p>
+&lt;p>Поэтому наиболее объективную картину можно получить, проводя локальный мониторинг АР
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#11">
+&lt;abbr title="Виноградова А.Г., Кузьменков А.Ю. Организация данных как основа локального мониторинга антибиотикорезистентности. Клиническая микробиология и антимикробная химиотерапия. 2020;22(2):137–141." class="initialism">[11]&lt;/abbr>
+&lt;/a>. При организации локального мониторинга могут возникать существенные трудности, особенно на одном из самых объемных этапов – анализе и оценке итоговых (объединенных) данных. Для того чтобы упростить данный процесс была создана онлайн-платформа по анализу, визуализации и представлению данных по антибиотикорезистентности – AMRcloud (&lt;a href="https://amrcloud.net/">https://amrcloud.net/&lt;/a>)
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#12">
+&lt;abbr title="Кузьменков А.Ю., Виноградова А.Г., Трушин И.В., Авраменко А.А., Эйдельштейн М.В., Дехнич А.В., и соавт. AMRcloud: новая парадигма мониторинга антибиотикорезистентности. Клиническая микробиология и антимикробная химиотерапия. 2019;21(2):119–124." class="initialism">[12]&lt;/abbr>
+&lt;/a>.&lt;/p>
+&lt;p>Настоящее издание содержит важные для микробиологов, лечащих врачей и организаторов здравоохранения сведения, касающиеся вопросов локального мониторинга АР, в том числе основных этапов его внедрения. Описаны функциональные возможности и область применения онлайн-платформы AMRcloud для анализа, визуализации и обмена данных АР с целью совершенствования взаимодействия участников мониторинга.&lt;/p>
+&lt;p>Надеемся, что научно-методическое пособие будет полезно при решении вопросов по локальному мониторингу АР.&lt;/p>
+&lt;p>Авторы приглашают читателей к сотрудничеству. Комментарии, критические замечания, вопросы и пожелания можно направлять на электронную почту: &lt;a href="mailto:support@antibiotic.ru">support@antibiotic.ru&lt;/a>&lt;/p></description></item><item><title>Docs: Список сокращений</title><link>https://monitoring.amrcloud.net/docs/abbr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/abbr/</guid><description>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Сокращение&lt;/th>
+&lt;th>Полное наименование&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>АР&lt;/td>
+&lt;td>антибиотикорезистентность&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>АБТ&lt;/td>
+&lt;td>антибактериальная терапия&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>АМП&lt;/td>
+&lt;td>антимикробный препарат&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>АМР&lt;/td>
+&lt;td>антимикробная резистентность&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>АМТ&lt;/td>
+&lt;td>антимикробная терапия&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ВОЗ&lt;/td>
+&lt;td>Всемирная организация здравоохранения&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ГОНФ&lt;/td>
+&lt;td>грамотрицательные неферментирующие бактерии&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ДДМ&lt;/td>
+&lt;td>диско-диффузионный метод&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ДИ&lt;/td>
+&lt;td>доверительный интервал&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ИСМП&lt;/td>
+&lt;td>инфекции, связанные с оказанием медицинской помощи&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ЛИС&lt;/td>
+&lt;td>лабораторная информационная система&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>МИ&lt;/td>
+&lt;td>микробилогическое исследование&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>МИС&lt;/td>
+&lt;td>медицинская информационная система&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>МО&lt;/td>
+&lt;td>микроорганизм&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ЛС&lt;/td>
+&lt;td>лекарственные средства&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ЛПС&lt;/td>
+&lt;td>липополисахарид&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ЛПУ&lt;/td>
+&lt;td>лечебно-профилактическое учреждение&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>МАНК&lt;/td>
+&lt;td>методы амплификации нуклеиновых кислот&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>МПК&lt;/td>
+&lt;td>минимальная подавляющая концентрация&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>НИ&lt;/td>
+&lt;td>нозокомиальная инфекция&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ПСБ&lt;/td>
+&lt;td>пенициллин-связывающий белок&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ПЦР&lt;/td>
+&lt;td>полимеразная цепная реакция&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>CLSI&lt;/td>
+&lt;td>Институт по клиническим и лабораторным стандартам США&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>CPE&lt;/td>
+&lt;td>карбапенемазопродуцирующие энтеробактерии&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>DDM&lt;/td>
+&lt;td>диско-диффузионный метод (disk diffusion method)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ECOFF&lt;/td>
+&lt;td>эпидемиологические точки отсечения (epidemiological cut-off values)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ESBL&lt;/td>
+&lt;td>β-Лактамазы расширенного спектра&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>EUCAST&lt;/td>
+&lt;td>Европейский комитет по определению чувствительности к антимикробным препаратам&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>MIC&lt;/td>
+&lt;td>метод минимальных подавляющих концентраций (minimum inhibitory concentration)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>MRSA&lt;/td>
+&lt;td>штаммы &lt;em>S. aureus&lt;/em>, проявляющие фенотип метициллинорезистентности&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>PSB&lt;/td>
+&lt;td>методика защищенной щеточки (protected specimen brush)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>VRE&lt;/td>
+&lt;td>ванкомицинорезистентные энтерококки&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>WGS&lt;/td>
+&lt;td>методы геномного секвенирования&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Docs: 1.1 Важность мониторинга антибиотикорезистентности</title><link>https://monitoring.amrcloud.net/docs/01/01/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/01/01/</guid><description>
+&lt;p>Проблема роста антибиотикорезистентности (АР) в последние десятилетия занимает одну из ключевых позиций в системах общественного здравоохранения и требует особого внимания со стороны медицинского сообщества
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#5">
+&lt;abbr title="Michael C.A., Dominey-Howes D., Labbate M. The antimicrobial resistance crisis: causes, consequences, and management. Front public Heal. 2014;2:145." class="initialism">[5]&lt;/abbr>
+&lt;/a>
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#13">
+&lt;abbr title="Lushniak B.D. Antibiotic resistance: a public health crisis. Public Health Rep. 2014;129(4):314–316." class="initialism">[13]&lt;/abbr>
+&lt;/a>
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#14">
+&lt;abbr title="Ferri M., Ranucci E., Romagnoli P., Giaccone V. Antimicrobial resistance: a global emerging threat to public health systems. Crit Rev Food Sci Nutr. 2017;57(13):2857–2876." class="initialism">[14]&lt;/abbr>
+&lt;/a>. Базовой составляющей для отслеживания динамики чувствительности микроорганизмов к антимикробным препаратам является мониторинг АР
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#15">
+&lt;abbr title="Núñez-Núñez M., Navarro M.D., Palomo V., Rajendran N.B., del Toro M.D., Voss A., et al. The methodology of surveillance for antimicrobial resistance and healthcare-associated infections in Europe (SUSPIRE): a systematic review of publicly available information. Clinical Microbiology and Infection. 2018;24(2):105–109." class="initialism">[15]&lt;/abbr>
+&lt;/a>
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#16">
+&lt;abbr title="Masterton R. The Importance and Future of Antimicrobial Surveillance Studies. Clin Infect Dis. 2008;47(S1):S21–31." class="initialism">[16]&lt;/abbr>
+&lt;/a>.&lt;/p>
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Мониторинг антибиотикорезистентности&lt;/h4>
+это систематический, непрерывный процесс сбора, анализа и представления данных по резистентности к антимикробным препаратам. Полученная в рамках мониторинга информация имеет практические точки приложения, включая организацию лечебных и профилактических мероприятий.
+&lt;/div>
+&lt;p>Принципами мониторинга являются:&lt;/p>
+&lt;ul>
+&lt;li>непрерывность,&lt;/li>
+&lt;li>стандартизация,&lt;/li>
+&lt;li>комплексность,&lt;/li>
+&lt;li>курируемость.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Непрерывность&lt;/strong> – мониторинг проводится на постоянной основе.&lt;/p>
+&lt;p>&lt;strong>Стандартизация&lt;/strong> – соблюдение единого дизайна и принципов проведения исследования: сбора, анализа и интерпретации результатов
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#17">
+&lt;abbr title="Coulehan M.B., Wells J.F. Guidelines for responsible data management in scientific research. 46 p." class="initialism">[17]&lt;/abbr>
+&lt;/a>. Кроме того, сохранение результатов в электронном, пригодном для последующей пакетной статистической обработки виде (в электронных таблицах и/или лабораторных информационных системах) должно осуществляться в соответствии с разработанными правилами (использование словаря различных наименований, определенное оформление заголовочной строки таблицы и т. д.). При составлении справочников и словарей необходимо придерживаться принципа «разумной достаточности» - исключение излишних подробностей в записях, что позволяет рассмотреть динамику устойчивости в общем виде (при этом добавление новых записей не должно противоречить уже существующим).&lt;/p>
+&lt;p>&lt;strong>Комплексность&lt;/strong> – данные по каждому возбудителю должны включать не только результаты определения чувствительности, но и дополнительную информацию о пациенте, заболевании и лечебном учреждении. Сбор данных в таком объеме позволяет выявить (или обнаружить) неявные причинно-следственные связи между появлением устойчивости микроорганизмов к АМП и наличием определенных факторов.
+Курируемость – регулярный контроль качества процесса получения данных (включая процессы сбора, микробиологических исследований, хранения и обработки данных).&lt;/p>
+&lt;p>Основными этапами работы с данными мониторинга являются:&lt;/p>
+&lt;ul>
+&lt;li>непрерывный сбор данных,&lt;/li>
+&lt;li>анализ данных,&lt;/li>
+&lt;li>интерпретация данных,&lt;/li>
+&lt;li>практическое использование результатов.&lt;/li>
+&lt;/ul>
+&lt;p>Ключевые задачи мониторинга АР
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#18">
+&lt;abbr title="Кузьменков А.Ю., Виноградова А.Г. Мониторинг антибиотикорезистентности: обзор информационных ресурсов. Бюллетень сибирской медицины. 2020;19(2):163–170." class="initialism">[18]&lt;/abbr>
+&lt;/a>:&lt;/p>
+&lt;ul>
+&lt;li>выявление АР;&lt;/li>
+&lt;li>анализ АР;&lt;/li>
+&lt;li>прогнозирование изменений в показателях АР;&lt;/li>
+&lt;li>установление новых механизмов АР;&lt;/li>
+&lt;li>сравнение активности новых антибиотиков до и после их внедрения в клиническую практику;&lt;/li>
+&lt;li>обучение медицинского сообщества, пациентов, заинтересованных лиц;&lt;/li>
+&lt;li>разработка практических мер для снижения уровня АР;&lt;/li>
+&lt;li>оценка эффективности профилактических вмешательств по контролю АР.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: 2.1 Для чего нужен локальный мониторинг</title><link>https://monitoring.amrcloud.net/docs/02/01/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/02/01/</guid><description>
+&lt;p>В ЛПУ локальный мониторинг АР необходим для решения задач, связанных с двумя направлениями:&lt;/p>
+&lt;ul>
+&lt;li>оптимизация антимикробной терапии,&lt;/li>
+&lt;li>планирование, реализация и оценка мероприятий инфекционного контроля.&lt;/li>
+&lt;/ul>
+&lt;p>Одним из способов оптимизации АМТ инфекций является составление протоколов по антимикробной терапии и формуляров антимикробных средств
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#20">
+&lt;abbr title="Яковлев С.В., Брико Н.И., Сидоренко С.В., Проценко Д.Н. Программа СКАТ (Стратегия Контроля Антимикробной Терапии) при оказании стационарной медицинской помощи. 2018; 156 с. Доступно по адресу: http://nasci. ru/?id=2880" class="initialism">[20]&lt;/abbr>
+&lt;/a>. Однако меняющиеся тренды АР приводят к устареванию этих протоколов. Вышеупомянутые документы должны периодически актуализироваться на основе данных по активности АМП в отношении ключевых возбудителей инфекций.&lt;/p>
+&lt;p>Информация по активности АМП может быть получена из референсных источников: международных и национальных систем мониторинга антибиотикорезистентности
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#21">
+&lt;abbr title="CDDEP. ResistanceMap: Antibiotic Resistance. 2020." class="initialism">[21]&lt;/abbr>
+&lt;/a>
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#22">
+&lt;abbr title="CDC. Surveillance Reports." class="initialism">[22]&lt;/abbr>
+&lt;/a>
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#23">
+&lt;abbr title="The British Society for Antimicrobial Chemotherapy. Resistance Surveillance Project." class="initialism">[23]&lt;/abbr>
+&lt;/a>
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#24">
+&lt;abbr title="Edwards J.R., Peterson K.D., Mu Y., Banerjee S., Allen-Bridson K., Morrell G., et al. National Healthcare Safety Network (NHSN) report: Data summary for 2006 through 2008, issued December 2009. Am J Infect Control. 2009;37(10):783–805." class="initialism">[24]&lt;/abbr>
+&lt;/a>. В то же время международные и национальные данные не могут в полной мере удовлетворить локальные потребности при составлении протоколов АМТ и формуляров антимикробных средств. Это обусловлено задержкой в публикации данных (более 1 года), локальными отклонениями в эпидемиологии АР и особенностями конкретной медицинской организации
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#25">
+&lt;abbr title="Antimicrobial Resistance Standing Committee. National Surveillance and Reporting of Antimicrobial Resistance and Antibiotic Usage for Human Health in Australia (Project AMRAU). 2013; 152 p." class="initialism">[25]&lt;/abbr>
+&lt;/a>.&lt;/p>
+&lt;p>Организация локального мониторинга АР является базовым принципом для своевременной оценки масштабов резистентности и модификации терапевтических подходов для надлежащего использования антимикробных препаратов
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#26">
+&lt;abbr title="Fuhrmeister A.S., Jones R.N. The Importance of antimicrobial resistance monitoring worldwide and the origins of SENTRY antimicrobial surveillance program. Open Forum Infect Dis. 2019;6(Suppl.1):S1–4." class="initialism">[26]&lt;/abbr>
+&lt;/a>.&lt;/p></description></item><item><title>Docs: 6.1 Шаблон направления на микробиологическое исследование</title><link>https://monitoring.amrcloud.net/docs/06/01/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/06/01/</guid><description>
+&lt;figure id="figure-qr-code-для-загрузки-шаблона-направления-на-микробиологическое-исследование">
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/6.1.1.png" data-caption="QR-code для загрузки шаблона направления на микробиологическое исследование">
+&lt;img src="https://monitoring.amrcloud.net/images/6.1.1.png" alt="" >
+&lt;/a>
+&lt;figcaption data-pre="Рисунок " data-post=":" class="numbered">
+QR-code для загрузки шаблона направления на микробиологическое исследование
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Ссылка для скачивания шаблона: &lt;a href="https://monitoring.amrcloud.net/files/appointment.docx">https://monitoring.amrcloud.net/files/appointment.docx&lt;/a>&lt;/p>
+&lt;figure id="figure-вариант-шаблона-направления-на-микробиологическое-исследование">
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/6.1.2.png" data-caption="Вариант шаблона направления на микробиологическое исследование">
+&lt;img src="https://monitoring.amrcloud.net/images/6.1.2.png" alt="" >
+&lt;/a>
+&lt;figcaption data-pre="Рисунок " data-post=":" class="numbered">
+Вариант шаблона направления на микробиологическое исследование
+&lt;/figcaption>
+&lt;/figure></description></item><item><title>Docs: 1.2 Системы мониторинга</title><link>https://monitoring.amrcloud.net/docs/01/02/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/01/02/</guid><description>
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Система мониторинга&lt;/h4>
+это комплекс мероприятий, который позволяет организовывать и анализировать данные с предоставлением результатов по запросу специалиста.
+&lt;/div>
+&lt;p>Необходимость учета большого объема данных способствует развитию систем мониторинга
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#19">
+&lt;abbr title="Perez F., Villegas M.V. The role of surveillance systems in confronting the global crisis of antibiotic-resistant bacteria. Curr Opin Infect Dis. 2015;28(4): 375–383." class="initialism">[19]&lt;/abbr>
+&lt;/a>. При этом существуют особенности, которые отличают системы между собой и обуславливают их классификацию.&lt;/p>
+&lt;h2 id="типы-систем-мониторинга">Типы систем мониторинга:&lt;/h2>
+&lt;ul>
+&lt;li>По открытости:
+&lt;ul>
+&lt;li>открытые – результаты доступны для любого пользователя&lt;/li>
+&lt;li>закрытые – для доступа к данным необходимы логин и пароль&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>По объему данных:
+&lt;ul>
+&lt;li>без ограничений – включен максимально возможный объем данных&lt;/li>
+&lt;li>с ограничениями – включен объем данных, отобранный согласно критериям (ограничения перечня АМП, видов микроорганизмов и т. д.)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>По уровню организации:
+&lt;ul>
+&lt;li>локальные – данные по АР получены в рамках определенного географического объекта (медицинской организации)&lt;/li>
+&lt;li>национальные – данные по АР получены из различных географических объектов, значительно отличающихся по географическому расположению, в рамках одной страны&lt;/li>
+&lt;li>международные – данные по АР получены в различных странах&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="примеры-международных-систем-мониторинга">Примеры международных систем мониторинга:&lt;/h2>
+&lt;ul>
+&lt;li>Европейская система по наблюдению за антимикробной резистентностью (The European Antimicrobial Resistance Surveillance Network; EARS-Net);
+&lt;a href="https://www.ecdc.europa.eu/en/about-us/partnerships-and-networks/disease-and-laboratory-networks/ears-net">https://www.ecdc.europa.eu/en/about-us/partnerships-and-networks/disease-and-laboratory-networks/ears-net&lt;/a>&lt;/li>
+&lt;li>Cистема эпиднадзора за устойчивостью к противомикробным препаратам в Центральной Азии и Восточной Европе (The Central Asian and Eastern European Surveillance of Antimicrobial Resistance; CAESAR);
+&lt;a href="https://www.euro.who.int/en/health-topics/disease-prevention/antimicrobial-resistance/publications/2019/central-asian-and-european-surveillance-of-antimicrobial-resistance.-annual-report-2019">https://www.euro.who.int/en/health-topics/disease-prevention/antimicrobial-resistance/publications/2019/central-asian-and-european-surveillance-of-antimicrobial-resistance.-annual-report-2019&lt;/a>&lt;/li>
+&lt;li>ResistanceMap, разработанная Центром динамики заболеваний, экономики и политики (The Center for Disease Dynamics, Economics &amp;amp; Policy, CDDEP);
+&lt;a href="https://resistancemap.cddep.org/AntibioticResistance.php">https://resistancemap.cddep.org/AntibioticResistance.php&lt;/a>&lt;/li>
+&lt;li>Глобальная система надзора за антибиотикорезистентностью (The Global Antimicrobial Resistance Surveillance System; GLASS);
+&lt;a href="https://www.who.int/glass/en/">https://www.who.int/glass/en/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="примеры-национальных-систем-мониторинга">Примеры национальных систем мониторинга:&lt;/h2>
+&lt;ul>
+&lt;li>AMRmap (Российская Федерация); &lt;a href="https://amrmap.ru/">https://amrmap.ru/&lt;/a>&lt;/li>
+&lt;li>Национальная сеть безопасности здравоохранения (National Healthcare Safety Network; NHSN, США); &lt;a href="https://arpsp.cdc.gov/">https://arpsp.cdc.gov/&lt;/a>&lt;/li>
+&lt;li>BSAC Resistance Surveillance Programme (Великобритания); &lt;a href="http://www.bsacsurv.org/">http://www.bsacsurv.org/&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: 2.2 Основные этапы внедрения системы мониторинга</title><link>https://monitoring.amrcloud.net/docs/02/02/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/02/02/</guid><description>
+&lt;h2 id="1-формирование-рабочей-группы">1. Формирование рабочей группы&lt;/h2>
+&lt;p>Рекомендуемый состав:&lt;/p>
+&lt;ul>
+&lt;li>микробиолог;&lt;/li>
+&lt;li>эпидемиолог;&lt;/li>
+&lt;li>клинический фармаколог;&lt;/li>
+&lt;li>администрация;&lt;/li>
+&lt;li>лечащий врач;&lt;/li>
+&lt;li>специалист по информационным технологиям.&lt;/li>
+&lt;/ul>
+&lt;p>Состав рабочей группы и количество участников может изменяться в зависимости от конкретного стационара, однако необходимо обеспечить присутствие компетентных представителей всех отделов и направлений деятельности, которые будут задействованы в ходе внедрения системы локального мониторинга.&lt;/p>
+&lt;p>В составе рабочей группы выделяются:&lt;/p>
+&lt;ul>
+&lt;li>лицо, принимающее решение;&lt;/li>
+&lt;li>лицо, ответственное за исполнение;&lt;/li>
+&lt;li>исполнители.&lt;/li>
+&lt;/ul>
+&lt;p>В некоторых случаях лицо, принимающее решение, и лицо, ответственное за исполнение, могут совпадать, но лучше разделить эти роли (например, лицо, принимающее решение – главный врач; лицо, ответственное за исполнение – микробиолог, эпидемиолог или клинический фармаколог). Нужно учитывать, что лицо, ответственное за исполнение, должно постоянно взаимодействовать с другими членами рабочей группы и контролировать процесс внедрения. Для координации процесса необходимо, чтобы исполнители не взаимодействовали с лицом, принимающим решения, напрямую, а только через лицо, ответственное за исполнение.&lt;/p>
+&lt;h2 id="2-проведение-аудита">2. Проведение аудита&lt;/h2>
+&lt;p>До каждого члена группы необходимо довести информацию о его роли в процессе внедрения системы мониторинга, целях и поставленных задачах. Каждый из членов рабочей группы должен оценить, насколько текущее состояние его сферы ответственности соответствует итоговым задачам процесса мониторинга.&lt;/p>
+&lt;p>Для такой оценки можно использовать следующий чеклист:&lt;/p>
+&lt;ul>
+&lt;li>Как организован поток данных в стационаре, на каких этапах присутствуют «узкие места»:
+&lt;ul>
+&lt;li>где максимальный процент ручного заполнения;&lt;/li>
+&lt;li>где больше всего используется бумажный носитель;&lt;/li>
+&lt;li>где тратится больше всего времени на внесение данных;&lt;/li>
+&lt;li>как организовано хранение и доступ к данным.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Какие локальные справочники необходимо создать или модифицировать:
+&lt;ul>
+&lt;li>антибиотики;&lt;/li>
+&lt;li>локусы инфекции;&lt;/li>
+&lt;li>диагнозы;&lt;/li>
+&lt;li>клинические материалы;&lt;/li>
+&lt;li>типы пациентов;&lt;/li>
+&lt;li>отделения, с которыми осуществляется взаимодействие.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Соответствуют ли бумажные направления/электронные формы ввода рекомендациям по оптимальному хранению/передачи информации. Подробная информация представлена в разделах &lt;strong>4.2. Шаблон для сбора и ввода данных&lt;/strong> и &lt;strong>4.4. Правила оформления и хранения данных&lt;/strong>.&lt;/li>
+&lt;li>Существует ли график отчетности по текущим показателям АР лицу, принимающему решение и соответствует ли он требуемой периодичности.&lt;/li>
+&lt;li>Соответствуют ли отчеты требуемой форме и достаточны ли они для принятия решений.&lt;/li>
+&lt;li>Доступны ли данные о локальной эпидемиологии АР профильным специалистам.&lt;/li>
+&lt;li>Соответствует ли уровень компетенции персонала предъявляемым требованиям, потребуется ли дополнительный инструктаж/обучение.&lt;/li>
+&lt;li>Обеспечивает ли текущий технический уровень программно-аппаратных средств реализацию системы мониторинга, какое оборудование необходимо приобрести дополнительно.&lt;/li>
+&lt;/ul>
+&lt;h2 id="3-разработка-программы-внедрения">3. Разработка программы внедрения&lt;/h2>
+&lt;p>На основании проведенного аудита, обсуждения и согласованного мнения членами рабочей группы должна быть разработана программа внедрения системы мониторинга, включающая:&lt;/p>
+&lt;ul>
+&lt;li>бланк направления на микробиологическое исследование (МИ). Подробнее в разделе &lt;strong>6.1. Шаблон направления на микробиологическое исследование&lt;/strong>;&lt;/li>
+&lt;li>перечень справочников, которые необходимо сформировать (и которые должны быть использованы в бланках направления, лабораторных информационных системах/медицинских информационных системах). Подробнее в разделе &lt;strong>6.2. Работа с шаблоном, справочниками и словарями&lt;/strong>;&lt;/li>
+&lt;li>шаблоны форм данных, которые необходимо реализовать для этапа ввода данных. Подробная информация представлена в разделе &lt;strong>4.2. Шаблон для сбора и ввода данных&lt;/strong>;&lt;/li>
+&lt;li>формы отчетов и периодичность их формирования;&lt;/li>
+&lt;li>порядок составления протоколов и периодичность их пересмотра;&lt;/li>
+&lt;li>перечень оборудования, программно-аппаратных средств, которые необходимо приобрести;&lt;/li>
+&lt;li>перечень задач по внедрению системы мониторинга, которые необходимо выполнить в рамках каждого направления с указанием ответственного исполнителя и даты, к которой задачи должны быть выполнены;&lt;/li>
+&lt;li>порядок инструктажа и обучения персонала новым целям/задачам/методикам системы мониторинга;&lt;/li>
+&lt;li>график представления результатов внедрения лицу, ответственному за исполнение;&lt;/li>
+&lt;li>сроки внедрения и количественные показатели, соответствующие итогу внедрения системы мониторинга.&lt;/li>
+&lt;/ul>
+&lt;h2 id="4-функционирование-рабочей-группы-после-внедрения">4. Функционирование рабочей группы после внедрения&lt;/h2>
+&lt;p>После перехода системы мониторинга в штатный режим работы необходимо определить:&lt;/p>
+&lt;ul>
+&lt;li>Лицо, ответственное за формирование, хранение и публикацию собранных данных (в доступных для участников группы ресурсах);&lt;/li>
+&lt;li>Направления работы с собранными данными для членов рабочей группы:
+&lt;ul>
+&lt;li>микробиолог – оптимизирует процессы в лаборатории (актуализация перечня АМП для определения чувствительности, осуществление контроля качества и т.д.);&lt;/li>
+&lt;li>эпидемиолог – использует полученные данные как часть эпидемиологического мониторинга;&lt;/li>
+&lt;li>клинический фармаколог – на основании собранных данных пересматривает протоколы антимикробной терапии и составляет формуляры АМП с установленной периодичностью;&lt;/li>
+&lt;li>лечащий врач – взаимодействуют с клиническими фармакологами, эпидемиологами, микробиологами с целью получения и использования актуальных данных в повседневной практике;&lt;/li>
+&lt;li>администрация – оптимизирует бюджетные расходы (закупка АМП, расходных материалов для диагностики АР).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>График и порядок проведения мероприятий по информированию персонала о текущем уровне АР;&lt;/li>
+&lt;li>Периодичность пересмотра существующей системы мониторинга с целью её адаптации к изменяющимся условиям, включая пересмотр всех форм документов.&lt;/li>
+&lt;/ul>
+&lt;figure id="figure-система-локального-мониторинга-антибиотикорезистентности">
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/2.2.1.png" data-caption="Система локального мониторинга антибиотикорезистентности">
+&lt;img src="https://monitoring.amrcloud.net/images/2.2.1.png" alt="" >
+&lt;/a>
+&lt;figcaption data-pre="Рисунок " data-post=":" class="numbered">
+Система локального мониторинга антибиотикорезистентности
+&lt;/figcaption>
+&lt;/figure></description></item><item><title>Docs: 6.2 Работа с шаблоном, справочниками и словарями</title><link>https://monitoring.amrcloud.net/docs/06/02/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/06/02/</guid><description>
+&lt;h2 id="621-шаблон-данных">6.2.1 Шаблон данных&lt;/h2>
+&lt;p>Шаблон данных является базовым элементом для организации мониторинга АР и представляет &lt;strong>файл&lt;/strong> формата .xlsx и включает себя следующие страницы:&lt;/p>
+&lt;ul>
+&lt;li>«ИРК_1» – пример таблицы для ввода данных.&lt;/li>
+&lt;li>«&lt;strong>Словари&lt;/strong>» – наборы справочных наименований (микроорганизмы и группы микроорганизмов, профиль отделения, локализация инфекций, клинический материал).&lt;/li>
+&lt;li>«Антибиотики справка» – наименования АМП с учетом метода определения чувствительности (суффиксы формата «_mic», «_dd», «_sir», подробнее см. раздел &lt;strong>4.4. Правила оформления и хранения данных&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Шаблон данных&lt;/strong> может быть скачан по ссылке &lt;a href="https://monitoring.amrcloud.net/files/template.xlsx">https://monitoring.amrcloud.net/files/template.xlsx&lt;/a> и адаптирован с учетом специфики конкретного учреждения.&lt;/p>
+&lt;figure id="figure-qr-code-для-загрузки-шаблона-данных">
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/6.2.1.png" data-caption="QR-code для загрузки шаблона данных">
+&lt;img src="https://monitoring.amrcloud.net/images/6.2.1.png" alt="" >
+&lt;/a>
+&lt;figcaption data-pre="Рисунок " data-post=":" class="numbered">
+QR-code для загрузки шаблона данных
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="622-добавление-новых-строк-в-шаблон">6.2.2 Добавление новых строк в шаблон&lt;/h2>
+&lt;p>При внесении данных в шаблон может возникнуть ситуация, когда подстановки будут активны только для окрашенных ячеек, а если продолжать заполнять таблицу, то выпадающие списки пропадут. Для того, чтобы выпадающие списки с подстановками продолжали формироваться и для новых строк, необходимо добавлять такие строки следующим образом:&lt;/p>
+&lt;ol>
+&lt;li>Выделить первую свободную строку после заполненнных. На панели инструментов, на вкладке &lt;strong>Главная&lt;/strong>, в разделе &lt;strong>Ячейки&lt;/strong>, нажать кнопку &lt;strong>Вставить&lt;/strong>, выбрать пункт &lt;strong>Вставить строки на лист&lt;/strong>.&lt;/li>
+&lt;/ol>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/001.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/excel/001.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;h2 id="623-добавление-новых-значений-в-существующие-словарисоздание-новых-словарей">6.2.3 Добавление новых значений в существующие словари/создание новых словарей&lt;/h2>
+&lt;p>Допустим, в файл &lt;strong>Шаблон_AMRcloud.xlsx&lt;/strong> потребовалось добавить новые значения во встроенные справочники. Например, в список отделений необходимо внести новое отделение – &lt;strong>Нейрохирургия&lt;/strong>. Для этого необходимо сделать следующее:&lt;/p>
+&lt;ol>
+&lt;li>Перейти на лист &lt;strong>Словари&lt;/strong>, найти столбец с нужным справочником и добавить недостающее значение (напечатав значение в ячейку).&lt;/li>
+&lt;/ol>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/002.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/excel/002.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;ol start="2">
+&lt;li>На листе &lt;strong>ИРК_1&lt;/strong> выделить диапазон ячеек, в котором содержатся значения отделений. На панели инструментов во вкладке &lt;strong>Данные&lt;/strong>, в разделе &lt;strong>Работа с данными&lt;/strong> нажать на кнопку &lt;strong>Проверка данных&lt;/strong> и выбрать пункт &lt;strong>Проверка данных&lt;/strong>.&lt;/li>
+&lt;/ol>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/003.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/excel/003.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;ol start="3">
+&lt;li>В открывшемся диалоговом окне &lt;strong>Проверка вводимых значений&lt;/strong> выбрать &lt;strong>Тип данных: Список&lt;/strong>, отметить галочку &lt;strong>Список допустимых значений&lt;/strong>, и после клика в поле &lt;strong>Источник&lt;/strong> выделить рамкой диапазон ячеек на листе &lt;strong>Словари&lt;/strong>, в которых будут храниться значения подстановки. Нажать &lt;strong>ОК&lt;/strong>.&lt;/li>
+&lt;/ol>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/004.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/excel/004.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;div class="alert alert-primary" role="alert">
+Аналогичным образом можно создавать новые словари подстановки, добавлять новые столбцы со значениями на лист &lt;strong>Словари&lt;/strong> и задавать &lt;strong>Проверку данных&lt;/strong> для ячеек на листе &lt;strong>ИРК_1&lt;/strong>.
+&lt;/div>
+&lt;h2 id="624-замена-существующих-значений">6.2.4 Замена существующих значений&lt;/h2>
+&lt;p>Допустим, в таблице имеется заполненный столбец с кодами отделений и его требуется перекодировать в полное наименование. Например, закодированы они как ХИР1, ХИР2, ХИР3, ХИР4. Необходимо их автоматически переименовать в «Общая хирургия», «Урология», «Гнойная хирургия», «Торакальная хирургия».&lt;/p>
+&lt;p>Для этого следует использовать встроенную в &lt;strong>Excel&lt;/strong> функцию &lt;strong>ВПР()&lt;/strong>. Синтаксис функции следующий.&lt;/p>
+&lt;p>**ВПР(искомое_значение; таблица; номер_столбца; интервальный_ просмотр)**&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>искомое значение&lt;/strong> – значение, которое необходимо заменить;&lt;/li>
+&lt;li>&lt;strong>таблица&lt;/strong> – ссылка на диапазон ячеек со словарем, который будет использоваться при замене;&lt;/li>
+&lt;li>&lt;strong>номер_столбца&lt;/strong> – номер столбца из &lt;strong>таблицы&lt;/strong>, значения которого будут использоваться в качестве замены;&lt;/li>
+&lt;li>&lt;strong>интервальный_просмотр&lt;/strong> – может принимать 2 значения: ИСТИНА (поиск значения ближайшего к критерию или совпадающее с ним) и ЛОЖЬ (поиск значения в точности совпадающее с критерием).&lt;/li>
+&lt;/ul>
+&lt;p>Общий порядок действий для осуществления такой замены следующий.&lt;/p>
+&lt;ol>
+&lt;li>Создать словарь замен на новом листе.&lt;/li>
+&lt;/ol>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/005.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/excel/005.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;ol start="2">
+&lt;li>На листе &lt;strong>ИРК&lt;/strong>, рядом со столбцом с сокращенными названиями &lt;strong>Отделение Сокр&lt;/strong>, добавить два новых пустых столбца – &lt;strong>Отделение Полное 1&lt;/strong> и &lt;strong>Отделение Полное 2&lt;/strong>. В первый столбец вставить функцию &lt;strong>=ВПР(I2; Замены!$A$2:$B$5;2;ЛОЖЬ)&lt;/strong>, где:&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>I2 – ссылка на значение, которое предполагается заменить (в примере это &lt;strong>столбец I, строка 2&lt;/strong>);&lt;/li>
+&lt;li>Замены!$A$2:$B$5 – ссылка на диапазон ячеек, в котором содержатся данные для замены;&lt;/li>
+&lt;li>2 – это номер столбца в диапазоне ячеек для замен, откуда будут браться полные значения;&lt;/li>
+&lt;li>ЛОЖЬ – мы сообщаем функции, что нужно использовать точное совпадение.&lt;/li>
+&lt;/ul>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/006.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/excel/006.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;div class="alert alert-primary" role="alert">
+Для быстрой вставки вместо «перетягивания» формулы можно выделить диапазон ячеек для вставки, ввести формулу в первую ячейку и нажать &lt;strong>Ctrl+Enter&lt;/strong>. Введенная формула автоматически распространится на все выделенные ячейки диапазона.
+&lt;/div>
+&lt;ol start="3">
+&lt;li>После растягивания функции на все ячейки скопировать результат и вставить в столбец &lt;strong>Отделение Полное 2&lt;/strong> в режиме &lt;strong>Значения&lt;/strong>. Столбец (Отделение Полное 1) с функцией удалить.&lt;/li>
+&lt;/ol>
+&lt;div class="alert alert-primary" role="alert">
+Аналогичным образом можно осуществлять замены для группы микроорганизмов, с тем отличием, что в таблице замен в качестве кода будет использоваться полное наименование вида микроорганизма, а в качестве замены – его группа.
+&lt;/div>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/007.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/excel/007.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;h2 id="625-разворачивание-таблицы">6.2.5 «Разворачивание» таблицы&lt;/h2>
+&lt;p>Возможна ситуация, когда ЛИС либо иная информационная система выдает отчет в формате, где информация по одному изоляту содержится более чем в одной строке. Например, результаты тестирования для каждого из изолятов написаны в строках, при этом идентификатор изолята повторяется.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/008.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/excel/008.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>Для приведения такой таблицы к формату, пригодному для загрузки в AMRcloud (где требуется, АМП находились в столбцах, а запись для каждого изолята была представлена единственной строкой) следует выполнить ряд действий.&lt;/p>
+&lt;ol>
+&lt;li>Добавить новый столбец и пронумеровать все имеющиеся строки.&lt;/li>
+&lt;/ol>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/009.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/excel/009.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;ol start="2">
+&lt;li>На вкладке &lt;strong>Вставка&lt;/strong> панели инструментов нажать кнопку &lt;strong>Сводная таблица&lt;/strong>. В диалоговом окне выбрать таблицу с учетом добавленного столбца с номерами строк и отметить, что отчет сводной таблицы следует поместить на новый лист.&lt;/li>
+&lt;/ol>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/010.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/excel/010.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;ol start="3">
+&lt;li>&lt;strong>Excel&lt;/strong> предложит заполнить поля сводной таблицы, перетаскивая поля мышкой в соответствующие области. В качестве строк необходимо выбрать идентификатор изолята (&lt;strong>RecordID&lt;/strong>), в качестве столбцов – АМП (&lt;strong>Antibiotic&lt;/strong>), а для значений выбрать номера строк (&lt;strong>Номер строки&lt;/strong>). Сводная таблица в &lt;strong>Excel&lt;/strong> может работать только с числовыми значениями, поэтому и был дополнительно создан суррогатный столбец (&lt;strong>Номер строки&lt;/strong>). Агрегирующая функция для значений не играет роли, так как все значения уникальны. После «разворота» таблица примет вид, показанный на рисунке ниже.&lt;/li>
+&lt;/ol>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/011.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/excel/011.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;ol start="4">
+&lt;li>Скопировать таблицу без итогов и вставить как значения на новый лист.&lt;/li>
+&lt;/ol>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/012.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/excel/012.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;ol start="5">
+&lt;li>Продублировать имена столбцов АМП для вставленной таблицы и добавить к ним коды («_sir», «_mic» или «_dd»), в представленном примере – &lt;strong>_mic&lt;/strong>.&lt;/li>
+&lt;/ol>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/013.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/excel/013.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;ol start="6">
+&lt;li>
+&lt;p>В новых столбцах с кодом «_mic» необходимо вставить значения МПК из исходного варанта таблицы (т.е. до разворота) с помощью функции &lt;strong>ВПР()&lt;/strong>. Подробнее работа с функцией &lt;strong>ВПР()&lt;/strong> описана выше. В качестве кодов выступает столбец &lt;strong>Номера строк&lt;/strong>, в качестве замен – четвертый столбец &lt;strong>ResultMICValue&lt;/strong> оригинальной таблицы.&lt;/p>
+&lt;p>В пустые значения необходимо вставить функцию для замены номеров строк на МПК &lt;strong>=ЕСЛИ(ЕПУСТО(B2); «»;ВПР(B2; Лист1!$A$1:$D$189; 4; ЛОЖЬ))&lt;/strong>&lt;/p>
+&lt;p>В данной формуле проверяется, пустая ли ячейка, и если не пустая, то значение номера строки заменяется на МПК.&lt;/p>
+&lt;ul>
+&lt;li>B2 – ячейка, содержащая номер строки, который подлежит замене&lt;/li>
+&lt;li>Лист1!$A$1:$D$189 – диапазон ячеек с данными исходной таблицы из пункта 1. Из этой таблицы мы и будем брать значения МПК для вставки вместо номеров ячеек&lt;/li>
+&lt;li>4 – для замены необходимо использовать четвертый столбец&lt;/li>
+&lt;li>ЛОЖЬ – задается использование точного совпадения&lt;/li>
+&lt;/ul>
+&lt;p>Результат работы этой функции показан на рисунке ниже.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/014.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/excel/014.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;ol start="7">
+&lt;li>Скопировать полученные данные (столбцы с кодами АМП и значениями МПК) и вставить как значения на место столбцов с АМП и номерами строк. &lt;strong>Ячейки&lt;/strong> с формулами удалить.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: 2.3 Взаимодействие с лабораторией</title><link>https://monitoring.amrcloud.net/docs/02/03/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/02/03/</guid><description>
+&lt;p>Ключевой структурой в локальном мониторинге АР является микробиологическая лаборатория и/или специалисты, осуществляющие МИ в отделении клинической лабораторной диагностики. Для налаживания системы мониторинга АР необходимо выстроить четкие механизмы взаимодействия с лабораторией, а при отсутствии в учреждении собственной микробиологической лаборатории – с централизованной (внешней) лабораторией.&lt;/p>
+&lt;p>Особое внимание следует уделить следующим аспектам:&lt;/p>
+&lt;ul>
+&lt;li>модификации направления на микробиологическое исследование в соответствии с требованием рабочей группы по мониторингу АР;&lt;/li>
+&lt;li>внесению дополнительных параметров в медицинскую информационную систему (МИС) для автоматического формирования направления на МИ и интеграции с локальным журналом МИ;&lt;/li>
+&lt;li>уточнению и оценке методов определения чувствительности к антибактериальным препаратам (как фенотипических, так и генотипических методов), использующихся в лаборатории;&lt;/li>
+&lt;li>оценке и приведению в соответствие наборов антибактериальных препаратов, использующихся для определения чувствительности основных возбудителей инфекций;&lt;/li>
+&lt;li>уточнению критериев интерпретации для определения клинической категории чувствительности, использующихся как в лаборатории, так и в централизованной лаборатории;&lt;/li>
+&lt;li>для централизованной (внешней) лаборатории – наличию в предоставляемых результатах определения чувствительности &lt;strong>количественных данных&lt;/strong> (минимальные подавляющие концентрации (МПК), диаметры зон подавления роста), помимо клинических категорий чувствительности;&lt;/li>
+&lt;li>назначению сотрудника, ответственного за сбор и публикацию данных, которые будут получены из лаборатории, в доступных для участников рабочей группы ресурсах;&lt;/li>
+&lt;li>регистрации направления на МИ в локальном журнале/форме/ шаблоне данных медицинской организации (предпочтительно в цифровом виде, с внесением всей сопутствующей информации в соответствии с локально утвержденными справочниками и словарями) перед отправлением в централизованную (внешнюю) лабораторию;&lt;/li>
+&lt;li>внесению результатов определения чувствительности (в том числе количественных данных) в локальный журнал/форму/ шаблон данных медицинской организации после получения информации из централизованной (внешней) лаборатории;&lt;/li>
+&lt;li>утверждению формы предоставления результатов из централизованной (внешней) лаборатории:
+&lt;ul>
+&lt;li>по индивидуальным результатам пациентов (в виде стандартной формы, с учетом требований рабочей группы);&lt;/li>
+&lt;li>в виде дополнительной выгрузки данных в заданном формате (таблицы) и периодичностью, утвержденной рабочей группой.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-primary" role="alert">
+Если централизованная (внешняя) лаборатория не может осуществлять периодическое представление данных в виде выгрузки заданного формата, необходимо предусмотреть накопление и перевод всех полученных индивидуальных (по пациентам) результатов в цифровую форму – &lt;strong>введение результатов в шаблон данных&lt;/strong> утвержденного формата.
+&lt;/div></description></item><item><title>Docs: 6.3 Работа с WHONET</title><link>https://monitoring.amrcloud.net/docs/06/03/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/06/03/</guid><description>
+&lt;p>WHONET – это бесплатное настольное приложение Windows для управления и анализа данных микробиологических лабораторий с особым упором на наблюдение за устойчивостью к АМП. Программа разработана и поддержана Сотрудничающим центром ВОЗ по надзору за устойчивостью к АМП
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#68">
+&lt;abbr title="Stelling J. Руководство по WHONET. Глобальная система эпиднадзора за устойчивостью к противомикробным препаратам. 2016. 39 с." class="initialism">[68]&lt;/abbr>
+&lt;/a>.&lt;/p>
+&lt;p>Официальный сайт программы, где она доступна для загрузки – &lt;a href="https://whonet.org">https://whonet.org&lt;/a>.&lt;/p>
+&lt;p>Помимо встроенных справочников материалов, организмов и антибиотиков, программа имеет уже настроенные критерии интерпретации чувствительности EUCAST и CLSI (M100, M45, M60, M61, доступ к беcплатным ресурсам, в том числе ветеринарным VET03, VET04, VET06 и VET08), настроенные панели тестирования для каждого вида микроорганизмов и встроенную экспертную систему.&lt;/p>
+&lt;p>WHONET также включает модуль импорта данных под названием BacLink для сбора и стандартизации данных из существующих настольных приложений, лабораторных приборов и лабораторных информационных систем
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#69">
+&lt;abbr title="Всемирная организация здравоохранения. WHONET 5. Программное обеспечение базы данных микробиологической лаборатории. 128 с." class="initialism">[69]&lt;/abbr>
+&lt;/a>. Подробнее о работе с данным модулем можно прочитать на официальном сайте программы, а также в разделе, посвященном работе с BacLink.&lt;/p>
+&lt;p>Механизмы построения отчетов предоставляют широкие возможности для анализа данных чувствительности. Данное руководство не ставит себе целью описывать все возможности программы WHONET, для этого лучше обратиться к официальной документации программы
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#70">
+&lt;abbr title="WHONET. Официальная документация." class="initialism">[70]&lt;/abbr>
+&lt;/a>, либо воспользоваться справкой в самой программе.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/01.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/whonet/01.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;h2 id="631-создание-новой-лаборатории">6.3.1 Создание новой лаборатории&lt;/h2>
+&lt;p>Для начала работы с WHONET необходимо создать и сконфигурировать новую лабораторию
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#71">
+&lt;abbr title="WHONET for CAESAR. Manual. 2020; 71 p." class="initialism">[71]&lt;/abbr>
+&lt;/a>. При первом запуске программы предлагается выбрать лабораторию с демонстрационными данными.&lt;/p>
+&lt;p>Чтобы создать новую лабораторию, в стартовом окне программы необходимо нажать кнопку &lt;strong>Новая лаборатория&lt;/strong>, в открывшемся окне выбрать страну &lt;strong>Российская Федерация&lt;/strong>, ввести произвольное название лаборатории и указать её код. Код следует указывать латинскими символами, так как он будет использоваться в качестве расширения по умолчанию для всех файлов, связанных с созданной лабораторией. В дальнейшем при создании новых лабораторий можно копировать конфигурации лабораторий с помощью кнопки &lt;strong>Скопировать лабораторию&lt;/strong>.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/02.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/whonet/02.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>После этого необходимо пройти дополнительные шаги настройки, связанные с непосредственной деятельностью лаборатории, поэтому требуется заранее собрать информацию о АМП и методах тестирования, используемых в лаборатории, а также о стационарах, с которыми взаимодействует лаборатория и откуда поступают образцы.&lt;/p>
+&lt;h3 id="6311-настройка-антибиотиков-обязательно">6.3.1.1 Настройка антибиотиков (обязательно)&lt;/h3>
+&lt;p>Для открытия окна настройки антибиотиков, методов и контрольных точек нужно нажать кнопку &lt;strong>Антибиотики&lt;/strong>. Появится окно со списком антибиотиков, доступных в WHONET, (слева) и списков антибиотиков для работы в лаборатории.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/03.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/whonet/03.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>Порядок добавления антибиотиков в лабораторию следующий:&lt;/p>
+&lt;ol>
+&lt;li>Выбрать надлежащие рекомендации (рекомендуется EUCAST).&lt;/li>
+&lt;li>Кликнуть на нужный метод тестирования (DDM, MIC, Е-тест).&lt;/li>
+&lt;li>Выбрать подходящий антибиотик (и нагрузку диска, если речь идет о диско-диффузионном методе).&lt;/li>
+&lt;/ol>
+&lt;p>Чтобы выбрать антибиотик, нужно дважды кликнуть по нему или же кликнуть по нему один раз, а затем нажать на кнопку со стрелкой вправо &amp;ndash;&amp;gt;. Для удаления выбранного антибиотика нужно нажать кнопку со стрелкой влево &amp;lt;&amp;ndash;.&lt;/p>
+&lt;div class="alert alert-primary" role="alert">
+&lt;p>Каждому антибиотику присваивается код (до девяти знаков), который включает в себя:&lt;/p>
+&lt;ul>
+&lt;li>трехбуквенный код антибиотика;&lt;/li>
+&lt;li>однобуквенный код, отсылающий к типу используемых критериев интерпретации (например, E=EUCAST);&lt;/li>
+&lt;li>однобуквенный код, обозначающий метод тестирования (D=DDM, M=MIC, E=ETest);&lt;/li>
+&lt;li>нагрузка диска (при тестировании диско-диффузионным методом).&lt;/li>
+&lt;/ul>
+&lt;p>В отношении МПК или ETest необходимо выбрать только нужный антибиотик и соответствующие критерии интерпретации. Например, код ATM_ED30 расшифровывается следующим образом: азтреонам, EUCAST, DDM, 30 μg, тогда как ATM_EM означает: азтреонам, EUCAST, MIC.&lt;/p>
+&lt;/div>
+&lt;p>Дальнейшие настройки антиботиков необязательны, но тем не менее могут быть полезны.&lt;/p>
+&lt;h3 id="6312-пограничные-значения-для-антибиотиков-breakpoints-необязательно">6.3.1.2 Пограничные значения для антибиотиков (Breakpoints) (необязательно)&lt;/h3>
+&lt;p>При вводе данных чувствительности программа автоматически интерпретирует их, исходя из установленных пограничных значений. В большинстве случаев их менять не требуется, но для особых случаев предусмотрена такая возможность. Чтобы открыть окно редактирования пограничных значений, требуется нажать кнопку &lt;strong>Breakpoints&lt;/strong>.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/04.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/whonet/04.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>Доступны следующие опции:&lt;/p>
+&lt;ul>
+&lt;li>Общие – используются для установки пограничных значений для всех видов.&lt;/li>
+&lt;li>Видоспецифические – используются для установки пограничных значений для конкретных видов, по приоритету стоят выше общих (для EUCAST заполняются только видоспецифические пограничных значения). Все изменения необходимо осуществлять именно здесь.&lt;/li>
+&lt;/ul>
+&lt;p>Квалифицированные правила интерпретации служат для создания экспертных правил интерпретации.&lt;/p>
+&lt;div class="alert alert-primary" role="alert">
+При введении пограничных значений МПК для комбинированных препаратов, таких как триметоприм/сульфаметоксазол, необходимо указывать концентрацию первого компонента. Эти концентрации обычно соответствуют сериям двойного разведения 1, 2, 4 мг/л.
+&lt;/div>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/05.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/whonet/05.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;h3 id="6313-наборы-антибиотиков-панели-необязательно">6.3.1.3 Наборы антибиотиков (Панели) (необязательно)&lt;/h3>
+&lt;p>В целях упрощения ввода данных присутствует возможность настроить панели тестируемых антибиотиков для каждой группы микроорганизмов с помощью кнопки &lt;strong>Наборы&lt;/strong>. В открывшемся окне можно указать, какие антибиотики тестируются по каждому виду микроорганизмов. Однако в момент ввода данных допускается добавление результатов для антибиотиков, не предусмотренных в панели.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/06.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/whonet/06.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;h3 id="6314-отделение">6.3.1.4 Отделение&lt;/h3>
+&lt;p>Данная опция является необязательной с точки зрения работы программы WHONET, но обязательна в рамках организации мониторинга АР.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/07.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/whonet/07.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>В рамках данного справочника можно завести несколько отделений из разных учреждений. При этом используется трехуровневая иерархическая структура: Учреждение – Отделение – Тип отделения. Справочники учреждений и отделений при этом могут быть отредактированы самим пользователем.&lt;/p>
+&lt;h3 id="6315-поля-данных">6.3.1.5 Поля данных&lt;/h3>
+&lt;p>Программа WHONET автоматически определяет набор стандартных полей данных. К стандартным полям относится такая информация, как уникальный идентификатор пациента, местонахождение, дата получения образца, тип образца, микроорганизм/возбудитель, панель антибиотиков.&lt;/p>
+&lt;p>Для организации полноценного мониторинга АР может потребоваться внесение дополнительных полей, таких как диагноз пациента, локализация инфекции, другие значимые данные. Чтобы добавить такие поля, требуется нажать кнопку &lt;strong>Поля данных&lt;/strong> в окне настройки лаборатории. Откроется окно &lt;strong>Поля данных&lt;/strong>, в нем необходимо нажать кнопку &lt;strong>Изменить список&lt;/strong>.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/08.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/whonet/08.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>Слева находятся списки категорий данных WHONET (клинические данные, инфекционный контроль и т.п.) и полей данных (диагноз, дата поступления пациента и т.п.), из которых пользователь может выбирать нужные ему категории и поля. Справа – поля, которые доступны в конфигурации текущей лаборатории. Поля добавляются двойным нажатием либо кнопкой &amp;ndash;&amp;gt;.&lt;/p>
+&lt;p>Для того, чтобы добавить поле, которое отсутствует в списке, нужно дважды кликнуть по пункту (&lt;strong>Определенный для пользователя…&lt;/strong>) и в появившемся окне указать название, тип и описание нового поля.&lt;/p>
+&lt;p>Для полей можно определить справочники, которые будут использоваться для заполнения. Это позволит снизить количество ошибок, а также увеличит скорость ввода за счет кодов. Чтобы определить такие справочники, необходимо выбрать поле и нажать кнопку &lt;strong>Код список&lt;/strong>.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/09.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/whonet/09.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>На этом настройку лаборатории можно считать завершенной. После сохранения конфигурации можно приступать к вводу данных. Остальные разделы настройки являются более специфичными и не относятся к теме данного руководства. Работа с ними подробно описана в официальной документации к программе.&lt;/p>
+&lt;h2 id="632-ввод-данных">6.3.2 Ввод данных&lt;/h2>
+&lt;p>Для организации хранения и формирования интерфейса для ввода информации WHONET использует структуру данных, определенную текущими настройками лаборатории. Структура данных – это своего рода инструкции, как должен быть устроен файл с данными. На основании структуры данных для лаборатории можно создать один или несколько файлов с данными. Это может быть полезно в случаях, когда одной конфигурацией пользуется несколько лабораторий одновременно, либо одна лаборатория хранит данные за разные периоды в разных файлах на диске.&lt;/p>
+&lt;p>Чтобы начать ввод, необходимо создать новый или выбрать существующий файл данных.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/10.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/whonet/10.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>Откроется окно ввода данных.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/11.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/whonet/11.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>Данные необходимо вводить в поля, расположенные в левой половине экрана. Когда курсор переключается на то или иное поле для ввода данных, в правом нижнем углу экрана появляются краткие инструкции и рекомендуемые коды данных для этого поля. Переходить по полям можно с помощью кнопок &lt;strong>Enter&lt;/strong>, &lt;strong>Tab&lt;/strong>, стрелками. После ввода даты и перехода к следующему полю пользователю следует убедиться в том, что дата была прочитана верно: WHONET автоматически преобразует числовое обозначение месяца в название месяца. При введении даты год может быть введен как в виде двузначной, так и в виде четырехзначной цифры. Числа, обозначающие день, месяц и год, должны быть разделены косой чертой /, дефисом или пробелом.&lt;/p>
+&lt;p>После того как будут введены все данные об изоляте, нужно нажать кнопку &lt;strong>Сохранить изолят&lt;/strong> (или комбинация клавиш &lt;strong>Alt+С&lt;/strong>). WHONET предложит три варианта сохранения записи:&lt;/p>
+&lt;ul>
+&lt;li>сохранить изолят,&lt;/li>
+&lt;li>сохранить и продолжить работу с тем же изолятом,&lt;/li>
+&lt;li>сохранить и продолжить работу с тем же пациентом.&lt;/li>
+&lt;/ul>
+&lt;p>Выбор одной из этих опций сохраняет информацию и очищает экран &lt;strong>Ввод данных&lt;/strong> для ввода данных следующего изолята (полностью или частично).&lt;/p>
+&lt;h2 id="633-просмотр-данных">6.3.3 Просмотр данных&lt;/h2>
+&lt;p>При открытии файла данных всегда по умолчанию открывается форма для ввода нового образца. Чтобы посмотреть информацию по всем образцам в файле, нужно нажать на этой форме кнопку &lt;strong>Просмотреть базу данных&lt;/strong>.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/12.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/whonet/12.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>По данной таблице можно осуществлять поиск, удаление записей, вывод результатов на печать и даже осуществлять быстрое редактирование для некоторых полей. Чтобы перейти к полноценной форме редактирования, требуется выделить интересующую строку и нажать кнопку &lt;strong>Редактировать&lt;/strong>.&lt;/p>
+&lt;h2 id="634-объединение-данных">6.3.4 Объединение данных&lt;/h2>
+&lt;p>К преимуществам WHONET можно отнести концепцию разделения конфигурации лаборатории и ее файла данных. Благодаря этому на основе одной конфигурации можно создавать несколько файлов данных с одинаковой структурой и «протоколом» хранения для разных лабораторий, а затем объединять и агрегировать эти данные. На этом принципе построена работа в таких междунароных системах эпиднадзора за устойчивостью к АМП, как GLASS и CAESAR.&lt;/p>
+&lt;p>Порядок действий для объединения файлов WHONET, полученных от разных центров/лабораторий/стационаров:&lt;/p>
+&lt;ol>
+&lt;li>Выбрать лабораторию с требуемой конфигурацией, нажать кнопку &lt;strong>Открыть лабораторию&lt;/strong>.&lt;/li>
+&lt;li>В меню &lt;strong>Ввод данных&lt;/strong> выбрать пункт &lt;strong>Объединять, экспортировать или шифровать файлы данных&lt;/strong>.&lt;/li>
+&lt;/ol>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/13.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/whonet/13.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;ol start="3">
+&lt;li>В появившемся окне выбрать файлы, которые требуется объединить с помощью кнопки Файлы данных, указать, куда сохранить объединенный файл данных. Если данный файл предполагается передавать в сторонние центральные лаборатории или другие организации, необходимо отметить галочку &lt;strong>Зашифровать информацию о пациентах&lt;/strong>. В этом случае персональные данные в объединенном файле будут удалены. Для начала процесса объединения необходимо нажать кнопку &lt;strong>Совместить&lt;/strong>.&lt;/li>
+&lt;/ol>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/14.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/whonet/14.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;h2 id="635-экспорт-данных">6.3.5 Экспорт данных&lt;/h2>
+&lt;p>Одно из главных преимуществ WHONET состоит в возможности обмениваться стандартизированными данными с другими лабораториями, например, в национальной сети эпиднадзора.&lt;/p>
+&lt;p>Однако текущая версия WHONET не имеет достаточно гибких возможностей для углубленного анализа и представления данных, а также существенно ограничена при использовании мультидисциплинарной командой с целью мониторинга АР. Получаемые отчеты лишены интерактивности и удобных возможностей быстрого переключения параметров и сравнения полученных результатов. Для этого гораздо удобнее использовать AMRcloud. Существует возможность подготовить данные, хранящиеся в датафайлах программы WHONET, к загрузке в AMRcloud.&lt;/p>
+&lt;p>В общем случае алгоритм следующий:&lt;/p>
+&lt;ol>
+&lt;li>Открыть в программе лабораторию, из которой нужно получить данные, выбрать в меню &lt;strong>Анализ данных&lt;/strong> пункт &lt;strong>Анализ данных&lt;/strong>.&lt;/li>
+&lt;/ol>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/15.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/whonet/15.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;ol start="2">
+&lt;li>Выбрать &lt;strong>Тип анализа – Список изолята и сводка&lt;/strong>. В разделе &lt;strong>Формат отчетов&lt;/strong> выбрать пункт &lt;strong>Результат загрузки&lt;/strong>.&lt;/li>
+&lt;/ol>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/16.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/whonet/16.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;ol start="3">
+&lt;li>Выбрать &lt;strong>Микроорганизмы&lt;/strong>, которые требуется включить в анализ.&lt;/li>
+&lt;/ol>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/17.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/whonet/17.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;ol start="4">
+&lt;li>Выбрать файл данных.&lt;/li>
+&lt;li>Установть вывод результата в формате &lt;strong>Текст (WHONET)&lt;/strong>.&lt;/li>
+&lt;li>Указать, куда сохранить файл экспорта.&lt;/li>
+&lt;/ol>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/18.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/whonet/18.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>Нажать кнопку &lt;strong>Начать анализ&lt;/strong>. Программа сформирует текстовый файл, который необходимо загрузить в онлайн-конвертер, доступный по ссылке &lt;a href="https://public.amrcloud.net/whonet">https://public.amrcloud.net/whonet&lt;/a>. После прохождения всех шагов работы конвертера появится файл, пригодный для загрузки в AMRcloud.&lt;/p>
+&lt;p>Более подробное описание процедуры экспорта и работы с конвертером можно найти в официальном руководстве по ссылке &lt;a href="https://amrcloud.net/ru/tutorials/whonet-converter">https://amrcloud.net/ru/tutorials/whonet-converter&lt;/a>.&lt;/p></description></item><item><title>Docs: 6.4 Работа с BACLINK</title><link>https://monitoring.amrcloud.net/docs/06/04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/06/04/</guid><description>
+&lt;p>Программа BacLink входит в состав программы WHONET и позволяет преобразовывать табличные файлы различных форматов, чтобы затем работать с ними уже в рамках программы WHONET
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#69">
+&lt;abbr title="Всемирная организация здравоохранения. WHONET 5. Программное обеспечение базы данных микробиологической лаборатории. 128 с." class="initialism">[69]&lt;/abbr>
+&lt;/a>. Если решено отказаться от накопления данных в Excel и начать работать в WHONET, то программа BacLink максимально упростит этот переход и перенесет накопленные за долгое время данные
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#72">
+&lt;abbr title="WHO. Collaborating Centre for Surveillance of Antimicrobial resistance. BacLink.Excel, text files, and other desktop applications. 2006; 35 p." class="initialism">[72]&lt;/abbr>
+&lt;/a>.&lt;/p>
+&lt;p>Официальное руководство по работе с программой доступно на сайте &lt;a href="https://whonet.org/documentation.html">https://whonet.org/documentation.html&lt;/a> , а также в самой программе.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/01.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/baclink/01.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>В данном руководстве представлен алгоритм работы с программой на примере табличного файла с результатами тестирования.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/02.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/baclink/02.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>Данный файл не удовлетворяет условию одна строка – один изолят. В каждой строке содержатся данные по чувствительности к отдельному антибиотику, при этом данные самого изолята повторяются. Мало того, что такой способ хранения неэффективно расходует место на диске, это затрудняет анализ полученных данных. Требуется преобразовать такой файл с помощью программы BacLink. Лучше всего программа работает с текстовыми файлами, поэтому, если данные хранятся в форматах Excel (.xls, .xlsx), необходимо их сохранение в формат CSV. Рекомендуется использовать латинские символы в именах полей.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/03.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/baclink/03.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>Окно программы BacLink после запуска показано на рисунке.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/04.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/baclink/04.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>Необходимо определить параметры файла с помощью кнопки &lt;strong>Новый формат&lt;/strong>. Регистрационные данные лаборатории можно заполнить произвольно.&lt;/p>
+&lt;p>Затем нужно сопоставить поля файла с внутренними полями WHONET с помощью кнопки &lt;strong>Структура файла&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Файл&lt;/strong> сохранен в формате CSV, значит, это текстовый файл с разбиением по полям, при этом разделителем полей служит символ точки с запятой ( ; ) и первая строка содержит заголовки полей. Если файл получен с помощью Excel, то по умолчанию используется кодировка Windows (ANSI).&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/05.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/baclink/05.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>Необходимо заполнить сведения об антибиотиках – нажать кнопку ****Антибиотик&lt;strong>и&lt;/strong>. В файле на изолят приходится несколько строк, при этом каждый изолят может тестироваться разными антибиотиками. Результаты чувствительности представлены МПК. Интерпретировать полученные результаты необходимо согласно EUCAST.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/06.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/baclink/06.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>Один из самых важных этапов – сопоставление имеющихся полей данных с полями данных программы WHONET – кнопка &lt;strong>Поля данных&lt;/strong>. Сначала необходимо получить список полей файла: выбрать файл с помощью кнопки &lt;strong>Выбрать образцовый файл данных&lt;/strong>. В результате в правой части окна появятся заголовки столбцов импортируемой таблицы с примерами данных. Для сопоставления необходимо последовательно выбирать поле из левой колонки, затем из правой и нажимать кнопку [=], чтобы создать связь.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/07.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/baclink/07.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>В файле используется формат даты ДД.ММ.ГГГГ, поэтому нужно установить формат данных D.M.Y. Часть полей отсутствует в списке &lt;strong>Поля данных&lt;/strong> в новом файле, чтобы добавить новые поля, требуется нажать кнопку &lt;strong>Изменить список данных полей&lt;/strong> и выбрать по очереди поля ESBL, CARBAPENEMASE и ADMISSION DATE, отметить галочку &lt;strong>Демонстрировать в поле списка&lt;/strong> и нажать кнопку &lt;strong>ОК&lt;/strong>.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/08.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/baclink/08.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>По окончании сопоставления всех полей нужно нажать кнопку &lt;strong>ОК&lt;/strong>. На этом определение структуры файла окончено, можно закрыть окно &lt;strong>Структура файла&lt;/strong> с помощью кнопки &lt;strong>ОК&lt;/strong>. Во время конверсии файлов программа BacLink пытается сопоставить значения полей файла со встроенными справочниками программы WHONET. Если нажать кнопку &lt;strong>Коды и даты&lt;/strong> в окне конфигурации лаборатории, можно увидеть данные настройки, а также пути сохранения файлов с правилами сопоставлений. На данном этапе можно не заполнять данные настройки целиком, а лишь определить формат дат и назначить коды для определения пола. Также стоит обратить внимание на место сохранения файлов-словарей и при необходимости изменить его. Это может быть полезным в дальнейшем.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/09.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/baclink/09.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>Далее необходимо определить, куда будет сохранен преобразованный файл – для этого нужно нажать кнопку &lt;strong>Новый файл данных&lt;/strong> и указать путь.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/10.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/baclink/10.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>C помощью кнопки &lt;strong>Сохранить&lt;/strong> необходимо сохранить конфигурацию лаборатории и структуры файла. Эти настройки можно использовать повторно, если потребуется преобразовать еще несколько файлов с такой же структурой. В таком случае не придется заново задавать все параметры, достаточно будет указать файл конфигурации. После этого можно нажать кнопку &lt;strong>Выход&lt;/strong>.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/11.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/baclink/11.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>Теперь все готово к преобразованию и можно нажать кнопку &lt;strong>Начать конверсию&lt;/strong>.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/12.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/baclink/12.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>В процессе работы программа покажет несколько изолятов для демонстрации преобразования и по окончании выведет отчет о количестве обработанных изолятов. Так как при определении структуры файла не заполнялись словари замен, будут выведены коды, которые BacLink не смог интерпретировать. Их необходимо интерпретировать вручную.&lt;/p>
+&lt;p>Окно &lt;strong>Непризнанные коды&lt;/strong> показывает, какие коды для каких полей остались нераспознанными. Необходимо последовательно выбрать каждое поле данных, нажать кнопку &lt;strong>Определить коды&lt;/strong> и указать правильную интерпретацию.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/13.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/baclink/13.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>Для примера можно взять поле &lt;strong>Антибиотик&lt;/strong>: выделить поле данных &lt;strong>Антибиотик&lt;/strong> и нажать кнопку &lt;strong>Определить код&lt;/strong>.&lt;/p>
+&lt;p>В нижней части окна предлагаются возможные варианты замен. Для антибиотиков рекомендуется выбрать значения с пометкой EUCAST. После выбора замены необходимо нажать кнопку &lt;strong>ОК&lt;/strong>. По мере сопоставления замен они будут исчезать из списка.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/14.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/baclink/14.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>Возможна ситуация, когда программа сама не сможет предложить замену, например, при определении кодов организмов. В таком случае необходимо ввести в поле &lt;strong>Поиск&lt;/strong> нужную замену и тем самым указать программе интерпретацию.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/15.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/baclink/15.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>После определения всех кодов окно &lt;strong>Непризнанные коды&lt;/strong> должно остаться пустым. Теперь можно нажать кнопку &lt;strong>Продолжить&lt;/strong>.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/16.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/baclink/16.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>Далее нужно повторить процедуру конвертации, но уже с определенными заменами для кодов, так как при первоначальной конверсии поля с нераспознанными кодами оставались пустыми. При дальнейшей конвертации подобных файлов коды заново определять не потребуется, так как они сохраняются в словарях. Для повторного запуска процедуры конвертации нужно нажать кнопку &lt;strong>Начать конверсию&lt;/strong> повторно и согласиться на перезапись файла данных.&lt;/p>
+&lt;p>Теперь созданный файл можно использовать в программе WHONET и работать с ним как с обычным датафайлом лаборатории. Для этого нужно запустить программу и выбрать лабораторию.&lt;/p>
+&lt;p>Если ее нет, можно создать новую лабораторию на основе сконвертированного файла. Для этого нужно закрыть окно выбора лаборатории, выбрать в меню &lt;strong>Файл&lt;/strong> пункт Создать лабораторию с файла данных. В открывшемся окне необходимо заполнить данные лаборатории и выбрать сконвертированный файл данных.&lt;/p>
+&lt;p>На основании этих данных программа WHONET создаст новую конфигурацию лаборатории, импортирует существующие настройки, добавит антибиотики, отделения и поля из датафайла и предложит дополнить информацию. Для лаборатории можно указать, с какими антибиотиками она работает, из каких отделений могут поступать пациенты, какие поля данных стоит заводить на изолят. Более подробно о том, как сконфигурировать лабораторию, написано в официальном руководстве программы WHONET, а также краткий обзор дается в приложении (6.3. Работа с WHONET](https://monitoring.amrcloud.net/docs/06/03/). Чтобы продолжить работу с конвертированным датафайлом, достаточно нажать кнопку &lt;strong>Сохранить&lt;/strong>.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/17.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/baclink/17.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>Для начала ввода необходимо выбрать в меню &lt;strong>Ввод данных&lt;/strong> пункт &lt;strong>Открыть файл данных&lt;/strong> и указать файл, который был получен после конвертации программой BacLink.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/18.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/baclink/18.png" alt="" >
+&lt;/a>
+&lt;/figure>
+&lt;p>Откроется окно ввода новых данных. Для просмотра списка изолятов нужно нажать кнопку &lt;strong>Посмотреть базу данных&lt;/strong>. Откроется таблица со всеми изолятами и результатами определения чувствительности.&lt;/p>
+&lt;figure >
+&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/19.png" >
+&lt;img src="https://monitoring.amrcloud.net/images/baclink/19.png" alt="" >
+&lt;/a>
+&lt;/figure></description></item><item><title>Docs: 6.5 Стандартные эпидемиологические определения случая инфекции</title><link>https://monitoring.amrcloud.net/docs/06/05/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/06/05/</guid><description>
+&lt;p>Определения случая инфекции адаптированы из следующих источников:&lt;/p>
+&lt;ul>
+&lt;li>Pan American Health Organization. Epidemiological Surveillance of Healthcare-Associated Infections
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#73">
+&lt;abbr title="Pan American Health Organization. Epidemiological Surveillance of Healthcare-Associated Infections. 2011." class="initialism">[73]&lt;/abbr>
+&lt;/a>;&lt;/li>
+&lt;li>CDC. Procedure-associated Module. Surgical Site Infection (SSI) Event
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#74">
+&lt;abbr title="CDC. Procedure-associated Module. Surgical Site Infection (SSI) Event. 2020." class="initialism">[74]&lt;/abbr>
+&lt;/a>;&lt;/li>
+&lt;li>IDSA. Clinical Practice Guideline for the Management of Asymptomatic Bacteriuria: 2019
+&lt;a href="https://monitoring.amrcloud.net/docs/literature/#75">
+&lt;abbr title="Infectious Diseases Society of America. Clinical practice guideline for the management of asymptomatic bacteriuria: 2019 update by the infectious diseases society of America. 2019." class="initialism">[75]&lt;/abbr>
+&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="651-пневмония">6.5.1 Пневмония&lt;/h2>
+&lt;p>&lt;em>Пневмония должна удовлетворять &lt;strong>одному&lt;/strong> из следующих критериев:&lt;/em>&lt;/p>
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Критерий 1:&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>один и более&lt;/strong> из следующих признаков, сохраняющихся на двух или более последовательных рентгеновских снимках грудной клетки:
+&lt;ul>
+&lt;li>новый или прогрессирующий и стойкий инфильтрат;&lt;/li>
+&lt;li>консолидация;&lt;/li>
+&lt;li>кавитация.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Примечание. У пациентов без основной легочной патологии и/или патологии сердца (например, в отсутствии респираторного дистресс-синдрома, бронхолегочной дисплазии, отека легких, хронической обструктивной болезни легких) допускается однократное рентгенологическое исследование.&lt;/p>
+&lt;p>&lt;strong>И&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;em>&lt;strong>один и более&lt;/strong>&lt;/em> из следующих признаков:
+&lt;ul>
+&lt;li>температура тела ≥38 °С или ≤36 °С без других известных причин;&lt;/li>
+&lt;li>лейкоциты крови &amp;gt;12 × 10&lt;sup>9&lt;/sup>/мл или &amp;lt;4 × 10&lt;sup>9&lt;/sup>/мл, или незрелых форм &amp;gt;10%;&lt;/li>
+&lt;li>для взрослых &amp;gt;70 лет измененное психическое состояние без какой-либо другой установленной причины.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>И&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;em>&lt;strong>два и более&lt;/strong>&lt;/em> из следующих признаков:
+&lt;ul>
+&lt;li>вновь появившаяся гнойная мокрота, или изменение характера мокроты, или усиление дыхательной секреции, или повышенная потребность в аспирации отделяемого трахебронхиального дерева;&lt;/li>
+&lt;li>появление или ухудшение кашля и/или одышки и/или тахипноэ;&lt;/li>
+&lt;li>наличие хрипов или бронхиального дыхания;&lt;/li>
+&lt;li>ухудшение показателей газообмена [например, десатурация O2 (например, PaO2 /FiO2 &amp;lt;240), повышенная потребность в кислороде или потребность в аппарате ИВЛ].&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Критерий 2:&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>один и более&lt;/strong> из следующих признаков, сохраняющихся на двух или более последовательных рентгеновских снимках грудной клетки:
+&lt;ul>
+&lt;li>новый или прогрессирующий и стойкий инфильтрат;&lt;/li>
+&lt;li>консолидация;&lt;/li>
+&lt;li>кавитация.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Примечание. У пациентов без основной легочной патологии и/или патологии сердца (например, в отсутствии респираторного дистресссиндрома, бронхолегочной дисплазии, отека легких, хронической обструктивной болезни легких) допускается однократное рентгенологическое исследование.&lt;/p>
+&lt;p>&lt;strong>И&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>один и более&lt;/strong> из следующих признаков:
+&lt;ul>
+&lt;li>температура тела ≥38 °С или ≤36 °С без других известных причин;&lt;/li>
+&lt;li>лейкоциты крови &amp;gt;12 × 10&lt;sup>9&lt;/sup>/мл или &amp;lt;4 × 10&lt;sup>9&lt;/sup>/мл, или незрелых форм &amp;gt;10%;&lt;/li>
+&lt;li>для взрослых &amp;gt;70 лет измененное психическое состояние без какой-либо другой установленной причины.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>И&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>один и более&lt;/strong> из следующих признаков:
+&lt;ul>
+&lt;li>вновь появившаяся гнойная мокрота, или изменение характера мокроты, или усиление дыхательной секреции, или повышенная потребность в аспирации отделяемого трахебронхиального дерева;&lt;/li>
+&lt;li>появление или ухудшение кашля и/или одышки и/или тахипноэ;&lt;/li>
+&lt;li>наличие хрипов или бронхиального дыхания;&lt;/li>
+&lt;li>ухудшение показателей газообмена [например, десатурация O2 (например, PaO2 /FiO2 &amp;lt;240), повышенная потребность в кислороде или потребность в аппарате ИВЛ].&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>И&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>один и более&lt;/strong> из следующих признаков:
+&lt;ul>
+&lt;li>положительная гемокультура (выявление микроорганизмов в культуре крови), не связанная с другим источником инфекции;&lt;/li>
+&lt;li>выявление микроорганизмов в культуре плевральной жидкости;&lt;/li>
+&lt;li>положительный количественный посев материала из нижних дыхательных путей из образцов, полученных с минимальной вероятностью контаминации (например, с помощью бронхоальвеолярного лаважа (&amp;gt;10&lt;sup>4&lt;/sup> КОЕ/мл), или метода защищенных щеток (&amp;gt;10&lt;sup>3&lt;/sup> КОЕ/мл), или аспирате из трахеи (&amp;gt;10&lt;sup>3&lt;/sup> КОЕ/мл);&lt;/li>
+&lt;li>≥5% клеток, полученных в бронхоальвеолярном лаваже, содержат внутриклеточно расположенные бактерии при прямом микроскопическом исследовании (например, при окрашивании по Граму);&lt;/li>
+&lt;li>&lt;strong>один и более&lt;/strong> из следующих признаков: 
+&lt;ul>
+&lt;li>образование абсцесса или очаги уплотнения с интенсивным накоплением полиморфноядерных лейкоцитов в бронхиолах и альвеолах;&lt;/li>
+&lt;li>положительный количественный посев паренхимы легкого;&lt;/li>
+&lt;li>свидетельства инвазии паренхимы легкого грибковыми гифами или псевдогифами.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;h2 id="652-лабораторно-подтвержденная-инфекция-кровотока">6.5.2 Лабораторно подтвержденная инфекция кровотока&lt;/h2>
+&lt;p>&lt;em>Лабораторно подтвержденная инфекция кровотока должна удовлетворять &lt;strong>одному&lt;/strong> из следующих критериев:&lt;/em>&lt;/p>
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Критерий 1:&lt;/h4>
+&lt;ul>
+&lt;li>положительная гемокультура (выявление микроорганизмов в культуре крови) в одном или нескольких образцах (не относится к контаминирующим кожные покровы микроорганизмам, см. Критерий 2).&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>И&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>выделенный из гемокультуры микроорганизм не связан с другим источником инфекции.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Критерий 2:&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>один и более&lt;/strong> из следующих признаков без другой установленной причины:
+&lt;ul>
+&lt;li>лихорадка (&amp;gt;38 °C);&lt;/li>
+&lt;li>озноб;&lt;/li>
+&lt;li>гипотензия.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>И&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>обнаружение условно-патогенного микроорганизма из числа обычно наблюдаемых на поверхности кожного покрова (наример дифтероиды [&lt;em>Corynebacterium&lt;/em> spp.], &lt;em>Bacillus&lt;/em> [за исключением &lt;em>B. anthracis&lt;/em>] spp., &lt;em>Propionibacterium&lt;/em> spp., коагулазонегативные стафилококки [включая &lt;em>S. epidermidis&lt;/em>], зеленящие &lt;em>Streptococci, Aerococcus&lt;/em> spp., &lt;em>Micrococcus&lt;/em> spp.) в двух или более гемокультурах, взятых в разные сроки;&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>И / ИЛИ&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>обнаружение микроорганизма из числа обычно наблюдаемых на поверхности кожного покрова хотя бы в одном посеве крови, взятой у пациента с внутривенным катетером и назначение врачом по этому поводу антимикробной терапии.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;h2 id="653-инфекция-мочевыводящих-путей">6.5.3 Инфекция мочевыводящих путей&lt;/h2>
+&lt;p>&lt;em>Клинически выраженная инфекция мочевыводящих путей должна удовлетворять &lt;strong>одному&lt;/strong> из следующих критериев:&lt;/em>&lt;/p>
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Критерий 1:&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>один и более&lt;/strong> из следующих признаков без другой установленной причины:
+&lt;ul>
+&lt;li>лихорадка (≥38 °С);&lt;/li>
+&lt;li>резкие позывы к мочеиспусканию;&lt;/li>
+&lt;li>учащенное мочеиспускание;&lt;/li>
+&lt;li>дизурия или надлобковая болезненность.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>И&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>положительный количественный посев мочи (&amp;gt;10&lt;sup>5&lt;/sup> КОЕ/мл мочи).&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Критерий 2:&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>два и более&lt;/strong> из следующих признаков без другой установленной причины:
+&lt;ul>
+&lt;li>лихорадка (≥38 °С);&lt;/li>
+&lt;li>резкие позывы к мочеиспусканию;&lt;/li>
+&lt;li>учащенное мочеиспускание;&lt;/li>
+&lt;li>дизурия или надлобковая болезненность.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>И&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>один и более&lt;/strong> из следующих признаков:
+&lt;ul>
+&lt;li>положительный тест на лейкоцитарную эстеразу или нитрат;&lt;/li>
+&lt;li>пиурия (&amp;gt;10 лейкоцитов/мл мочи или &amp;gt;3 лейкоцитов в поле зрения микроскопии мочи высокого разрешения);&lt;/li>
+&lt;li>обнаружение микроорганизмов при окраске по Граму нецентрифугированной мочи;&lt;/li>
+&lt;li>выделение одного уропатогенного микроорганизма в количестве ≤10&lt;sup>5&lt;/sup> КОЕ/мл у пациента, получающего антимикробную терапию по поводу уроинфекции;&lt;/li>
+&lt;li>двукратно микробиологически подтвержденная бактериурия (&amp;gt;10&lt;sup>5&lt;/sup> КОЕ/мл мочи).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;h2 id="654-бессимптомная-бактериурия">6.5.4 Бессимптомная бактериурия&lt;/h2>
+&lt;p>&lt;em>Бессимптомная бактериурия должна удовлетворять следующим критериям:&lt;/em>&lt;/p>
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Критерий:&lt;/h4>
+&lt;ul>
+&lt;li>микробиологически подтвержденная бактериурия (≥10&lt;sup>5&lt;/sup> КОЕ/ мл мочи) вне зависимости от наличия пиурии;&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>И&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>температура тела &amp;lt;37,5 °С, отсутствие резких позывов к мочеиспусканию, учащенного мочеиспускания, дизурии, надлобковой болезненности.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;h2 id="655-инфекция-области-хирургического-вмешательства">6.5.5 Инфекция области хирургического вмешательства&lt;/h2>
+&lt;p>&lt;strong>Поверхностная инфекция&lt;/strong> разреза возникает не позднее 30 дней после операции и вовлекает только кожу и подкожные ткани в области разреза.&lt;/p>
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Критерий:&lt;/h4>
+&lt;p>&lt;strong>как минимум одно&lt;/strong> из перечисленного&lt;/p>
+&lt;ul>
+&lt;li>гнойное отделяемое из поверхностного разреза;&lt;/li>
+&lt;li>выделение микроорганизмов из жидкости или ткани, полученной асептически пункцией области поверхностного разреза или из мазка из раны при наличии микроскопических признаков гнойного воспаления;&lt;/li>
+&lt;li>имеется &lt;strong>не менее двух&lt;/strong> из следующих симптомов:
+&lt;ul>
+&lt;li>боль или болезненность;&lt;/li>
+&lt;li>ограниченный отек;&lt;/li>
+&lt;li>гиперемия;&lt;/li>
+&lt;li>местное повышение температуры.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>назначение лечащим врачом антимикробной терапии по поводу нагноения послеоперационной раны.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;p>&lt;strong>Глубокая инфекция области хирургического вмешательства&lt;/strong> возникает не позднее 30 дней после операции при отсутствии имплантата или не позднее одного года при наличии имплантата в месте операции и вовлекает глубокие мягкие ткани (например, фасциальный и мышечный слой) в области разреза.&lt;/p>
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Критерий:&lt;/h4>
+&lt;p>&lt;strong>как минимум одно&lt;/strong> из перечисленного&lt;/p>
+&lt;ul>
+&lt;li>гнойное отделяемое из глубины разреза в месте данного хирургического вмешательства, но не из органа/полости;&lt;/li>
+&lt;li>выделение микроорганизмов из жидкости или ткани, полученное асептически пункцией области глубокого разреза или из мазка из глубины раны при наличии микроскопических признаков гнойного воспаления;&lt;/li>
+&lt;li>спонтанное расхождение краев раны или намеренное ее открытие хирургом, когда у пациента имеются следующие признаки и симптомы:
+&lt;ul>
+&lt;li>температура тела &amp;gt;37,5 °C;&lt;/li>
+&lt;li>локализованная боль и/или отек.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>при непосредственном осмотре, во время повторной операции, при гистологическом или рентгенологическом исследовании обнаружен абсцесс или иные признаки инфекции в области глубоких слоев операционной раны;&lt;/li>
+&lt;li>назначение лечащим врачом антимикробной терапии по поводу абсцесса, флегмоны в месте операции и пр.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;p>&lt;strong>Инфекция полости/органа&lt;/strong> возникает не позднее 30 дней после операции при отсутствии имплантата или не позднее одного года при наличии имплантата в месте операции, с вовлечением органа или полости.&lt;/p>
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Критерий:&lt;/h4>
+&lt;p>&lt;strong>как минимум одно&lt;/strong> из перечисленного&lt;/p>
+&lt;ul>
+&lt;li>гнойное отделяемое из дренажа, установленного в органе/полости через специальный разрез;&lt;/li>
+&lt;li>выделение микроорганизмов из жидкости или ткани, полученной асептически из органа/полости и лихорадка;&lt;/li>
+&lt;li>при непосредственном осмотре, во время повторной операции, при гистологическом или рентгенологическом исследовании обнаружен абсцесс или иные признаки инфекции, вовлекающие орган/полость;&lt;/li>
+&lt;li>назначение лечащим врачом антимикробной терапии по поводу перитонита, остеомиелита, эмпиемы плевры, пиелонефрита, медиастенита, эндометрита и другие, возникшие после операции на соответствующем органе.&lt;/li>
+&lt;/ul>
+&lt;/div></description></item><item><title>Docs: Литература</title><link>https://monitoring.amrcloud.net/docs/literature/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/literature/</guid><description>
+&lt;div class="list-literature">
+&lt;h6 class="lit-heading" id="1">1. Tillotson G.S., Zinner S.H. Burden of antimicrobial resistance in an era of decreasing susceptibility. Expert Rev Anti Infect Ther. 2017;15(7):663–676.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.tandfonline.com/doi/abs/10.1080/14787210.2017.1337508?journalCode=ierz20" rel="noopener" target="_blank">&lt;small>https://www.tandfonline.com/doi/abs/10.1080/14787210.2017.1337508?journalCode=ierz20&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="2">2. Козлов Р.С., Голуб А.В. Остановить темпы роста антибиотикорезистентности микроорганизмов сегодня – дать шанс на выживание человечества завтра. Клиническая микробиология и антимикробная химиотерапия. 2019;21(4):310–315.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://cmac-journal.ru/publication/2019/4/cmac-2019-t21-n4-p310/" rel="noopener" target="_blank">&lt;small>https://cmac-journal.ru/publication/2019/4/cmac-2019-t21-n4-p310/&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="3">3. Всемирная организация здравоохранения. Глобальный план действий по борьбе с устойчивостью к противомикробным препаратам. Geneva, Switzerland; 2016.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://apps.who.int/iris/bitstream/handle/10665/254884/9789244509760-rus.pdf?sequence=1" rel="noopener" target="_blank">&lt;small>https://apps.who.int/iris/bitstream/handle/10665/254884/9789244509760-rus.pdf?sequence=1&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="4">4. Распоряжение правительства Российской Федерации от 25 Сентября 2017 г. № 2045-р «Стратегия предупреждения распространения антимикробной резистентности в Российской Федерации на период до 2030 года».&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="http://static.government.ru/media/files/onJ3GY3ObDGqLDvrED7AhpLF3ywRRFpp.pdf" rel="noopener" target="_blank">&lt;small>http://static.government.ru/media/files/onJ3GY3ObDGqLDvrED7AhpLF3ywRRFpp.pdf&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="5">5. Michael C.A., Dominey-Howes D., Labbate M. The antimicrobial resistance crisis: causes, consequences, and management. Front public Heal. 2014;2:145.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.frontiersin.org/articles/10.3389/fpubh.2014.00145/full" rel="noopener" target="_blank">&lt;small>https://www.frontiersin.org/articles/10.3389/fpubh.2014.00145/full&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="6">6. Tacconelli E., Sifakis F., Harbarth S., Schrijver R., van Mourik M., Voss A., et al. Surveillance for control of antimicrobial resistance. Lancet Infect Dis. 2018;18(3):e99–106.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099%2817%2930485-1/fulltext" rel="noopener" target="_blank">&lt;small>https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(17)30485-1/fulltext&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="7">7. Stratchounski L.S., Dekhnich A.V., Kretchikov V.A., Edelstain I.A., Narezkina A.D., Afinogenov G.E., et al. Antimicrobial resistance of nosocomial strains of Staphylococcus aureus in Russia: results of a prospective study. J Chemother. 2005;17(1):54–60.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.tandfonline.com/doi/abs/10.1179/joc.2005.17.1.54" rel="noopener" target="_blank">&lt;small>https://www.tandfonline.com/doi/abs/10.1179/joc.2005.17.1.54&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="8">8. Stratchounski L.S., Kozlov R.S., Appelbaum P.C., Kretchikova O.I., KosowskaShick K. Antimicrobial resistance of nasopharyngeal pneumococci from children from day-care centres and orphanages in Russia: results of a unique prospective multicentre study. Clin Microbiol Infect. 2006;12(9):853–866.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.clinicalmicrobiologyandinfection.com/article/S1198-743X%2814%2964303-2/fulltext" rel="noopener" target="_blank">&lt;small>https://www.clinicalmicrobiologyandinfection.com/article/S1198-743X(14)64303-2/fulltext&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="9">9. Stratchounski L.S., Kretchikova O.I., Kozlov R.S., Reshedko G.K., Stetsiouk O.U., Tarasova G.D., et al. Antimicrobial resistance of Streptococcus pneumoniae isolated from healthy children in day-care centers: results of a multicenter study in Russia. Pediatr Infect Dis J. 2000;19(3):196–200.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://journals.lww.com/pidj/Abstract/2000/03000/Antimicrobial_resistance_ofStreptococcus.4.aspx" rel="noopener" target="_blank">&lt;small>https://journals.lww.com/pidj/Abstract/2000/03000/Antimicrobial_resistance_ofStreptococcus.4.aspx&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="10">10. Кузьменков А.Ю., Трушин И.В., Авраменко А.А., Эйдельштейн М.В., Дехнич А.В., Козлов Р.С. AMRmap: Интернет-платформа мониторинга антибиотикорезистентности. Клиническая микробиология и антимикробная химиотерапия. 2017;19(2):84–90.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://cmac-journal.ru/publication/2017/2/cmac-2017-t19-n2-p084/" rel="noopener" target="_blank">&lt;small>https://cmac-journal.ru/publication/2017/2/cmac-2017-t19-n2-p084/&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="11">11. Виноградова А.Г., Кузьменков А.Ю. Организация данных как основа локального мониторинга антибиотикорезистентности. Клиническая микробиология и антимикробная химиотерапия. 2020;22(2):137–141.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://cmac-journal.ru/publication/2020/2/cmac-2020-t22-n2-p137/" rel="noopener" target="_blank">&lt;small>https://cmac-journal.ru/publication/2020/2/cmac-2020-t22-n2-p137/&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="12">12. Кузьменков А.Ю., Виноградова А.Г., Трушин И.В., Авраменко А.А., Эйдельштейн М.В., Дехнич А.В., и соавт. AMRcloud: новая парадигма мониторинга антибиотикорезистентности. Клиническая микробиология и антимикробная химиотерапия. 2019;21(2):119–124.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://cmac-journal.ru/publication/2019/2/cmac-2019-t21-n2-p119/" rel="noopener" target="_blank">&lt;small>https://cmac-journal.ru/publication/2019/2/cmac-2019-t21-n2-p119/&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="13">13. Lushniak B.D. Antibiotic resistance: a public health crisis. Public Health Rep. 2014;129(4):314–316.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://journals.sagepub.com/doi/10.1177/003335491412900402" rel="noopener" target="_blank">&lt;small>https://journals.sagepub.com/doi/10.1177/003335491412900402&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="14">14. Ferri M., Ranucci E., Romagnoli P., Giaccone V. Antimicrobial resistance: a global emerging threat to public health systems. Crit Rev Food Sci Nutr. 2017;57(13):2857–2876.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.tandfonline.com/doi/abs/10.1080/10408398.2015.1077192?journalCode=bfsn20" rel="noopener" target="_blank">&lt;small>https://www.tandfonline.com/doi/abs/10.1080/10408398.2015.1077192?journalCode=bfsn20&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="15">15. Núñez-Núñez M., Navarro M.D., Palomo V., Rajendran N.B., del Toro M.D., Voss A., et al. The methodology of surveillance for antimicrobial resistance and healthcare-associated infections in Europe (SUSPIRE): a systematic review of publicly available information. Clinical Microbiology and Infection. 2018;24(2):105–109.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.clinicalmicrobiologyandinfection.com/article/S1198-743X%2817%2930385-3/fulltext" rel="noopener" target="_blank">&lt;small>https://www.clinicalmicrobiologyandinfection.com/article/S1198-743X(17)30385-3/fulltext&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="16">16. Masterton R. The Importance and Future of Antimicrobial Surveillance Studies. Clin Infect Dis. 2008;47(S1):S21–31.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://academic.oup.com/cid/article/47/Supplement_1/S21/304789" rel="noopener" target="_blank">&lt;small>https://academic.oup.com/cid/article/47/Supplement_1/S21/304789&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="17">17. Coulehan M.B., Wells J.F. Guidelines for responsible data management in scientific research. 46 p.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://ori.hhs.gov/guidelines-responsible-datamanagementscientific-research" rel="noopener" target="_blank">&lt;small>https://ori.hhs.gov/guidelines-responsible-datamanagementscientific-research&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="18">18. Кузьменков А.Ю., Виноградова А.Г. Мониторинг антибиотикорезистентности: обзор информационных ресурсов. Бюллетень сибирской медицины. 2020;19(2):163–170.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://bulletin.tomsk.ru/jour/article/view/2873/1753" rel="noopener" target="_blank">&lt;small>https://bulletin.tomsk.ru/jour/article/view/2873/1753&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="19">19. Perez F., Villegas M.V. The role of surveillance systems in confronting the global crisis of antibiotic-resistant bacteria. Curr Opin Infect Dis. 2015;28(4): 375–383.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://journals.lww.com/co-infectiousdiseases/Abstract/2015/08000/The_role_of_surveillance_systems_in_confronting.14.aspx" rel="noopener" target="_blank">&lt;small>https://journals.lww.com/co-infectiousdiseases/Abstract/2015/08000/The_role_of_surveillance_systems_in_confronting.14.aspx&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="20">20. Яковлев С.В., Брико Н.И., Сидоренко С.В., Проценко Д.Н. Программа СКАТ (Стратегия Контроля Антимикробной Терапии) при оказании стационарной медицинской помощи. 2018; 156 с. Доступно по адресу: http://nasci. ru/?id=2880&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="http://nasci.ru/?id=2880" rel="noopener" target="_blank">&lt;small>http://nasci.ru/?id=2880&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="21">21. CDDEP. ResistanceMap: Antibiotic Resistance. 2020.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://resistancemap.cddep.org/AntibioticResistance.php" rel="noopener" target="_blank">&lt;small>https://resistancemap.cddep.org/AntibioticResistance.php&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="22">22. CDC. Surveillance Reports.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="http://www.cdc.gov/abcs/reports-findings/surv-reports.html" rel="noopener" target="_blank">&lt;small>http://www.cdc.gov/abcs/reports-findings/surv-reports.html&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="23">23. The British Society for Antimicrobial Chemotherapy. Resistance Surveillance Project.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="http://www.bsacsurv.org/" rel="noopener" target="_blank">&lt;small>http://www.bsacsurv.org/&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="24">24. Edwards J.R., Peterson K.D., Mu Y., Banerjee S., Allen-Bridson K., Morrell G., et al. National Healthcare Safety Network (NHSN) report: Data summary for 2006 through 2008, issued December 2009. Am J Infect Control. 2009;37(10):783–805.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.ajicjournal.org/article/S0196-6553%2809%2900839-6/fulltext" rel="noopener" target="_blank">&lt;small>https://www.ajicjournal.org/article/S0196-6553(09)00839-6/fulltext&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="25">25. Antimicrobial Resistance Standing Committee. National Surveillance and Reporting of Antimicrobial Resistance and Antibiotic Usage for Human Health in Australia (Project AMRAU). 2013; 152 p.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.safetyandquality.gov.au/sites/default/files/migrated/National-surveillance-and-reporting-of-antimicrobial-resistance-andantibioticusage-for-human-health-in-Australia.pdf" rel="noopener" target="_blank">&lt;small>https://www.safetyandquality.gov.au/sites/default/files/migrated/National-surveillance-and-reporting-of-antimicrobial-resistance-andantibioticusage-for-human-health-in-Australia.pdf&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="26">26. Fuhrmeister A.S., Jones R.N. The Importance of antimicrobial resistance monitoring worldwide and the origins of SENTRY antimicrobial surveillance program. Open Forum Infect Dis. 2019;6(Suppl.1):S1–4.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://academic.oup.com/ofid/article/6/Supplement_1/S1/5381628" rel="noopener" target="_blank">&lt;small>https://academic.oup.com/ofid/article/6/Supplement_1/S1/5381628&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="27">27. European Centre for Disease Prevention and Control. Surveillance of antimicrobial resistance in Europe 2018.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.ecdc.europa.eu/en" rel="noopener" target="_blank">&lt;small>https://www.ecdc.europa.eu/en&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="28">28. Виноградова А.Г., Кузьменков А.Ю. Практическое применение AMRmap: элементы подхода «от общего к частному» на примере Klebsiella pneumoniae. Клиническая микробиология и антимикробная химиотерапия. 2019;21(2):181–186.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://cmac-journal.ru/publication/2019/2/cmac-2019-t21-n2-p181/" rel="noopener" target="_blank">&lt;small>https://cmac-journal.ru/publication/2019/2/cmac-2019-t21-n2-p181/&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="29">29. ГОСТ Р 53079.2-2008 Технологии лабораторные клинические. Обеспечение качества клинических лабораторных исследований. Часть 2. Руководство по управлению качеством в клинико-диагностической лаборатории. Типовая модель. 2010.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="http://docs.cntd.ru/document/1200073591" rel="noopener" target="_blank">&lt;small>http://docs.cntd.ru/document/1200073591&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="30">30. МУ 4.2.2039-05 Техника сбора и транспортирования биоматериалов в микробиологические лаборатории. 2006; 23 с.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="http://docs.cntd.ru/document/1200044664" rel="noopener" target="_blank">&lt;small>http://docs.cntd.ru/document/1200044664&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="31">31. Культуры крови (гемокультуры). Ключевое исследование для диагностики инфекций кровотока.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.biomerieux-russia.com/sites/subsidiary_ru/files/biomerieux_-_blood_culture_-_ru_-_final.pdf" rel="noopener" target="_blank">&lt;small>https://www.biomerieux-russia.com/sites/subsidiary_ru/files/biomerieux_-_blood_culture_-_ru_-_final.pdf&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="32">32. Решедько Г.К. Определение чувствительности к антибиотикам: методы, результаты, оценка.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="http://www.antibiotic.ru/rus/all/articles/absens.shtml" rel="noopener" target="_blank">&lt;small>http://www.antibiotic.ru/rus/all/articles/absens.shtml&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="33">33. Тапальский Д.В., Бильский И.А. Определение чувствительности к антибиотикам методом микроразведений в бульоне: модификация, доступная для всех. Клиническая микробиология и антимикробная химиотерапия. 2018;20(1):62–67.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://cmac-journal.ru/publication/2018/1/cmac-2018-t20-n1-p062/" rel="noopener" target="_blank">&lt;small>https://cmac-journal.ru/publication/2018/1/cmac-2018-t20-n1-p062/&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="34">34. Шамина О.В., Крыжановская О.А., Лазарева А.В., Поликарпова С.В., Карасева О.В., Чеботарь И.В. и соавт. Сравнение методов определения устойчивости к колистину у карбапенемрезистентных штаммов Klebsiella pneumoniae. Клиническая лабораторная диагностика. 2018;63(10):646–650.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="http://www.medlit.ru/journalsview/lab/view/journal/2018/issue-10/1663-sravnenie-metodov-opredeleniya-ustoychivosti-k-kolistinu-u-karbapenemrezistentnyh-shtammov-klebsiella-pneumoniae/" rel="noopener" target="_blank">&lt;small>http://www.medlit.ru/journalsview/lab/view/journal/2018/issue-10/1663-sravnenie-metodov-opredeleniya-ustoychivosti-k-kolistinu-u-karbapenemrezistentnyh-shtammov-klebsiella-pneumoniae/&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="35">35. ISO 20776-1:2019. Susceptibility testing of infectious agents and evaluation of performance of antimicrobial susceptibility test devices – Part 1: Broth micro-dilution reference method for testing the in vitro activity of antimicrobial agents against rapidly growing aerobic bacteria involved in infectious diseases. 2019.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.iso.org/standard/70464.html" rel="noopener" target="_blank">&lt;small>https://www.iso.org/standard/70464.html&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="36">36. Приказ Федерального агентства по техническому регулированию и метрологии Российской Федерации от 23 ноября 2010 г. N 499-ст.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="http://docs.cntd.ru/document/902264310" rel="noopener" target="_blank">&lt;small>http://docs.cntd.ru/document/902264310&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="37">37. Jorgensen J.H., Ferraro M.J. Antimicrobial Susceptibility Testing: A review of general principles and contemporary practices. Clin Infect Dis. 2009;49(11):1749– 1755.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="http://www.ncbi.nlm.nih.gov/pubmed/19857164" rel="noopener" target="_blank">&lt;small>http://www.ncbi.nlm.nih.gov/pubmed/19857164&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="38">38. Kahlmeter G., Giske C.G., Kirn T.J., Sharp S.E. Point-Counterpoint: differences between the European Committee on Antimicrobial Susceptibility Testing and Clinical and Laboratory Standards Institute Recommendations for reporting antimicrobial susceptibility results. J Clin Microbiol. 2019;57(9): e01129-19.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://jcm.asm.org/content/57/9/e01129-19" rel="noopener" target="_blank">&lt;small>https://jcm.asm.org/content/57/9/e01129-19&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="39">39. Pantozzi F.L., Ibar M.P., Nievas V.F., Vigo G.B., Moredo F.A., Giacoboni G.I. Wild-type minimal inhibitory concentration distributions in bacteria of animal origin in Argentina. Rev Argent Microbiol. 2014;46(1):34–40.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.sciencedirect.com/science/article/pii/S0325754114700458?via%3Dihub" rel="noopener" target="_blank">&lt;small>https://www.sciencedirect.com/science/article/pii/S0325754114700458?via%3Dihub&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="40">40. Kronvall G., Giske C.G., Kahlmeter G. Setting interpretive breakpoints for antimicrobial susceptibility testing using disk diffusion. Int J Antimicrob Agents. 2011;38(4):281–290.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.sciencedirect.com/science/article/abs/pii/S0924857911001968?via%3Dihub" rel="noopener" target="_blank">&lt;small>https://www.sciencedirect.com/science/article/abs/pii/S0924857911001968?via%3Dihub&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="41">41. Всемирная организация здравоохранения. Эпиднадзор за устойчивостью к противомикробным препаратам в Центральной Азии и Восточной Европе. Ежегодный доклад. Женева; 2019; 167 с.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="http://www.euro.who.int/PubRequest?language=Russian" rel="noopener" target="_blank">&lt;small>http://www.euro.who.int/PubRequest?language=Russian&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="42">42. Сухорукова М.В. Определение чувствительности микроорганизмов к антибиотикам: что стоит за результатом. Клиническая микробиология и антимикробная химиотерапия. 2013;15(3):219–229.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://cmac-journal.ru/publication/2013/3/cmac-2013-t15-n3-p219/" rel="noopener" target="_blank">&lt;small>https://cmac-journal.ru/publication/2013/3/cmac-2013-t15-n3-p219/&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="43">43. Кафтырева Л.А., Зуева Л.П., Колосовская Е.Н., Егорова С.А., Макарова М.А., Светличная Ю.С., Кузин А.А., Свистунов С.А. Принципы организации мониторирования устойчивости ведущих возбудителей инфекций, связанных с оказанием медицинской помощи, к антимикробным препаратам к антимикробным препаратам в лечебно-профилактических медицинских организациях здравоохранения. 2014; 137 с.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="http://nasci.ru/?id=3374" rel="noopener" target="_blank">&lt;small>http://nasci.ru/?id=3374&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="44">44. EUCAST. Экспертные правила определения чувствительности к антибиотикам EUCAST.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.eucast.org/expert_rules_%20and_intrinsic_resistance/" rel="noopener" target="_blank">&lt;small>https://www.eucast.org/expert_rules_ and_intrinsic_resistance/&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="45">45. Полонская А.В., Корниенко М.А., Манолов А.И., Купцов Н.С., Смирнов Г.Б., Любасовская Л.А., Припутневич Т.В., Шитиков Е.А., Ильина Е.Н. Вариабельность генов рекомбиназ и mecA стафилококковой хромосомной кассеты Staphylococcus haemolyticus. Антибиотики и Химиотерапия. 2018;63(7–8):33–40.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.antibiotics-chemotherapy.ru/jour/article/view/94/94" rel="noopener" target="_blank">&lt;small>https://www.antibiotics-chemotherapy.ru/jour/article/view/94/94&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="46">46. Тимофеева О.Г., Поликарпова С.В. Локальный микробиологический мониторинг штаммов Enterobacterales, продуцирующих карбапенемазы. Лабораторная служба. 2019;8(3):14.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.mediasphera.ru/issues/laboratornaya-sluzhba/2019/3/1230521982019031014" rel="noopener" target="_blank">&lt;small>https://www.mediasphera.ru/issues/laboratornaya-sluzhba/2019/3/1230521982019031014&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="47">47. Kumari R., Banerjee T., Anupurba S. Molecular detection of drug resistance to ofloxacin and kanamycin in Mycobacterium tuberculosis by using multiplex allelespecific PCR. J Infect Public Health. 2018;11(1):54–58.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.sciencedirect.com/science/article/pii/S1876034117300990?via%3Dihub" rel="noopener" target="_blank">&lt;small>https://www.sciencedirect.com/science/article/pii/S1876034117300990?via%3Dihub&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="48">48. Malik T., Naim A., Saeed A. Molecular Detection of TEM, SHV and CTX-M Genes among Gram-negative Klebsiella Isolates. Curr Drug Deliv. 2018;15(3):417– 423.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://pubmed.ncbi.nlm.nih.gov/29295691/" rel="noopener" target="_blank">&lt;small>https://pubmed.ncbi.nlm.nih.gov/29295691/&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="49">49. Thirumalmuthu K., Devarajan B., Prajna L., Mohankumar V. Mechanisms of fluoroquinolone and aminoglycoside resistance in keratitis-associated Pseudomonas aeruginosa. Microb Drug Resist. 2019;25(6):813–823.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.liebertpub.com/doi/10.1089/mdr.2018.0218" rel="noopener" target="_blank">&lt;small>https://www.liebertpub.com/doi/10.1089/mdr.2018.0218&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="50">50. Shaaban M., Al-Qahtani A., Al-Ahdal M., Barwa R. Molecular characterization of resistance mechanisms in Pseudomonas aeruginosa isolates resistant to carbapenems. J Infect Dev Ctries. 2018;11(12):935–943.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://jidc.org/index.php/journal/article/view/9501" rel="noopener" target="_blank">&lt;small>https://jidc.org/index.php/journal/article/view/9501&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="51">51. EUCAST guidelines for detection of resistance mechanisms and specific resistances of clinical and/or epidemiological importance. 2017.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.eucast.org/fileadmin/src/media/PDFs/EUCAST_files/Resistance_%20mechanisms/EUCAST_detection_of_resistance_mechanisms_170711.pdf" rel="noopener" target="_blank">&lt;small>https://www.eucast.org/fileadmin/src/media/PDFs/EUCAST_files/Resistance_ mechanisms/EUCAST_detection_of_resistance_mechanisms_170711.pdf&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="52">52. Global Antimicrobial Resistance Surveillance System. Molecular methods for antimicrobial resistance (AMR) diagnostics to enhance the Global Antimicrobial Resistance Surveillance System. 2019.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.who.int/glass/resources/publications/molecular-methods-for-amr-diagnostics/en/" rel="noopener" target="_blank">&lt;small>https://www.who.int/glass/resources/publications/molecular-methods-for-amr-diagnostics/en/&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="53">53. Global Antimicrobial Resistance Surveillance System. GLASS whole-genome sequencing for surveillance of antimicrobial resistance. 2020.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.who.int/publications/i/item/9789240011007" rel="noopener" target="_blank">&lt;small>https://www.who.int/publications/i/item/9789240011007&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="54">54. Шайдуллина Э.Р., Эйдельштейн М.В., Склеенова Е.Ю., Сухорукова М.В., Козлов Р.С. Антибиотикорезистентность нозокомиальных карбапенемазопродуцирующих штаммов Enterobacterales в России: результаты эпидемиологического исследования 2014–2016 гг. Клиническая микробиология и антимикробная химиотерапия. 2018;20(4):362–369.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://cmac-journal.ru/publication/2018/4/cmac-2018-t20-n4-p362/" rel="noopener" target="_blank">&lt;small>https://cmac-journal.ru/publication/2018/4/cmac-2018-t20-n4-p362/&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="55">55. Сухорукова М.В., Эйдельштейн М.В., Иванчик Н.В., Склеенова Е.Ю., Шайдуллина Э.Р., Шек Е.А., и соавт. Антибиотикорезистентность нозокомиальных штаммов Enterobacterales в стационарах России: результаты многоцентрового эпидемиологического исследования МАРАФОН 2015–2016. Клиническая микробиология и антимикробная химиотерапия. 2019;21(2):147–159.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://cmac-journal.ru/publication/2019/2/cmac-2019-t21-n2-p147/" rel="noopener" target="_blank">&lt;small>https://cmac-journal.ru/publication/2019/2/cmac-2019-t21-n2-p147/&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="56">56. Попов Д.А. Сравнительная характеристика современных методов определения продукции карбапенемаз. Клиническая микробиология и антимикробная химиотерапия. 2019;21(2):125–33.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://cmac-journal.ru/publication/2019/2/cmac-2019-t21-n2-p125/" rel="noopener" target="_blank">&lt;small>https://cmac-journal.ru/publication/2019/2/cmac-2019-t21-n2-p125/&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="57">57. Белобородов В.Б., Гусаров В.Г., Дехнич А.В., Замятин М.Н., Зубарева Н.А., Зырянов С.К. и соавт. Диагностика и антимикробная терапия инфекций, вызванных полирезистентными микроорганизмами. Вестник анестезиологии и реаниматологии. 2020;16(1):52–83.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="http://www.antibiotic.ru/files/pdf/2019/guidelines-daticmm-20191204.pdf" rel="noopener" target="_blank">&lt;small>http://www.antibiotic.ru/files/pdf/2019/guidelines-daticmm-20191204.pdf&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="58">58. Эйдельштейн М.В., Сухорукова М.В., Склеенова Е.Ю., Иванчик Н.В., Микотина А.В., Шек Е.А. и соавт. Антибиотикорезистентность нозокомиальных штаммов Pseudomonas aeruginosa в стационарах России: результаты многоцентрового эпидемиологического исследования «МАРАФОН» 2013–2014. Клиническая микробиология и антимикробная химиотерапия. 2017;19(1):37–41.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://cmac-journal.ru/publication/2017/1/cmac-2017-t19-n1-p037/" rel="noopener" target="_blank">&lt;small>https://cmac-journal.ru/publication/2017/1/cmac-2017-t19-n1-p037/&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="59">59. Сухорукова М.В., Эйдельштейн М.В., Склеенова Е.Ю., Иванчик Н.В., Шек Е.А., Дехнич А.В. и соавт. Антибиотикорезистентность нозокомиальных штаммов Acinetobacter spp. в стационарах России: результаты многоцентрового эпидемиологического исследования «МАРАФОН» 2013–2014. Клиническая микробиология и антимикробная химиотерапия. 2017;19(1):42–48.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://cmac-journal.ru/publication/2017/1/cmac-2017-t19-n1-p042/" rel="noopener" target="_blank">&lt;small>https://cmac-journal.ru/publication/2017/1/cmac-2017-t19-n1-p042/&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="60">60. Becker K., Denis O., Roisin S., Mellmann A., Idelevich E.A., Knaack D., et al. Detection of mecA – and mecC -Positive Methicillin-Resistant Staphylococcus aureus (MRSA) Isolates by the New Xpert MRSA Gen 3 PCR Assay. J Clin Microbiol. 2016;54(1):180–184.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://jcm.asm.org/content/54/1/180" rel="noopener" target="_blank">&lt;small>https://jcm.asm.org/content/54/1/180&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="61">61. Tenover F.C., Tickler I.A., Le V.M., Dewell S., Mendes R.E., Goering R.V. Updating molecular diagnostics for detecting methicillin-susceptible and methicillinresistant Staphylococcus aureus isolates in blood culture bottles. J Clin Microbiol. 2019;57(11): e01195-19.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://jcm.asm.org/content/57/11/e01195-19" rel="noopener" target="_blank">&lt;small>https://jcm.asm.org/content/57/11/e01195-19&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="62">62. AMRFinderPlus.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.ncbi.nlm.nih.gov/pathogens/antimicrobial-resistance/AMRFinder/" rel="noopener" target="_blank">&lt;small>https://www.ncbi.nlm.nih.gov/pathogens/antimicrobial-resistance/AMRFinder/&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="63">63. ResFinder.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://cge.cbs.dtu.dk/services/ResFinder/" rel="noopener" target="_blank">&lt;small>https://cge.cbs.dtu.dk/services/ResFinder/&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="64">64. Fontaine R.E. Describing epidemiologic data. The CDC Field Epidemiology Manual. Oxford University Press; 2018. 528 p.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.%20cdc.gov/eis/field-epi-manual/chapters/Describing-Epi-Data.html" rel="noopener" target="_blank">&lt;small>https://www. cdc.gov/eis/field-epi-manual/chapters/Describing-Epi-Data.html&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="65">65. Arts DGT. Defining and improving data quality in medical registries: a literature review, case study, and generic framework. J Am Med Informatics Assoc. 2002;9(6):600–611.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://academic.oup.com/jamia/articlelookup/doi/10.1197/jamia.M1087" rel="noopener" target="_blank">&lt;small>https://academic.oup.com/jamia/articlelookup/doi/10.1197/jamia.M1087&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="66">66. НСИ. Федеральный справочник лабораторных исследований. Справочник лабораторных материалов и образцов. 2019.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://nsi.rosminzdrav.ru/#!/refbook/1.2.643.5.1.13.13.11.1081/version/2.2" rel="noopener" target="_blank">&lt;small>https://nsi.rosminzdrav.ru/#!/refbook/1.2.643.5.1.13.13.11.1081/version/2.2&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="67">67. НСИ. Справочник территории (СМРПМЗ). 2016.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://nsi.rosminzdrav.ru/#!/refbook/1.2.643.5.1.13.2.1.1.346/version/1.0" rel="noopener" target="_blank">&lt;small>https://nsi.rosminzdrav.ru/#!/refbook/1.2.643.5.1.13.2.1.1.346/version/1.0&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="68">68. Stelling J. Руководство по WHONET. Глобальная система эпиднадзора за устойчивостью к противомикробным препаратам. 2016. 39 с.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="http://www.whonet.org/Docs/WHONET_for_GLASS.%20Russian.docx" rel="noopener" target="_blank">&lt;small>http://www.whonet.org/Docs/WHONET_for_GLASS. Russian.docx&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="69">69. Всемирная организация здравоохранения. WHONET 5. Программное обеспечение базы данных микробиологической лаборатории. 128 с.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://apps.who.int/iris/bitstream/handle/%2010665/91616/WHO_CDS_CSR_DRS_99.1_rus.pdf?sequence=%201&amp;amp;isAllowed=y" rel="noopener" target="_blank">&lt;small>https://apps.who.int/iris/bitstream/handle/ 10665/91616/WHO_CDS_CSR_DRS_99.1_rus.pdf?sequence= 1&amp;amp;isAllowed=y&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="70">70. WHONET. Официальная документация.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://whonet.org/documentation.html" rel="noopener" target="_blank">&lt;small>https://whonet.org/documentation.html&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="71">71. WHONET for CAESAR. Manual. 2020; 71 p.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://whonet.org/docserv/Manual_WHONET_for_CAESAR.pdf" rel="noopener" target="_blank">&lt;small>https://whonet.org/docserv/Manual_WHONET_for_CAESAR.pdf&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="72">72. WHO. Collaborating Centre for Surveillance of Antimicrobial resistance. BacLink.Excel, text files, and other desktop applications. 2006; 35 p.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://whonet.org/Docs/BacLink%202.Excel,%20text%20files,%20other%20applications.doc" rel="noopener" target="_blank">&lt;small>https://whonet.org/Docs/BacLink 2.Excel, text files, other applications.doc&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="73">73. Pan American Health Organization. Epidemiological Surveillance of Healthcare-Associated Infections. 2011.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.paho.org/hq/dmdocuments/2011/ENG_%20Modulo_I_final.pdf" rel="noopener" target="_blank">&lt;small>https://www.paho.org/hq/dmdocuments/2011/ENG_ Modulo_I_final.pdf&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="74">74. CDC. Procedure-associated Module. Surgical Site Infection (SSI) Event. 2020.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.cdc.gov/nhsn/pdfs/pscmanual/9pscssicurrent.pdf" rel="noopener" target="_blank">&lt;small>https://www.cdc.gov/nhsn/pdfs/pscmanual/9pscssicurrent.pdf&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h6 class="lit-heading" id="75">75. Infectious Diseases Society of America. Clinical practice guideline for the management of asymptomatic bacteriuria: 2019 update by the infectious diseases society of America. 2019.&lt;/h6>
+&lt;p>&lt;a class="lit-list-link" href="https://www.idsociety.org/practiceguideline/asymptomatic-bacteriuria/" rel="noopener" target="_blank">&lt;small>https://www.idsociety.org/practiceguideline/asymptomatic-bacteriuria/&lt;/small>&lt;/a>&lt;/p>
+&lt;hr>
+&lt;/div></description></item></channel></rss>
