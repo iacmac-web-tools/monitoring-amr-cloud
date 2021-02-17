@@ -377,7 +377,7 @@ QR-code для загрузки шаблона данных
 &lt;/figure>
 &lt;ol start="4">
 &lt;li>Выбрать файл данных.&lt;/li>
-&lt;li>Установть вывод результата в формате &lt;strong>Текст (WHONET)&lt;/strong>.&lt;/li>
+&lt;li>Установить вывод результата в формате &lt;strong>Текст (WHONET)&lt;/strong>.&lt;/li>
 &lt;li>Указать, куда сохранить файл экспорта.&lt;/li>
 &lt;/ol>
 &lt;figure >
