@@ -3,7 +3,7 @@
 &lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/6.1.1.png" data-caption="QR-code для загрузки шаблона направления на микробиологическое исследование">
 &lt;img src="https://monitoring.amrcloud.net/images/6.1.1.png" alt="" >
 &lt;/a>
-&lt;figcaption data-pre="Рисунок " data-post=":" class="numbered">
+&lt;figcaption data-pre="Рисунок " data-post=": " class="numbered">
 QR-code для загрузки шаблона направления на микробиологическое исследование
 &lt;/figcaption>
 &lt;/figure>
@@ -12,7 +12,7 @@ QR-code для загрузки шаблона направления на ми�
 &lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/6.1.2.png" data-caption="Вариант шаблона направления на микробиологическое исследование">
 &lt;img src="https://monitoring.amrcloud.net/images/6.1.2.png" alt="" >
 &lt;/a>
-&lt;figcaption data-pre="Рисунок " data-post=":" class="numbered">
+&lt;figcaption data-pre="Рисунок " data-post=": " class="numbered">
 Вариант шаблона направления на микробиологическое исследование
 &lt;/figcaption>
 &lt;/figure></description></item><item><title>Docs: 6.2 Работа с шаблоном, справочниками и словарями</title><link>https://monitoring.amrcloud.net/docs/06/02/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/06/02/</guid><description>
@@ -28,7 +28,7 @@ QR-code для загрузки шаблона направления на ми�
 &lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/6.2.1.png" data-caption="QR-code для загрузки шаблона данных">
 &lt;img src="https://monitoring.amrcloud.net/images/6.2.1.png" alt="" >
 &lt;/a>
-&lt;figcaption data-pre="Рисунок " data-post=":" class="numbered">
+&lt;figcaption data-pre="Рисунок " data-post=": " class="numbered">
 QR-code для загрузки шаблона данных
 &lt;/figcaption>
 &lt;/figure>
