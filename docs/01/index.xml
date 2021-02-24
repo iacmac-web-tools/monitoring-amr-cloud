@@ -1,103 +1,183 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AMRcloud. Monitoring – 1. Введение</title><link>https://monitoring.amrcloud.net/docs/01/</link><description>Recent content in 1. Введение on AMRcloud. Monitoring</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://monitoring.amrcloud.net/docs/01/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 1.1 Важность мониторинга антибиотикорезистентности</title><link>https://monitoring.amrcloud.net/docs/01/01/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/01/01/</guid><description>
-&lt;p>Проблема роста антибиотикорезистентности (АР) в последние десятилетия занимает одну из ключевых позиций в системах общественного здравоохранения и требует особого внимания со стороны медицинского сообщества
-&lt;a href="https://monitoring.amrcloud.net/docs/literature/#5">
-&lt;abbr title="Michael C.A., Dominey-Howes D., Labbate M. The antimicrobial resistance crisis: causes, consequences, and management. Front public Heal. 2014;2:145." class="initialism">[5]&lt;/abbr>
-&lt;/a>
-&lt;a href="https://monitoring.amrcloud.net/docs/literature/#13">
-&lt;abbr title="Lushniak B.D. Antibiotic resistance: a public health crisis. Public Health Rep. 2014;129(4):314–316." class="initialism">[13]&lt;/abbr>
-&lt;/a>
-&lt;a href="https://monitoring.amrcloud.net/docs/literature/#14">
-&lt;abbr title="Ferri M., Ranucci E., Romagnoli P., Giaccone V. Antimicrobial resistance: a global emerging threat to public health systems. Crit Rev Food Sci Nutr. 2017;57(13):2857–2876." class="initialism">[14]&lt;/abbr>
-&lt;/a>. Базовой составляющей для отслеживания динамики чувствительности микроорганизмов к антимикробным препаратам является мониторинг АР
-&lt;a href="https://monitoring.amrcloud.net/docs/literature/#15">
-&lt;abbr title="Núñez-Núñez M., Navarro M.D., Palomo V., Rajendran N.B., del Toro M.D., Voss A., et al. The methodology of surveillance for antimicrobial resistance and healthcare-associated infections in Europe (SUSPIRE): a systematic review of publicly available information. Clinical Microbiology and Infection. 2018;24(2):105–109." class="initialism">[15]&lt;/abbr>
-&lt;/a>
-&lt;a href="https://monitoring.amrcloud.net/docs/literature/#16">
-&lt;abbr title="Masterton R. The Importance and Future of Antimicrobial Surveillance Studies. Clin Infect Dis. 2008;47(S1):S21–31." class="initialism">[16]&lt;/abbr>
-&lt;/a>.&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">Мониторинг антибиотикорезистентности&lt;/h4>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AMRcloud. Monitoring – 1. Введение</title>
+    <link>https://monitoring.amrcloud.net/docs/01/</link>
+    <description>Recent content in 1. Введение on AMRcloud. Monitoring</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://monitoring.amrcloud.net/docs/01/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: 1.1 Важность мониторинга антибиотикорезистентности</title>
+      <link>https://monitoring.amrcloud.net/docs/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://monitoring.amrcloud.net/docs/01/01/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Проблема роста антибиотикорезистентности (АР) в последние десятилетия занимает одну из ключевых позиций в системах общественного здравоохранения и требует особого внимания со стороны медицинского сообщества 
+
+
+
+
+&lt;a href=&#34;https://monitoring.amrcloud.net/docs/literature/#5&#34;&gt;
+    &lt;abbr title=&#34;Michael C.A., Dominey-Howes D., Labbate M. The antimicrobial resistance crisis: causes, consequences, and management. Front public Heal. 2014;2:145.&#34; class=&#34;initialism&#34;&gt;[5]&lt;/abbr&gt;
+&lt;/a&gt;
+
+
+
+
+&lt;a href=&#34;https://monitoring.amrcloud.net/docs/literature/#13&#34;&gt;
+    &lt;abbr title=&#34;Lushniak B.D. Antibiotic resistance: a public health crisis. Public Health Rep. 2014;129(4):314–316.&#34; class=&#34;initialism&#34;&gt;[13]&lt;/abbr&gt;
+&lt;/a&gt;
+
+
+
+
+&lt;a href=&#34;https://monitoring.amrcloud.net/docs/literature/#14&#34;&gt;
+    &lt;abbr title=&#34;Ferri M., Ranucci E., Romagnoli P., Giaccone V. Antimicrobial resistance: a global emerging threat to public health systems. Crit Rev Food Sci Nutr. 2017;57(13):2857–2876.&#34; class=&#34;initialism&#34;&gt;[14]&lt;/abbr&gt;
+&lt;/a&gt;. Базовой составляющей для отслеживания динамики чувствительности микроорганизмов к антимикробным препаратам является мониторинг АР 
+
+
+
+
+&lt;a href=&#34;https://monitoring.amrcloud.net/docs/literature/#15&#34;&gt;
+    &lt;abbr title=&#34;Núñez-Núñez M., Navarro M.D., Palomo V., Rajendran N.B., del Toro M.D., Voss A., et al. The methodology of surveillance for antimicrobial resistance and healthcare-associated infections in Europe (SUSPIRE): a systematic review of publicly available information. Clinical Microbiology and Infection. 2018;24(2):105–109.&#34; class=&#34;initialism&#34;&gt;[15]&lt;/abbr&gt;
+&lt;/a&gt;
+
+
+
+
+&lt;a href=&#34;https://monitoring.amrcloud.net/docs/literature/#16&#34;&gt;
+    &lt;abbr title=&#34;Masterton R. The Importance and Future of Antimicrobial Surveillance Studies. Clin Infect Dis. 2008;47(S1):S21–31.&#34; class=&#34;initialism&#34;&gt;[16]&lt;/abbr&gt;
+&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Мониторинг антибиотикорезистентности&lt;/h4&gt;
 это систематический, непрерывный процесс сбора, анализа и представления данных по резистентности к антимикробным препаратам. Полученная в рамках мониторинга информация имеет практические точки приложения, включая организацию лечебных и профилактических мероприятий.
-&lt;/div>
-&lt;p>Принципами мониторинга являются:&lt;/p>
-&lt;ul>
-&lt;li>непрерывность,&lt;/li>
-&lt;li>стандартизация,&lt;/li>
-&lt;li>комплексность,&lt;/li>
-&lt;li>курируемость.&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Непрерывность&lt;/strong> – мониторинг проводится на постоянной основе.&lt;/p>
-&lt;p>&lt;strong>Стандартизация&lt;/strong> – соблюдение единого дизайна и принципов проведения исследования: сбора, анализа и интерпретации результатов
-&lt;a href="https://monitoring.amrcloud.net/docs/literature/#17">
-&lt;abbr title="Coulehan M.B., Wells J.F. Guidelines for responsible data management in scientific research. 46 p." class="initialism">[17]&lt;/abbr>
-&lt;/a>. Кроме того, сохранение результатов в электронном, пригодном для последующей пакетной статистической обработки виде (в электронных таблицах и/или лабораторных информационных системах) должно осуществляться в соответствии с разработанными правилами (использование словаря различных наименований, определенное оформление заголовочной строки таблицы и т. д.). При составлении справочников и словарей необходимо придерживаться принципа «разумной достаточности» - исключение излишних подробностей в записях, что позволяет рассмотреть динамику устойчивости в общем виде (при этом добавление новых записей не должно противоречить уже существующим).&lt;/p>
-&lt;p>&lt;strong>Комплексность&lt;/strong> – данные по каждому возбудителю должны включать не только результаты определения чувствительности, но и дополнительную информацию о пациенте, заболевании и лечебном учреждении. Сбор данных в таком объеме позволяет выявить (или обнаружить) неявные причинно-следственные связи между появлением устойчивости микроорганизмов к АМП и наличием определенных факторов.
-Курируемость – регулярный контроль качества процесса получения данных (включая процессы сбора, микробиологических исследований, хранения и обработки данных).&lt;/p>
-&lt;p>Основными этапами работы с данными мониторинга являются:&lt;/p>
-&lt;ul>
-&lt;li>непрерывный сбор данных,&lt;/li>
-&lt;li>анализ данных,&lt;/li>
-&lt;li>интерпретация данных,&lt;/li>
-&lt;li>практическое использование результатов.&lt;/li>
-&lt;/ul>
-&lt;p>Ключевые задачи мониторинга АР
-&lt;a href="https://monitoring.amrcloud.net/docs/literature/#18">
-&lt;abbr title="Кузьменков А.Ю., Виноградова А.Г. Мониторинг антибиотикорезистентности: обзор информационных ресурсов. Бюллетень сибирской медицины. 2020;19(2):163–170." class="initialism">[18]&lt;/abbr>
-&lt;/a>:&lt;/p>
-&lt;ul>
-&lt;li>выявление АР;&lt;/li>
-&lt;li>анализ АР;&lt;/li>
-&lt;li>прогнозирование изменений в показателях АР;&lt;/li>
-&lt;li>установление новых механизмов АР;&lt;/li>
-&lt;li>сравнение активности новых антибиотиков до и после их внедрения в клиническую практику;&lt;/li>
-&lt;li>обучение медицинского сообщества, пациентов, заинтересованных лиц;&lt;/li>
-&lt;li>разработка практических мер для снижения уровня АР;&lt;/li>
-&lt;li>оценка эффективности профилактических вмешательств по контролю АР.&lt;/li>
-&lt;/ul></description></item><item><title>Docs: 1.2 Системы мониторинга</title><link>https://monitoring.amrcloud.net/docs/01/02/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/01/02/</guid><description>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">Система мониторинга&lt;/h4>
+&lt;/div&gt;
+
+&lt;p&gt;Принципами мониторинга являются:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;непрерывность,&lt;/li&gt;
+&lt;li&gt;стандартизация,&lt;/li&gt;
+&lt;li&gt;комплексность,&lt;/li&gt;
+&lt;li&gt;курируемость.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Непрерывность&lt;/strong&gt; – мониторинг проводится на постоянной основе.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Стандартизация&lt;/strong&gt; – соблюдение единого дизайна и принципов проведения исследования: сбора, анализа и интерпретации результатов 
+
+
+
+
+&lt;a href=&#34;https://monitoring.amrcloud.net/docs/literature/#17&#34;&gt;
+    &lt;abbr title=&#34;Coulehan M.B., Wells J.F. Guidelines for responsible data management in scientific research. 46 p.&#34; class=&#34;initialism&#34;&gt;[17]&lt;/abbr&gt;
+&lt;/a&gt;. Кроме того, сохранение результатов в электронном, пригодном для последующей пакетной статистической обработки виде (в электронных таблицах и/или лабораторных информационных системах) должно осуществляться в соответствии с разработанными правилами (использование словаря различных наименований, определенное оформление заголовочной строки таблицы и т. д.). При составлении справочников и словарей необходимо придерживаться принципа «разумной достаточности» - исключение излишних подробностей в записях, что позволяет рассмотреть динамику устойчивости в общем виде (при этом добавление новых записей не должно противоречить уже существующим).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Комплексность&lt;/strong&gt; – данные по каждому возбудителю должны включать не только результаты определения чувствительности, но и дополнительную информацию о пациенте, заболевании и лечебном учреждении. Сбор данных в таком объеме позволяет выявить (или обнаружить) неявные причинно-следственные связи между появлением устойчивости микроорганизмов к АМП и наличием определенных факторов.
+Курируемость – регулярный контроль качества процесса получения данных (включая процессы сбора, микробиологических исследований, хранения и обработки данных).&lt;/p&gt;
+&lt;p&gt;Основными этапами работы с данными мониторинга являются:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;непрерывный сбор данных,&lt;/li&gt;
+&lt;li&gt;анализ данных,&lt;/li&gt;
+&lt;li&gt;интерпретация данных,&lt;/li&gt;
+&lt;li&gt;практическое использование результатов.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ключевые задачи мониторинга АР 
+
+
+
+
+&lt;a href=&#34;https://monitoring.amrcloud.net/docs/literature/#18&#34;&gt;
+    &lt;abbr title=&#34;Кузьменков А.Ю., Виноградова А.Г. Мониторинг антибиотикорезистентности: обзор информационных ресурсов. Бюллетень сибирской медицины. 2020;19(2):163–170.&#34; class=&#34;initialism&#34;&gt;[18]&lt;/abbr&gt;
+&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;выявление АР;&lt;/li&gt;
+&lt;li&gt;анализ АР;&lt;/li&gt;
+&lt;li&gt;прогнозирование изменений в показателях АР;&lt;/li&gt;
+&lt;li&gt;установление новых механизмов АР;&lt;/li&gt;
+&lt;li&gt;сравнение активности новых антибиотиков до и после их внедрения в клиническую практику;&lt;/li&gt;
+&lt;li&gt;обучение медицинского сообщества, пациентов, заинтересованных лиц;&lt;/li&gt;
+&lt;li&gt;разработка практических мер для снижения уровня АР;&lt;/li&gt;
+&lt;li&gt;оценка эффективности профилактических вмешательств по контролю АР.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 1.2 Системы мониторинга</title>
+      <link>https://monitoring.amrcloud.net/docs/01/02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://monitoring.amrcloud.net/docs/01/02/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Система мониторинга&lt;/h4&gt;
 это комплекс мероприятий, который позволяет организовывать и анализировать данные с предоставлением результатов по запросу специалиста.
-&lt;/div>
-&lt;p>Необходимость учета большого объема данных способствует развитию систем мониторинга
-&lt;a href="https://monitoring.amrcloud.net/docs/literature/#19">
-&lt;abbr title="Perez F., Villegas M.V. The role of surveillance systems in confronting the global crisis of antibiotic-resistant bacteria. Curr Opin Infect Dis. 2015;28(4): 375–383." class="initialism">[19]&lt;/abbr>
-&lt;/a>. При этом существуют особенности, которые отличают системы между собой и обуславливают их классификацию.&lt;/p>
-&lt;h2 id="типы-систем-мониторинга">Типы систем мониторинга:&lt;/h2>
-&lt;ul>
-&lt;li>По открытости:
-&lt;ul>
-&lt;li>открытые – результаты доступны для любого пользователя&lt;/li>
-&lt;li>закрытые – для доступа к данным необходимы логин и пароль&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>По объему данных:
-&lt;ul>
-&lt;li>без ограничений – включен максимально возможный объем данных&lt;/li>
-&lt;li>с ограничениями – включен объем данных, отобранный согласно критериям (ограничения перечня АМП, видов микроорганизмов и т. д.)&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>По уровню организации:
-&lt;ul>
-&lt;li>локальные – данные по АР получены в рамках определенного географического объекта (медицинской организации)&lt;/li>
-&lt;li>национальные – данные по АР получены из различных географических объектов, значительно отличающихся по географическому расположению, в рамках одной страны&lt;/li>
-&lt;li>международные – данные по АР получены в различных странах&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="примеры-международных-систем-мониторинга">Примеры международных систем мониторинга:&lt;/h2>
-&lt;ul>
-&lt;li>Европейская система по наблюдению за антимикробной резистентностью (The European Antimicrobial Resistance Surveillance Network; EARS-Net);
-&lt;a href="https://www.ecdc.europa.eu/en/about-us/partnerships-and-networks/disease-and-laboratory-networks/ears-net">https://www.ecdc.europa.eu/en/about-us/partnerships-and-networks/disease-and-laboratory-networks/ears-net&lt;/a>&lt;/li>
-&lt;li>Cистема эпиднадзора за устойчивостью к противомикробным препаратам в Центральной Азии и Восточной Европе (The Central Asian and Eastern European Surveillance of Antimicrobial Resistance; CAESAR);
-&lt;a href="https://www.euro.who.int/en/health-topics/disease-prevention/antimicrobial-resistance/publications/2019/central-asian-and-european-surveillance-of-antimicrobial-resistance.-annual-report-2019">https://www.euro.who.int/en/health-topics/disease-prevention/antimicrobial-resistance/publications/2019/central-asian-and-european-surveillance-of-antimicrobial-resistance.-annual-report-2019&lt;/a>&lt;/li>
-&lt;li>ResistanceMap, разработанная Центром динамики заболеваний, экономики и политики (The Center for Disease Dynamics, Economics &amp;amp; Policy, CDDEP);
-&lt;a href="https://resistancemap.cddep.org/AntibioticResistance.php">https://resistancemap.cddep.org/AntibioticResistance.php&lt;/a>&lt;/li>
-&lt;li>Глобальная система надзора за антибиотикорезистентностью (The Global Antimicrobial Resistance Surveillance System; GLASS);
-&lt;a href="https://www.who.int/glass/en/">https://www.who.int/glass/en/&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="примеры-национальных-систем-мониторинга">Примеры национальных систем мониторинга:&lt;/h2>
-&lt;ul>
-&lt;li>AMRmap (Российская Федерация); &lt;a href="https://amrmap.ru/">https://amrmap.ru/&lt;/a>&lt;/li>
-&lt;li>Национальная сеть безопасности здравоохранения (National Healthcare Safety Network; NHSN, США); &lt;a href="https://arpsp.cdc.gov/">https://arpsp.cdc.gov/&lt;/a>&lt;/li>
-&lt;li>BSAC Resistance Surveillance Programme (Великобритания); &lt;a href="http://www.bsacsurv.org/">http://www.bsacsurv.org/&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/div&gt;
+
+&lt;p&gt;Необходимость учета большого объема данных способствует развитию систем мониторинга 
+
+
+
+
+&lt;a href=&#34;https://monitoring.amrcloud.net/docs/literature/#19&#34;&gt;
+    &lt;abbr title=&#34;Perez F., Villegas M.V. The role of surveillance systems in confronting the global crisis of antibiotic-resistant bacteria. Curr Opin Infect Dis. 2015;28(4): 375–383.&#34; class=&#34;initialism&#34;&gt;[19]&lt;/abbr&gt;
+&lt;/a&gt;. При этом существуют особенности, которые отличают системы между собой и обуславливают их классификацию.&lt;/p&gt;
+&lt;h2 id=&#34;типы-систем-мониторинга&#34;&gt;Типы систем мониторинга:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;По открытости:
+&lt;ul&gt;
+&lt;li&gt;открытые – результаты доступны для любого пользователя&lt;/li&gt;
+&lt;li&gt;закрытые – для доступа к данным необходимы логин и пароль&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;По объему данных:
+&lt;ul&gt;
+&lt;li&gt;без ограничений – включен максимально возможный объем данных&lt;/li&gt;
+&lt;li&gt;с ограничениями – включен объем данных, отобранный согласно критериям (ограничения перечня АМП, видов микроорганизмов и т. д.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;По уровню организации:
+&lt;ul&gt;
+&lt;li&gt;локальные – данные по АР получены в рамках определенного географического объекта (медицинской организации)&lt;/li&gt;
+&lt;li&gt;национальные – данные по АР получены из различных географических объектов, значительно отличающихся по географическому расположению, в рамках одной страны&lt;/li&gt;
+&lt;li&gt;международные – данные по АР получены в различных странах&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;примеры-международных-систем-мониторинга&#34;&gt;Примеры международных систем мониторинга:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Европейская система по наблюдению за антимикробной резистентностью (The European Antimicrobial Resistance Surveillance Network; EARS-Net);
+&lt;a href=&#34;https://www.ecdc.europa.eu/en/about-us/partnerships-and-networks/disease-and-laboratory-networks/ears-net&#34;&gt;https://www.ecdc.europa.eu/en/about-us/partnerships-and-networks/disease-and-laboratory-networks/ears-net&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Cистема эпиднадзора за устойчивостью к противомикробным препаратам в Центральной Азии и Восточной Европе (The Central Asian and Eastern European Surveillance of Antimicrobial Resistance; CAESAR);
+&lt;a href=&#34;https://www.euro.who.int/en/health-topics/disease-prevention/antimicrobial-resistance/publications/2019/central-asian-and-european-surveillance-of-antimicrobial-resistance.-annual-report-2019&#34;&gt;https://www.euro.who.int/en/health-topics/disease-prevention/antimicrobial-resistance/publications/2019/central-asian-and-european-surveillance-of-antimicrobial-resistance.-annual-report-2019&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ResistanceMap, разработанная Центром динамики заболеваний, экономики и политики (The Center for Disease Dynamics, Economics &amp;amp; Policy, CDDEP);
+&lt;a href=&#34;https://resistancemap.cddep.org/AntibioticResistance.php&#34;&gt;https://resistancemap.cddep.org/AntibioticResistance.php&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Глобальная система надзора за антибиотикорезистентностью (The Global Antimicrobial Resistance Surveillance System; GLASS);
+&lt;a href=&#34;https://www.who.int/glass/en/&#34;&gt;https://www.who.int/glass/en/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;примеры-национальных-систем-мониторинга&#34;&gt;Примеры национальных систем мониторинга:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;AMRmap (Российская Федерация); &lt;a href=&#34;https://amrmap.ru/&#34;&gt;https://amrmap.ru/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Национальная сеть безопасности здравоохранения (National Healthcare Safety Network; NHSN, США); &lt;a href=&#34;https://arpsp.cdc.gov/&#34;&gt;https://arpsp.cdc.gov/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;BSAC Resistance Surveillance Programme (Великобритания); &lt;a href=&#34;http://www.bsacsurv.org/&#34;&gt;http://www.bsacsurv.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,755 +1,2292 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AMRcloud. Monitoring – 6. Приложения</title><link>https://monitoring.amrcloud.net/docs/06/</link><description>Recent content in 6. Приложения on AMRcloud. Monitoring</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://monitoring.amrcloud.net/docs/06/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 6.1 Шаблон направления на микробиологическое исследование</title><link>https://monitoring.amrcloud.net/docs/06/01/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/06/01/</guid><description>
-&lt;figure id="figure-qr-code-для-загрузки-шаблона-направления-на-микробиологическое-исследование">
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/6.1.1.png" data-caption="QR-code для загрузки шаблона направления на микробиологическое исследование">
-&lt;img src="https://monitoring.amrcloud.net/images/6.1.1.png" alt="" >
-&lt;/a>
-&lt;figcaption data-pre="Рисунок " data-post=": " class="numbered">
-QR-code для загрузки шаблона направления на микробиологическое исследование
-&lt;/figcaption>
-&lt;/figure>
-&lt;p>Ссылка для скачивания шаблона: &lt;a href="https://monitoring.amrcloud.net/files/appointment.docx">https://monitoring.amrcloud.net/files/appointment.docx&lt;/a>&lt;/p>
-&lt;figure id="figure-вариант-шаблона-направления-на-микробиологическое-исследование">
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/6.1.2.png" data-caption="Вариант шаблона направления на микробиологическое исследование">
-&lt;img src="https://monitoring.amrcloud.net/images/6.1.2.png" alt="" >
-&lt;/a>
-&lt;figcaption data-pre="Рисунок " data-post=": " class="numbered">
-Вариант шаблона направления на микробиологическое исследование
-&lt;/figcaption>
-&lt;/figure></description></item><item><title>Docs: 6.2 Работа с шаблоном, справочниками и словарями</title><link>https://monitoring.amrcloud.net/docs/06/02/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/06/02/</guid><description>
-&lt;h2 id="621-шаблон-данных">6.2.1 Шаблон данных&lt;/h2>
-&lt;p>Шаблон данных является базовым элементом для организации мониторинга АР и представляет &lt;strong>файл&lt;/strong> формата .xlsx и включает себя следующие страницы:&lt;/p>
-&lt;ul>
-&lt;li>«ИРК_1» – пример таблицы для ввода данных.&lt;/li>
-&lt;li>«&lt;strong>Словари&lt;/strong>» – наборы справочных наименований (микроорганизмы и группы микроорганизмов, профиль отделения, локализация инфекций, клинический материал).&lt;/li>
-&lt;li>«Антибиотики справка» – наименования АМП с учетом метода определения чувствительности (суффиксы формата «_mic», «_dd», «_sir», подробнее см. раздел &lt;strong>4.4. Правила оформления и хранения данных&lt;/strong>.&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Шаблон данных&lt;/strong> может быть скачан по ссылке &lt;a href="https://monitoring.amrcloud.net/files/template.xlsx">https://monitoring.amrcloud.net/files/template.xlsx&lt;/a> и адаптирован с учетом специфики конкретного учреждения.&lt;/p>
-&lt;figure id="figure-qr-code-для-загрузки-шаблона-данных">
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/6.2.1.png" data-caption="QR-code для загрузки шаблона данных">
-&lt;img src="https://monitoring.amrcloud.net/images/6.2.1.png" alt="" >
-&lt;/a>
-&lt;figcaption data-pre="Рисунок " data-post=": " class="numbered">
-QR-code для загрузки шаблона данных
-&lt;/figcaption>
-&lt;/figure>
-&lt;h2 id="622-добавление-новых-строк-в-шаблон">6.2.2 Добавление новых строк в шаблон&lt;/h2>
-&lt;p>При внесении данных в шаблон может возникнуть ситуация, когда подстановки будут активны только для окрашенных ячеек, а если продолжать заполнять таблицу, то выпадающие списки пропадут. Для того, чтобы выпадающие списки с подстановками продолжали формироваться и для новых строк, необходимо добавлять такие строки следующим образом:&lt;/p>
-&lt;ol>
-&lt;li>Выделить первую свободную строку после заполненнных. На панели инструментов, на вкладке &lt;strong>Главная&lt;/strong>, в разделе &lt;strong>Ячейки&lt;/strong>, нажать кнопку &lt;strong>Вставить&lt;/strong>, выбрать пункт &lt;strong>Вставить строки на лист&lt;/strong>.&lt;/li>
-&lt;/ol>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/001.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/excel/001.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;h2 id="623-добавление-новых-значений-в-существующие-словарисоздание-новых-словарей">6.2.3 Добавление новых значений в существующие словари/создание новых словарей&lt;/h2>
-&lt;p>Допустим, в файл &lt;strong>Шаблон_AMRcloud.xlsx&lt;/strong> потребовалось добавить новые значения во встроенные справочники. Например, в список отделений необходимо внести новое отделение – &lt;strong>Нейрохирургия&lt;/strong>. Для этого необходимо сделать следующее:&lt;/p>
-&lt;ol>
-&lt;li>Перейти на лист &lt;strong>Словари&lt;/strong>, найти столбец с нужным справочником и добавить недостающее значение (напечатав значение в ячейку).&lt;/li>
-&lt;/ol>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/002.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/excel/002.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;ol start="2">
-&lt;li>На листе &lt;strong>ИРК_1&lt;/strong> выделить диапазон ячеек, в котором содержатся значения отделений. На панели инструментов во вкладке &lt;strong>Данные&lt;/strong>, в разделе &lt;strong>Работа с данными&lt;/strong> нажать на кнопку &lt;strong>Проверка данных&lt;/strong> и выбрать пункт &lt;strong>Проверка данных&lt;/strong>.&lt;/li>
-&lt;/ol>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/003.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/excel/003.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;ol start="3">
-&lt;li>В открывшемся диалоговом окне &lt;strong>Проверка вводимых значений&lt;/strong> выбрать &lt;strong>Тип данных: Список&lt;/strong>, отметить галочку &lt;strong>Список допустимых значений&lt;/strong>, и после клика в поле &lt;strong>Источник&lt;/strong> выделить рамкой диапазон ячеек на листе &lt;strong>Словари&lt;/strong>, в которых будут храниться значения подстановки. Нажать &lt;strong>ОК&lt;/strong>.&lt;/li>
-&lt;/ol>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/004.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/excel/004.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;div class="alert alert-primary" role="alert">
-Аналогичным образом можно создавать новые словари подстановки, добавлять новые столбцы со значениями на лист &lt;strong>Словари&lt;/strong> и задавать &lt;strong>Проверку данных&lt;/strong> для ячеек на листе &lt;strong>ИРК_1&lt;/strong>.
-&lt;/div>
-&lt;h2 id="624-замена-существующих-значений">6.2.4 Замена существующих значений&lt;/h2>
-&lt;p>Допустим, в таблице имеется заполненный столбец с кодами отделений и его требуется перекодировать в полное наименование. Например, закодированы они как ХИР1, ХИР2, ХИР3, ХИР4. Необходимо их автоматически переименовать в «Общая хирургия», «Урология», «Гнойная хирургия», «Торакальная хирургия».&lt;/p>
-&lt;p>Для этого следует использовать встроенную в &lt;strong>Excel&lt;/strong> функцию &lt;strong>ВПР()&lt;/strong>. Синтаксис функции следующий.&lt;/p>
-&lt;p>**ВПР(искомое_значение; таблица; номер_столбца; интервальный_ просмотр)**&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>искомое значение&lt;/strong> – значение, которое необходимо заменить;&lt;/li>
-&lt;li>&lt;strong>таблица&lt;/strong> – ссылка на диапазон ячеек со словарем, который будет использоваться при замене;&lt;/li>
-&lt;li>&lt;strong>номер_столбца&lt;/strong> – номер столбца из &lt;strong>таблицы&lt;/strong>, значения которого будут использоваться в качестве замены;&lt;/li>
-&lt;li>&lt;strong>интервальный_просмотр&lt;/strong> – может принимать 2 значения: ИСТИНА (поиск значения ближайшего к критерию или совпадающее с ним) и ЛОЖЬ (поиск значения в точности совпадающее с критерием).&lt;/li>
-&lt;/ul>
-&lt;p>Общий порядок действий для осуществления такой замены следующий.&lt;/p>
-&lt;ol>
-&lt;li>Создать словарь замен на новом листе.&lt;/li>
-&lt;/ol>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/005.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/excel/005.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;ol start="2">
-&lt;li>На листе &lt;strong>ИРК&lt;/strong>, рядом со столбцом с сокращенными названиями &lt;strong>Отделение Сокр&lt;/strong>, добавить два новых пустых столбца – &lt;strong>Отделение Полное 1&lt;/strong> и &lt;strong>Отделение Полное 2&lt;/strong>. В первый столбец вставить функцию &lt;strong>=ВПР(I2; Замены!$A$2:$B$5;2;ЛОЖЬ)&lt;/strong>, где:&lt;/li>
-&lt;/ol>
-&lt;ul>
-&lt;li>I2 – ссылка на значение, которое предполагается заменить (в примере это &lt;strong>столбец I, строка 2&lt;/strong>);&lt;/li>
-&lt;li>Замены!$A$2:$B$5 – ссылка на диапазон ячеек, в котором содержатся данные для замены;&lt;/li>
-&lt;li>2 – это номер столбца в диапазоне ячеек для замен, откуда будут браться полные значения;&lt;/li>
-&lt;li>ЛОЖЬ – мы сообщаем функции, что нужно использовать точное совпадение.&lt;/li>
-&lt;/ul>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/006.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/excel/006.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;div class="alert alert-primary" role="alert">
-Для быстрой вставки вместо «перетягивания» формулы можно выделить диапазон ячеек для вставки, ввести формулу в первую ячейку и нажать &lt;strong>Ctrl+Enter&lt;/strong>. Введенная формула автоматически распространится на все выделенные ячейки диапазона.
-&lt;/div>
-&lt;ol start="3">
-&lt;li>После растягивания функции на все ячейки скопировать результат и вставить в столбец &lt;strong>Отделение Полное 2&lt;/strong> в режиме &lt;strong>Значения&lt;/strong>. Столбец (Отделение Полное 1) с функцией удалить.&lt;/li>
-&lt;/ol>
-&lt;div class="alert alert-primary" role="alert">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AMRcloud. Monitoring – 6. Приложения</title>
+    <link>https://monitoring.amrcloud.net/docs/06/</link>
+    <description>Recent content in 6. Приложения on AMRcloud. Monitoring</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://monitoring.amrcloud.net/docs/06/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: 6.1 Шаблон направления на микробиологическое исследование</title>
+      <link>https://monitoring.amrcloud.net/docs/06/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://monitoring.amrcloud.net/docs/06/01/</guid>
+      <description>
+        
+        
+        
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-qr-code-для-загрузки-шаблона-направления-на-микробиологическое-исследование&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/6.1.1.png&#34; data-caption=&#34;QR-code для загрузки шаблона направления на микробиологическое исследование&#34;&gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/6.1.1.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Рисунок  &#34; data-post=&#34;: &#34; class=&#34;numbered&#34;&gt;
+    QR-code для загрузки шаблона направления на микробиологическое исследование
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Ссылка для скачивания шаблона: &lt;a href=&#34;https://monitoring.amrcloud.net/files/appointment.docx&#34;&gt;https://monitoring.amrcloud.net/files/appointment.docx&lt;/a&gt;&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-вариант-шаблона-направления-на-микробиологическое-исследование&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/6.1.2.png&#34; data-caption=&#34;Вариант шаблона направления на микробиологическое исследование&#34;&gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/6.1.2.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Рисунок  &#34; data-post=&#34;: &#34; class=&#34;numbered&#34;&gt;
+    Вариант шаблона направления на микробиологическое исследование
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 6.2 Работа с шаблоном, справочниками и словарями</title>
+      <link>https://monitoring.amrcloud.net/docs/06/02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://monitoring.amrcloud.net/docs/06/02/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;621-шаблон-данных&#34;&gt;6.2.1 Шаблон данных&lt;/h2&gt;
+&lt;p&gt;Шаблон данных является базовым элементом для организации мониторинга АР и представляет &lt;strong&gt;файл&lt;/strong&gt; формата .xlsx и включает себя следующие страницы:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;«ИРК_1» – пример таблицы для ввода данных.&lt;/li&gt;
+&lt;li&gt;«&lt;strong&gt;Словари&lt;/strong&gt;» – наборы справочных наименований (микроорганизмы и группы микроорганизмов, профиль отделения, локализация инфекций, клинический материал).&lt;/li&gt;
+&lt;li&gt;«Антибиотики справка» – наименования АМП с учетом метода определения чувствительности (суффиксы формата «_mic», «_dd», «_sir», подробнее см. раздел &lt;strong&gt;4.4. Правила оформления и хранения данных&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Шаблон данных&lt;/strong&gt; может быть скачан по ссылке &lt;a href=&#34;https://monitoring.amrcloud.net/files/template.xlsx&#34;&gt;https://monitoring.amrcloud.net/files/template.xlsx&lt;/a&gt; и адаптирован с учетом специфики конкретного учреждения.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-qr-code-для-загрузки-шаблона-данных&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/6.2.1.png&#34; data-caption=&#34;QR-code для загрузки шаблона данных&#34;&gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/6.2.1.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Рисунок  &#34; data-post=&#34;: &#34; class=&#34;numbered&#34;&gt;
+    QR-code для загрузки шаблона данных
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;622-добавление-новых-строк-в-шаблон&#34;&gt;6.2.2 Добавление новых строк в шаблон&lt;/h2&gt;
+&lt;p&gt;При внесении данных в шаблон может возникнуть ситуация, когда подстановки будут активны только для окрашенных ячеек, а если продолжать заполнять таблицу, то выпадающие списки пропадут. Для того, чтобы выпадающие списки с подстановками продолжали формироваться и для новых строк, необходимо добавлять такие строки следующим образом:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Выделить первую свободную строку после заполненнных. На панели инструментов, на вкладке &lt;strong&gt;Главная&lt;/strong&gt;, в разделе &lt;strong&gt;Ячейки&lt;/strong&gt;, нажать кнопку &lt;strong&gt;Вставить&lt;/strong&gt;, выбрать пункт &lt;strong&gt;Вставить строки на лист&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/excel/001.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/excel/001.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;623-добавление-новых-значений-в-существующие-словарисоздание-новых-словарей&#34;&gt;6.2.3 Добавление новых значений в существующие словари/создание новых словарей&lt;/h2&gt;
+&lt;p&gt;Допустим, в файл &lt;strong&gt;Шаблон_AMRcloud.xlsx&lt;/strong&gt; потребовалось добавить новые значения во встроенные справочники. Например, в список отделений необходимо внести новое отделение – &lt;strong&gt;Нейрохирургия&lt;/strong&gt;. Для этого необходимо сделать следующее:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Перейти на лист &lt;strong&gt;Словари&lt;/strong&gt;, найти столбец с нужным справочником и добавить недостающее значение (напечатав значение в ячейку).&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/excel/002.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/excel/002.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;На листе &lt;strong&gt;ИРК_1&lt;/strong&gt; выделить диапазон ячеек, в котором содержатся значения отделений. На панели инструментов во вкладке &lt;strong&gt;Данные&lt;/strong&gt;, в разделе &lt;strong&gt;Работа с данными&lt;/strong&gt; нажать на кнопку &lt;strong&gt;Проверка данных&lt;/strong&gt; и выбрать пункт &lt;strong&gt;Проверка данных&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/excel/003.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/excel/003.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;В открывшемся диалоговом окне &lt;strong&gt;Проверка вводимых значений&lt;/strong&gt; выбрать &lt;strong&gt;Тип данных: Список&lt;/strong&gt;, отметить галочку &lt;strong&gt;Список допустимых значений&lt;/strong&gt;, и после клика в поле &lt;strong&gt;Источник&lt;/strong&gt; выделить рамкой диапазон ячеек на листе &lt;strong&gt;Словари&lt;/strong&gt;, в которых будут храниться значения подстановки. Нажать &lt;strong&gt;ОК&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/excel/004.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/excel/004.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+Аналогичным образом можно создавать новые словари подстановки, добавлять новые столбцы со значениями на лист &lt;strong&gt;Словари&lt;/strong&gt; и задавать &lt;strong&gt;Проверку данных&lt;/strong&gt; для ячеек на листе &lt;strong&gt;ИРК_1&lt;/strong&gt;.
+&lt;/div&gt;
+
+&lt;h2 id=&#34;624-замена-существующих-значений&#34;&gt;6.2.4 Замена существующих значений&lt;/h2&gt;
+&lt;p&gt;Допустим, в таблице имеется заполненный столбец с кодами отделений и его требуется перекодировать в полное наименование. Например, закодированы они как ХИР1, ХИР2, ХИР3, ХИР4. Необходимо их автоматически переименовать в «Общая хирургия», «Урология», «Гнойная хирургия», «Торакальная хирургия».&lt;/p&gt;
+&lt;p&gt;Для этого следует использовать встроенную в &lt;strong&gt;Excel&lt;/strong&gt; функцию &lt;strong&gt;ВПР()&lt;/strong&gt;. Синтаксис функции следующий.&lt;/p&gt;
+&lt;p&gt;**ВПР(искомое_значение; таблица; номер_столбца; интервальный_ просмотр)**&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;искомое значение&lt;/strong&gt; – значение, которое необходимо заменить;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;таблица&lt;/strong&gt; – ссылка на диапазон ячеек со словарем, который будет использоваться при замене;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;номер_столбца&lt;/strong&gt; – номер столбца из &lt;strong&gt;таблицы&lt;/strong&gt;, значения которого будут использоваться в качестве замены;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;интервальный_просмотр&lt;/strong&gt; – может принимать 2 значения: ИСТИНА (поиск значения ближайшего к критерию или совпадающее с ним) и ЛОЖЬ (поиск значения в точности совпадающее с критерием).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Общий порядок действий для осуществления такой замены следующий.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Создать словарь замен на новом листе.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/excel/005.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/excel/005.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;На листе &lt;strong&gt;ИРК&lt;/strong&gt;, рядом со столбцом с сокращенными названиями &lt;strong&gt;Отделение Сокр&lt;/strong&gt;, добавить два новых пустых столбца – &lt;strong&gt;Отделение Полное 1&lt;/strong&gt; и &lt;strong&gt;Отделение Полное 2&lt;/strong&gt;. В первый столбец вставить функцию &lt;strong&gt;=ВПР(I2; Замены!$A$2:$B$5;2;ЛОЖЬ)&lt;/strong&gt;, где:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;I2 – ссылка на значение, которое предполагается заменить (в примере это &lt;strong&gt;столбец I, строка 2&lt;/strong&gt;);&lt;/li&gt;
+&lt;li&gt;Замены!$A$2:$B$5 – ссылка на диапазон ячеек, в котором содержатся данные для замены;&lt;/li&gt;
+&lt;li&gt;2 – это номер столбца в диапазоне ячеек для замен, откуда будут браться полные значения;&lt;/li&gt;
+&lt;li&gt;ЛОЖЬ – мы сообщаем функции, что нужно использовать точное совпадение.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/excel/006.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/excel/006.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+Для быстрой вставки вместо «перетягивания» формулы можно выделить диапазон ячеек для вставки, ввести формулу в первую ячейку и нажать &lt;strong&gt;Ctrl+Enter&lt;/strong&gt;. Введенная формула автоматически распространится на все выделенные ячейки диапазона.
+&lt;/div&gt;
+
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;После растягивания функции на все ячейки скопировать результат и вставить в столбец &lt;strong&gt;Отделение Полное 2&lt;/strong&gt; в режиме &lt;strong&gt;Значения&lt;/strong&gt;. Столбец (Отделение Полное 1) с функцией удалить.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
 Аналогичным образом можно осуществлять замены для группы микроорганизмов, с тем отличием, что в таблице замен в качестве кода будет использоваться полное наименование вида микроорганизма, а в качестве замены – его группа.
-&lt;/div>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/007.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/excel/007.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;h2 id="625-разворачивание-таблицы">6.2.5 «Разворачивание» таблицы&lt;/h2>
-&lt;p>Возможна ситуация, когда ЛИС либо иная информационная система выдает отчет в формате, где информация по одному изоляту содержится более чем в одной строке. Например, результаты тестирования для каждого из изолятов написаны в строках, при этом идентификатор изолята повторяется.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/008.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/excel/008.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>Для приведения такой таблицы к формату, пригодному для загрузки в AMRcloud (где требуется, АМП находились в столбцах, а запись для каждого изолята была представлена единственной строкой) следует выполнить ряд действий.&lt;/p>
-&lt;ol>
-&lt;li>Добавить новый столбец и пронумеровать все имеющиеся строки.&lt;/li>
-&lt;/ol>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/009.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/excel/009.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;ol start="2">
-&lt;li>На вкладке &lt;strong>Вставка&lt;/strong> панели инструментов нажать кнопку &lt;strong>Сводная таблица&lt;/strong>. В диалоговом окне выбрать таблицу с учетом добавленного столбца с номерами строк и отметить, что отчет сводной таблицы следует поместить на новый лист.&lt;/li>
-&lt;/ol>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/010.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/excel/010.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;ol start="3">
-&lt;li>&lt;strong>Excel&lt;/strong> предложит заполнить поля сводной таблицы, перетаскивая поля мышкой в соответствующие области. В качестве строк необходимо выбрать идентификатор изолята (&lt;strong>RecordID&lt;/strong>), в качестве столбцов – АМП (&lt;strong>Antibiotic&lt;/strong>), а для значений выбрать номера строк (&lt;strong>Номер строки&lt;/strong>). Сводная таблица в &lt;strong>Excel&lt;/strong> может работать только с числовыми значениями, поэтому и был дополнительно создан суррогатный столбец (&lt;strong>Номер строки&lt;/strong>). Агрегирующая функция для значений не играет роли, так как все значения уникальны. После «разворота» таблица примет вид, показанный на рисунке ниже.&lt;/li>
-&lt;/ol>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/011.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/excel/011.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;ol start="4">
-&lt;li>Скопировать таблицу без итогов и вставить как значения на новый лист.&lt;/li>
-&lt;/ol>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/012.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/excel/012.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;ol start="5">
-&lt;li>Продублировать имена столбцов АМП для вставленной таблицы и добавить к ним коды («_sir», «_mic» или «_dd»), в представленном примере – &lt;strong>_mic&lt;/strong>.&lt;/li>
-&lt;/ol>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/013.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/excel/013.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;ol start="6">
-&lt;li>
-&lt;p>В новых столбцах с кодом «_mic» необходимо вставить значения МПК из исходного варанта таблицы (т.е. до разворота) с помощью функции &lt;strong>ВПР()&lt;/strong>. Подробнее работа с функцией &lt;strong>ВПР()&lt;/strong> описана выше. В качестве кодов выступает столбец &lt;strong>Номера строк&lt;/strong>, в качестве замен – четвертый столбец &lt;strong>ResultMICValue&lt;/strong> оригинальной таблицы.&lt;/p>
-&lt;p>В пустые значения необходимо вставить функцию для замены номеров строк на МПК &lt;strong>=ЕСЛИ(ЕПУСТО(B2); «»;ВПР(B2; Лист1!$A$1:$D$189; 4; ЛОЖЬ))&lt;/strong>&lt;/p>
-&lt;p>В данной формуле проверяется, пустая ли ячейка, и если не пустая, то значение номера строки заменяется на МПК.&lt;/p>
-&lt;ul>
-&lt;li>B2 – ячейка, содержащая номер строки, который подлежит замене&lt;/li>
-&lt;li>Лист1!$A$1:$D$189 – диапазон ячеек с данными исходной таблицы из пункта 1. Из этой таблицы мы и будем брать значения МПК для вставки вместо номеров ячеек&lt;/li>
-&lt;li>4 – для замены необходимо использовать четвертый столбец&lt;/li>
-&lt;li>ЛОЖЬ – задается использование точного совпадения&lt;/li>
-&lt;/ul>
-&lt;p>Результат работы этой функции показан на рисунке ниже.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/excel/014.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/excel/014.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;ol start="7">
-&lt;li>Скопировать полученные данные (столбцы с кодами АМП и значениями МПК) и вставить как значения на место столбцов с АМП и номерами строк. &lt;strong>Ячейки&lt;/strong> с формулами удалить.&lt;/li>
-&lt;/ol></description></item><item><title>Docs: 6.3 Работа с WHONET</title><link>https://monitoring.amrcloud.net/docs/06/03/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/06/03/</guid><description>
-&lt;p>WHONET – это бесплатное настольное приложение Windows для управления и анализа данных микробиологических лабораторий с особым упором на наблюдение за устойчивостью к АМП. Программа разработана и поддержана Сотрудничающим центром ВОЗ по надзору за устойчивостью к АМП
-&lt;a href="https://monitoring.amrcloud.net/docs/literature/#68">
-&lt;abbr title="Stelling J. Руководство по WHONET. Глобальная система эпиднадзора за устойчивостью к противомикробным препаратам. 2016. 39 с." class="initialism">[68]&lt;/abbr>
-&lt;/a>.&lt;/p>
-&lt;p>Официальный сайт программы, где она доступна для загрузки – &lt;a href="https://whonet.org">https://whonet.org&lt;/a>.&lt;/p>
-&lt;p>Помимо встроенных справочников материалов, организмов и антибиотиков, программа имеет уже настроенные критерии интерпретации чувствительности EUCAST и CLSI (M100, M45, M60, M61, доступ к беcплатным ресурсам, в том числе ветеринарным VET03, VET04, VET06 и VET08), настроенные панели тестирования для каждого вида микроорганизмов и встроенную экспертную систему.&lt;/p>
-&lt;p>WHONET также включает модуль импорта данных под названием BacLink для сбора и стандартизации данных из существующих настольных приложений, лабораторных приборов и лабораторных информационных систем
-&lt;a href="https://monitoring.amrcloud.net/docs/literature/#69">
-&lt;abbr title="Всемирная организация здравоохранения. WHONET 5. Программное обеспечение базы данных микробиологической лаборатории. 128 с." class="initialism">[69]&lt;/abbr>
-&lt;/a>. Подробнее о работе с данным модулем можно прочитать на официальном сайте программы, а также в разделе, посвященном работе с BacLink.&lt;/p>
-&lt;p>Механизмы построения отчетов предоставляют широкие возможности для анализа данных чувствительности. Данное руководство не ставит себе целью описывать все возможности программы WHONET, для этого лучше обратиться к официальной документации программы
-&lt;a href="https://monitoring.amrcloud.net/docs/literature/#70">
-&lt;abbr title="WHONET. Официальная документация." class="initialism">[70]&lt;/abbr>
-&lt;/a>, либо воспользоваться справкой в самой программе.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/01.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/whonet/01.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;h2 id="631-создание-новой-лаборатории">6.3.1 Создание новой лаборатории&lt;/h2>
-&lt;p>Для начала работы с WHONET необходимо создать и сконфигурировать новую лабораторию
-&lt;a href="https://monitoring.amrcloud.net/docs/literature/#71">
-&lt;abbr title="WHONET for CAESAR. Manual. 2020; 71 p." class="initialism">[71]&lt;/abbr>
-&lt;/a>. При первом запуске программы предлагается выбрать лабораторию с демонстрационными данными.&lt;/p>
-&lt;p>Чтобы создать новую лабораторию, в стартовом окне программы необходимо нажать кнопку &lt;strong>Новая лаборатория&lt;/strong>, в открывшемся окне выбрать страну &lt;strong>Российская Федерация&lt;/strong>, ввести произвольное название лаборатории и указать её код. Код следует указывать латинскими символами, так как он будет использоваться в качестве расширения по умолчанию для всех файлов, связанных с созданной лабораторией. В дальнейшем при создании новых лабораторий можно копировать конфигурации лабораторий с помощью кнопки &lt;strong>Скопировать лабораторию&lt;/strong>.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/02.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/whonet/02.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>После этого необходимо пройти дополнительные шаги настройки, связанные с непосредственной деятельностью лаборатории, поэтому требуется заранее собрать информацию о АМП и методах тестирования, используемых в лаборатории, а также о стационарах, с которыми взаимодействует лаборатория и откуда поступают образцы.&lt;/p>
-&lt;h3 id="6311-настройка-антибиотиков-обязательно">6.3.1.1 Настройка антибиотиков (обязательно)&lt;/h3>
-&lt;p>Для открытия окна настройки антибиотиков, методов и контрольных точек нужно нажать кнопку &lt;strong>Антибиотики&lt;/strong>. Появится окно со списком антибиотиков, доступных в WHONET, (слева) и списков антибиотиков для работы в лаборатории.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/03.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/whonet/03.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>Порядок добавления антибиотиков в лабораторию следующий:&lt;/p>
-&lt;ol>
-&lt;li>Выбрать надлежащие рекомендации (рекомендуется EUCAST).&lt;/li>
-&lt;li>Кликнуть на нужный метод тестирования (DDM, MIC, Е-тест).&lt;/li>
-&lt;li>Выбрать подходящий антибиотик (и нагрузку диска, если речь идет о диско-диффузионном методе).&lt;/li>
-&lt;/ol>
-&lt;p>Чтобы выбрать антибиотик, нужно дважды кликнуть по нему или же кликнуть по нему один раз, а затем нажать на кнопку со стрелкой вправо &amp;ndash;&amp;gt;. Для удаления выбранного антибиотика нужно нажать кнопку со стрелкой влево &amp;lt;&amp;ndash;.&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
-&lt;p>Каждому антибиотику присваивается код (до девяти знаков), который включает в себя:&lt;/p>
-&lt;ul>
-&lt;li>трехбуквенный код антибиотика;&lt;/li>
-&lt;li>однобуквенный код, отсылающий к типу используемых критериев интерпретации (например, E=EUCAST);&lt;/li>
-&lt;li>однобуквенный код, обозначающий метод тестирования (D=DDM, M=MIC, E=ETest);&lt;/li>
-&lt;li>нагрузка диска (при тестировании диско-диффузионным методом).&lt;/li>
-&lt;/ul>
-&lt;p>В отношении МПК или ETest необходимо выбрать только нужный антибиотик и соответствующие критерии интерпретации. Например, код ATM_ED30 расшифровывается следующим образом: азтреонам, EUCAST, DDM, 30 μg, тогда как ATM_EM означает: азтреонам, EUCAST, MIC.&lt;/p>
-&lt;/div>
-&lt;p>Дальнейшие настройки антиботиков необязательны, но тем не менее могут быть полезны.&lt;/p>
-&lt;h3 id="6312-пограничные-значения-для-антибиотиков-breakpoints-необязательно">6.3.1.2 Пограничные значения для антибиотиков (Breakpoints) (необязательно)&lt;/h3>
-&lt;p>При вводе данных чувствительности программа автоматически интерпретирует их, исходя из установленных пограничных значений. В большинстве случаев их менять не требуется, но для особых случаев предусмотрена такая возможность. Чтобы открыть окно редактирования пограничных значений, требуется нажать кнопку &lt;strong>Breakpoints&lt;/strong>.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/04.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/whonet/04.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>Доступны следующие опции:&lt;/p>
-&lt;ul>
-&lt;li>Общие – используются для установки пограничных значений для всех видов.&lt;/li>
-&lt;li>Видоспецифические – используются для установки пограничных значений для конкретных видов, по приоритету стоят выше общих (для EUCAST заполняются только видоспецифические пограничных значения). Все изменения необходимо осуществлять именно здесь.&lt;/li>
-&lt;/ul>
-&lt;p>Квалифицированные правила интерпретации служат для создания экспертных правил интерпретации.&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
+&lt;/div&gt;
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/excel/007.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/excel/007.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;625-разворачивание-таблицы&#34;&gt;6.2.5 «Разворачивание» таблицы&lt;/h2&gt;
+&lt;p&gt;Возможна ситуация, когда ЛИС либо иная информационная система выдает отчет в формате, где информация по одному изоляту содержится более чем в одной строке. Например, результаты тестирования для каждого из изолятов написаны в строках, при этом идентификатор изолята повторяется.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/excel/008.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/excel/008.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Для приведения такой таблицы к формату, пригодному для загрузки в AMRcloud (где требуется, АМП находились в столбцах, а запись для каждого изолята была представлена единственной строкой) следует выполнить ряд действий.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Добавить новый столбец и пронумеровать все имеющиеся строки.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/excel/009.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/excel/009.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;На вкладке &lt;strong&gt;Вставка&lt;/strong&gt; панели инструментов нажать кнопку &lt;strong&gt;Сводная таблица&lt;/strong&gt;. В диалоговом окне выбрать таблицу с учетом добавленного столбца с номерами строк и отметить, что отчет сводной таблицы следует поместить на новый лист.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/excel/010.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/excel/010.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Excel&lt;/strong&gt; предложит заполнить поля сводной таблицы, перетаскивая поля мышкой в соответствующие области. В качестве строк необходимо выбрать идентификатор изолята (&lt;strong&gt;RecordID&lt;/strong&gt;), в качестве столбцов – АМП (&lt;strong&gt;Antibiotic&lt;/strong&gt;), а для значений выбрать номера строк (&lt;strong&gt;Номер строки&lt;/strong&gt;). Сводная таблица в &lt;strong&gt;Excel&lt;/strong&gt; может работать только с числовыми значениями, поэтому и был дополнительно создан суррогатный столбец (&lt;strong&gt;Номер строки&lt;/strong&gt;). Агрегирующая функция для значений не играет роли, так как все значения уникальны. После «разворота» таблица примет вид, показанный на рисунке ниже.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/excel/011.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/excel/011.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Скопировать таблицу без итогов и вставить как значения на новый лист.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/excel/012.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/excel/012.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Продублировать имена столбцов АМП для вставленной таблицы и добавить к ним коды («_sir», «_mic» или «_dd»), в представленном примере – &lt;strong&gt;_mic&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/excel/013.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/excel/013.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;В новых столбцах с кодом «_mic» необходимо вставить значения МПК из исходного варанта таблицы (т.е. до разворота) с помощью функции &lt;strong&gt;ВПР()&lt;/strong&gt;. Подробнее работа с функцией &lt;strong&gt;ВПР()&lt;/strong&gt; описана выше. В качестве кодов выступает столбец &lt;strong&gt;Номера строк&lt;/strong&gt;, в качестве замен – четвертый столбец &lt;strong&gt;ResultMICValue&lt;/strong&gt; оригинальной таблицы.&lt;/p&gt;
+&lt;p&gt;В пустые значения необходимо вставить функцию для замены номеров строк на МПК &lt;strong&gt;=ЕСЛИ(ЕПУСТО(B2); «»;ВПР(B2; Лист1!$A$1:$D$189; 4; ЛОЖЬ))&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;В данной формуле проверяется, пустая ли ячейка, и если не пустая, то значение номера строки заменяется на МПК.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;B2 – ячейка, содержащая номер строки, который подлежит замене&lt;/li&gt;
+&lt;li&gt;Лист1!$A$1:$D$189 – диапазон ячеек с данными исходной таблицы из пункта 1. Из этой таблицы мы и будем брать значения МПК для вставки вместо номеров ячеек&lt;/li&gt;
+&lt;li&gt;4 – для замены необходимо использовать четвертый столбец&lt;/li&gt;
+&lt;li&gt;ЛОЖЬ – задается использование точного совпадения&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Результат работы этой функции показан на рисунке ниже.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/excel/014.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/excel/014.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;Скопировать полученные данные (столбцы с кодами АМП и значениями МПК) и вставить как значения на место столбцов с АМП и номерами строк. &lt;strong&gt;Ячейки&lt;/strong&gt; с формулами удалить.&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 6.3 Работа с WHONET</title>
+      <link>https://monitoring.amrcloud.net/docs/06/03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://monitoring.amrcloud.net/docs/06/03/</guid>
+      <description>
+        
+        
+        &lt;p&gt;WHONET – это бесплатное настольное приложение Windows для управления и анализа данных микробиологических лабораторий с особым упором на наблюдение за устойчивостью к АМП. Программа разработана и поддержана Сотрудничающим центром ВОЗ по надзору за устойчивостью к АМП 
+
+
+
+
+&lt;a href=&#34;https://monitoring.amrcloud.net/docs/literature/#68&#34;&gt;
+    &lt;abbr title=&#34;Stelling J. Руководство по WHONET. Глобальная система эпиднадзора за устойчивостью к противомикробным препаратам. 2016. 39 с.&#34; class=&#34;initialism&#34;&gt;[68]&lt;/abbr&gt;
+&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Официальный сайт программы, где она доступна для загрузки – &lt;a href=&#34;https://whonet.org&#34;&gt;https://whonet.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Помимо встроенных справочников материалов, организмов и антибиотиков, программа имеет уже настроенные критерии интерпретации чувствительности EUCAST и CLSI (M100, M45, M60, M61, доступ к беcплатным ресурсам, в том числе ветеринарным VET03, VET04, VET06 и VET08), настроенные панели тестирования для каждого вида микроорганизмов и встроенную экспертную систему.&lt;/p&gt;
+&lt;p&gt;WHONET также включает модуль импорта данных под названием BacLink для сбора и стандартизации данных из существующих настольных приложений, лабораторных приборов и лабораторных информационных систем 
+
+
+
+
+&lt;a href=&#34;https://monitoring.amrcloud.net/docs/literature/#69&#34;&gt;
+    &lt;abbr title=&#34;Всемирная организация здравоохранения. WHONET 5. Программное обеспечение базы данных микробиологической лаборатории. 128 с.&#34; class=&#34;initialism&#34;&gt;[69]&lt;/abbr&gt;
+&lt;/a&gt;. Подробнее о работе с данным модулем можно прочитать на официальном сайте программы, а также в разделе, посвященном работе с BacLink.&lt;/p&gt;
+&lt;p&gt;Механизмы построения отчетов предоставляют широкие возможности для анализа данных чувствительности. Данное руководство не ставит себе целью описывать все возможности программы WHONET, для этого лучше обратиться к официальной документации программы 
+
+
+
+
+&lt;a href=&#34;https://monitoring.amrcloud.net/docs/literature/#70&#34;&gt;
+    &lt;abbr title=&#34;WHONET. Официальная документация.&#34; class=&#34;initialism&#34;&gt;[70]&lt;/abbr&gt;
+&lt;/a&gt;, либо воспользоваться справкой в самой программе.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/whonet/01.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/whonet/01.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;631-создание-новой-лаборатории&#34;&gt;6.3.1 Создание новой лаборатории&lt;/h2&gt;
+&lt;p&gt;Для начала работы с WHONET необходимо создать и сконфигурировать новую лабораторию 
+
+
+
+
+&lt;a href=&#34;https://monitoring.amrcloud.net/docs/literature/#71&#34;&gt;
+    &lt;abbr title=&#34;WHONET for CAESAR. Manual. 2020; 71 p.&#34; class=&#34;initialism&#34;&gt;[71]&lt;/abbr&gt;
+&lt;/a&gt;. При первом запуске программы предлагается выбрать лабораторию с демонстрационными данными.&lt;/p&gt;
+&lt;p&gt;Чтобы создать новую лабораторию, в стартовом окне программы необходимо нажать кнопку &lt;strong&gt;Новая лаборатория&lt;/strong&gt;, в открывшемся окне выбрать страну &lt;strong&gt;Российская Федерация&lt;/strong&gt;, ввести произвольное название лаборатории и указать её код. Код следует указывать латинскими символами, так как он будет использоваться в качестве расширения по умолчанию для всех файлов, связанных с созданной лабораторией. В дальнейшем при создании новых лабораторий можно копировать конфигурации лабораторий с помощью кнопки &lt;strong&gt;Скопировать лабораторию&lt;/strong&gt;.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/whonet/02.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/whonet/02.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;После этого необходимо пройти дополнительные шаги настройки, связанные с непосредственной деятельностью лаборатории, поэтому требуется заранее собрать информацию о АМП и методах тестирования, используемых в лаборатории, а также о стационарах, с которыми взаимодействует лаборатория и откуда поступают образцы.&lt;/p&gt;
+&lt;h3 id=&#34;6311-настройка-антибиотиков-обязательно&#34;&gt;6.3.1.1 Настройка антибиотиков (обязательно)&lt;/h3&gt;
+&lt;p&gt;Для открытия окна настройки антибиотиков, методов и контрольных точек нужно нажать кнопку &lt;strong&gt;Антибиотики&lt;/strong&gt;. Появится окно со списком антибиотиков, доступных в WHONET, (слева) и списков антибиотиков для работы в лаборатории.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/whonet/03.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/whonet/03.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Порядок добавления антибиотиков в лабораторию следующий:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Выбрать надлежащие рекомендации (рекомендуется EUCAST).&lt;/li&gt;
+&lt;li&gt;Кликнуть на нужный метод тестирования (DDM, MIC, Е-тест).&lt;/li&gt;
+&lt;li&gt;Выбрать подходящий антибиотик (и нагрузку диска, если речь идет о диско-диффузионном методе).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Чтобы выбрать антибиотик, нужно дважды кликнуть по нему или же кликнуть по нему один раз, а затем нажать на кнопку со стрелкой вправо &amp;ndash;&amp;gt;. Для удаления выбранного антибиотика нужно нажать кнопку со стрелкой влево &amp;lt;&amp;ndash;.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;Каждому антибиотику присваивается код (до девяти знаков), который включает в себя:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;трехбуквенный код антибиотика;&lt;/li&gt;
+&lt;li&gt;однобуквенный код, отсылающий к типу используемых критериев интерпретации (например, E=EUCAST);&lt;/li&gt;
+&lt;li&gt;однобуквенный код, обозначающий метод тестирования (D=DDM, M=MIC, E=ETest);&lt;/li&gt;
+&lt;li&gt;нагрузка диска (при тестировании диско-диффузионным методом).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;В отношении МПК или ETest необходимо выбрать только нужный антибиотик и соответствующие критерии интерпретации. Например, код ATM_ED30 расшифровывается следующим образом: азтреонам, EUCAST, DDM, 30 μg, тогда как ATM_EM означает: азтреонам, EUCAST, MIC.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Дальнейшие настройки антиботиков необязательны, но тем не менее могут быть полезны.&lt;/p&gt;
+&lt;h3 id=&#34;6312-пограничные-значения-для-антибиотиков-breakpoints-необязательно&#34;&gt;6.3.1.2 Пограничные значения для антибиотиков (Breakpoints) (необязательно)&lt;/h3&gt;
+&lt;p&gt;При вводе данных чувствительности программа автоматически интерпретирует их, исходя из установленных пограничных значений. В большинстве случаев их менять не требуется, но для особых случаев предусмотрена такая возможность. Чтобы открыть окно редактирования пограничных значений, требуется нажать кнопку &lt;strong&gt;Breakpoints&lt;/strong&gt;.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/whonet/04.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/whonet/04.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Доступны следующие опции:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Общие – используются для установки пограничных значений для всех видов.&lt;/li&gt;
+&lt;li&gt;Видоспецифические – используются для установки пограничных значений для конкретных видов, по приоритету стоят выше общих (для EUCAST заполняются только видоспецифические пограничных значения). Все изменения необходимо осуществлять именно здесь.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Квалифицированные правила интерпретации служат для создания экспертных правил интерпретации.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
 При введении пограничных значений МПК для комбинированных препаратов, таких как триметоприм/сульфаметоксазол, необходимо указывать концентрацию первого компонента. Эти концентрации обычно соответствуют сериям двойного разведения 1, 2, 4 мг/л.
-&lt;/div>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/05.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/whonet/05.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;h3 id="6313-наборы-антибиотиков-панели-необязательно">6.3.1.3 Наборы антибиотиков (Панели) (необязательно)&lt;/h3>
-&lt;p>В целях упрощения ввода данных присутствует возможность настроить панели тестируемых антибиотиков для каждой группы микроорганизмов с помощью кнопки &lt;strong>Наборы&lt;/strong>. В открывшемся окне можно указать, какие антибиотики тестируются по каждому виду микроорганизмов. Однако в момент ввода данных допускается добавление результатов для антибиотиков, не предусмотренных в панели.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/06.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/whonet/06.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;h3 id="6314-отделение">6.3.1.4 Отделение&lt;/h3>
-&lt;p>Данная опция является необязательной с точки зрения работы программы WHONET, но обязательна в рамках организации мониторинга АР.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/07.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/whonet/07.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>В рамках данного справочника можно завести несколько отделений из разных учреждений. При этом используется трехуровневая иерархическая структура: Учреждение – Отделение – Тип отделения. Справочники учреждений и отделений при этом могут быть отредактированы самим пользователем.&lt;/p>
-&lt;h3 id="6315-поля-данных">6.3.1.5 Поля данных&lt;/h3>
-&lt;p>Программа WHONET автоматически определяет набор стандартных полей данных. К стандартным полям относится такая информация, как уникальный идентификатор пациента, местонахождение, дата получения образца, тип образца, микроорганизм/возбудитель, панель антибиотиков.&lt;/p>
-&lt;p>Для организации полноценного мониторинга АР может потребоваться внесение дополнительных полей, таких как диагноз пациента, локализация инфекции, другие значимые данные. Чтобы добавить такие поля, требуется нажать кнопку &lt;strong>Поля данных&lt;/strong> в окне настройки лаборатории. Откроется окно &lt;strong>Поля данных&lt;/strong>, в нем необходимо нажать кнопку &lt;strong>Изменить список&lt;/strong>.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/08.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/whonet/08.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>Слева находятся списки категорий данных WHONET (клинические данные, инфекционный контроль и т.п.) и полей данных (диагноз, дата поступления пациента и т.п.), из которых пользователь может выбирать нужные ему категории и поля. Справа – поля, которые доступны в конфигурации текущей лаборатории. Поля добавляются двойным нажатием либо кнопкой &amp;ndash;&amp;gt;.&lt;/p>
-&lt;p>Для того, чтобы добавить поле, которое отсутствует в списке, нужно дважды кликнуть по пункту (&lt;strong>Определенный для пользователя…&lt;/strong>) и в появившемся окне указать название, тип и описание нового поля.&lt;/p>
-&lt;p>Для полей можно определить справочники, которые будут использоваться для заполнения. Это позволит снизить количество ошибок, а также увеличит скорость ввода за счет кодов. Чтобы определить такие справочники, необходимо выбрать поле и нажать кнопку &lt;strong>Код список&lt;/strong>.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/09.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/whonet/09.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>На этом настройку лаборатории можно считать завершенной. После сохранения конфигурации можно приступать к вводу данных. Остальные разделы настройки являются более специфичными и не относятся к теме данного руководства. Работа с ними подробно описана в официальной документации к программе.&lt;/p>
-&lt;h2 id="632-ввод-данных">6.3.2 Ввод данных&lt;/h2>
-&lt;p>Для организации хранения и формирования интерфейса для ввода информации WHONET использует структуру данных, определенную текущими настройками лаборатории. Структура данных – это своего рода инструкции, как должен быть устроен файл с данными. На основании структуры данных для лаборатории можно создать один или несколько файлов с данными. Это может быть полезно в случаях, когда одной конфигурацией пользуется несколько лабораторий одновременно, либо одна лаборатория хранит данные за разные периоды в разных файлах на диске.&lt;/p>
-&lt;p>Чтобы начать ввод, необходимо создать новый или выбрать существующий файл данных.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/10.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/whonet/10.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>Откроется окно ввода данных.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/11.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/whonet/11.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>Данные необходимо вводить в поля, расположенные в левой половине экрана. Когда курсор переключается на то или иное поле для ввода данных, в правом нижнем углу экрана появляются краткие инструкции и рекомендуемые коды данных для этого поля. Переходить по полям можно с помощью кнопок &lt;strong>Enter&lt;/strong>, &lt;strong>Tab&lt;/strong>, стрелками. После ввода даты и перехода к следующему полю пользователю следует убедиться в том, что дата была прочитана верно: WHONET автоматически преобразует числовое обозначение месяца в название месяца. При введении даты год может быть введен как в виде двузначной, так и в виде четырехзначной цифры. Числа, обозначающие день, месяц и год, должны быть разделены косой чертой /, дефисом или пробелом.&lt;/p>
-&lt;p>После того как будут введены все данные об изоляте, нужно нажать кнопку &lt;strong>Сохранить изолят&lt;/strong> (или комбинация клавиш &lt;strong>Alt+С&lt;/strong>). WHONET предложит три варианта сохранения записи:&lt;/p>
-&lt;ul>
-&lt;li>сохранить изолят,&lt;/li>
-&lt;li>сохранить и продолжить работу с тем же изолятом,&lt;/li>
-&lt;li>сохранить и продолжить работу с тем же пациентом.&lt;/li>
-&lt;/ul>
-&lt;p>Выбор одной из этих опций сохраняет информацию и очищает экран &lt;strong>Ввод данных&lt;/strong> для ввода данных следующего изолята (полностью или частично).&lt;/p>
-&lt;h2 id="633-просмотр-данных">6.3.3 Просмотр данных&lt;/h2>
-&lt;p>При открытии файла данных всегда по умолчанию открывается форма для ввода нового образца. Чтобы посмотреть информацию по всем образцам в файле, нужно нажать на этой форме кнопку &lt;strong>Просмотреть базу данных&lt;/strong>.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/12.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/whonet/12.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>По данной таблице можно осуществлять поиск, удаление записей, вывод результатов на печать и даже осуществлять быстрое редактирование для некоторых полей. Чтобы перейти к полноценной форме редактирования, требуется выделить интересующую строку и нажать кнопку &lt;strong>Редактировать&lt;/strong>.&lt;/p>
-&lt;h2 id="634-объединение-данных">6.3.4 Объединение данных&lt;/h2>
-&lt;p>К преимуществам WHONET можно отнести концепцию разделения конфигурации лаборатории и ее файла данных. Благодаря этому на основе одной конфигурации можно создавать несколько файлов данных с одинаковой структурой и «протоколом» хранения для разных лабораторий, а затем объединять и агрегировать эти данные. На этом принципе построена работа в таких междунароных системах эпиднадзора за устойчивостью к АМП, как GLASS и CAESAR.&lt;/p>
-&lt;p>Порядок действий для объединения файлов WHONET, полученных от разных центров/лабораторий/стационаров:&lt;/p>
-&lt;ol>
-&lt;li>Выбрать лабораторию с требуемой конфигурацией, нажать кнопку &lt;strong>Открыть лабораторию&lt;/strong>.&lt;/li>
-&lt;li>В меню &lt;strong>Ввод данных&lt;/strong> выбрать пункт &lt;strong>Объединять, экспортировать или шифровать файлы данных&lt;/strong>.&lt;/li>
-&lt;/ol>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/13.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/whonet/13.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;ol start="3">
-&lt;li>В появившемся окне выбрать файлы, которые требуется объединить с помощью кнопки Файлы данных, указать, куда сохранить объединенный файл данных. Если данный файл предполагается передавать в сторонние центральные лаборатории или другие организации, необходимо отметить галочку &lt;strong>Зашифровать информацию о пациентах&lt;/strong>. В этом случае персональные данные в объединенном файле будут удалены. Для начала процесса объединения необходимо нажать кнопку &lt;strong>Совместить&lt;/strong>.&lt;/li>
-&lt;/ol>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/14.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/whonet/14.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;h2 id="635-экспорт-данных">6.3.5 Экспорт данных&lt;/h2>
-&lt;p>Одно из главных преимуществ WHONET состоит в возможности обмениваться стандартизированными данными с другими лабораториями, например, в национальной сети эпиднадзора.&lt;/p>
-&lt;p>Однако текущая версия WHONET не имеет достаточно гибких возможностей для углубленного анализа и представления данных, а также существенно ограничена при использовании мультидисциплинарной командой с целью мониторинга АР. Получаемые отчеты лишены интерактивности и удобных возможностей быстрого переключения параметров и сравнения полученных результатов. Для этого гораздо удобнее использовать AMRcloud. Существует возможность подготовить данные, хранящиеся в датафайлах программы WHONET, к загрузке в AMRcloud.&lt;/p>
-&lt;p>В общем случае алгоритм следующий:&lt;/p>
-&lt;ol>
-&lt;li>Открыть в программе лабораторию, из которой нужно получить данные, выбрать в меню &lt;strong>Анализ данных&lt;/strong> пункт &lt;strong>Анализ данных&lt;/strong>.&lt;/li>
-&lt;/ol>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/15.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/whonet/15.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;ol start="2">
-&lt;li>Выбрать &lt;strong>Тип анализа – Список изолята и сводка&lt;/strong>. В разделе &lt;strong>Формат отчетов&lt;/strong> выбрать пункт &lt;strong>Результат загрузки&lt;/strong>.&lt;/li>
-&lt;/ol>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/16.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/whonet/16.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;ol start="3">
-&lt;li>Выбрать &lt;strong>Микроорганизмы&lt;/strong>, которые требуется включить в анализ.&lt;/li>
-&lt;/ol>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/17.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/whonet/17.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;ol start="4">
-&lt;li>Выбрать файл данных.&lt;/li>
-&lt;li>Установить вывод результата в формате &lt;strong>Текст (WHONET)&lt;/strong>.&lt;/li>
-&lt;li>Указать, куда сохранить файл экспорта.&lt;/li>
-&lt;/ol>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/whonet/18.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/whonet/18.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>Нажать кнопку &lt;strong>Начать анализ&lt;/strong>. Программа сформирует текстовый файл, который необходимо загрузить в онлайн-конвертер, доступный по ссылке &lt;a href="https://public.amrcloud.net/whonet">https://public.amrcloud.net/whonet&lt;/a>. После прохождения всех шагов работы конвертера появится файл, пригодный для загрузки в AMRcloud.&lt;/p>
-&lt;p>Более подробное описание процедуры экспорта и работы с конвертером можно найти в официальном руководстве по ссылке &lt;a href="https://amrcloud.net/ru/tutorials/whonet-converter">https://amrcloud.net/ru/tutorials/whonet-converter&lt;/a>.&lt;/p></description></item><item><title>Docs: 6.4 Работа с BACLINK</title><link>https://monitoring.amrcloud.net/docs/06/04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/06/04/</guid><description>
-&lt;p>Программа BacLink входит в состав программы WHONET и позволяет преобразовывать табличные файлы различных форматов, чтобы затем работать с ними уже в рамках программы WHONET
-&lt;a href="https://monitoring.amrcloud.net/docs/literature/#69">
-&lt;abbr title="Всемирная организация здравоохранения. WHONET 5. Программное обеспечение базы данных микробиологической лаборатории. 128 с." class="initialism">[69]&lt;/abbr>
-&lt;/a>. Если решено отказаться от накопления данных в Excel и начать работать в WHONET, то программа BacLink максимально упростит этот переход и перенесет накопленные за долгое время данные
-&lt;a href="https://monitoring.amrcloud.net/docs/literature/#72">
-&lt;abbr title="WHO. Collaborating Centre for Surveillance of Antimicrobial resistance. BacLink.Excel, text files, and other desktop applications. 2006; 35 p." class="initialism">[72]&lt;/abbr>
-&lt;/a>.&lt;/p>
-&lt;p>Официальное руководство по работе с программой доступно на сайте &lt;a href="https://whonet.org/documentation.html">https://whonet.org/documentation.html&lt;/a> , а также в самой программе.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/01.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/baclink/01.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>В данном руководстве представлен алгоритм работы с программой на примере табличного файла с результатами тестирования.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/02.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/baclink/02.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>Данный файл не удовлетворяет условию одна строка – один изолят. В каждой строке содержатся данные по чувствительности к отдельному антибиотику, при этом данные самого изолята повторяются. Мало того, что такой способ хранения неэффективно расходует место на диске, это затрудняет анализ полученных данных. Требуется преобразовать такой файл с помощью программы BacLink. Лучше всего программа работает с текстовыми файлами, поэтому, если данные хранятся в форматах Excel (.xls, .xlsx), необходимо их сохранение в формат CSV. Рекомендуется использовать латинские символы в именах полей.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/03.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/baclink/03.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>Окно программы BacLink после запуска показано на рисунке.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/04.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/baclink/04.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>Необходимо определить параметры файла с помощью кнопки &lt;strong>Новый формат&lt;/strong>. Регистрационные данные лаборатории можно заполнить произвольно.&lt;/p>
-&lt;p>Затем нужно сопоставить поля файла с внутренними полями WHONET с помощью кнопки &lt;strong>Структура файла&lt;/strong>.&lt;/p>
-&lt;p>&lt;strong>Файл&lt;/strong> сохранен в формате CSV, значит, это текстовый файл с разбиением по полям, при этом разделителем полей служит символ точки с запятой ( ; ) и первая строка содержит заголовки полей. Если файл получен с помощью Excel, то по умолчанию используется кодировка Windows (ANSI).&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/05.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/baclink/05.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>Необходимо заполнить сведения об антибиотиках – нажать кнопку ****Антибиотик&lt;strong>и&lt;/strong>. В файле на изолят приходится несколько строк, при этом каждый изолят может тестироваться разными антибиотиками. Результаты чувствительности представлены МПК. Интерпретировать полученные результаты необходимо согласно EUCAST.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/06.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/baclink/06.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>Один из самых важных этапов – сопоставление имеющихся полей данных с полями данных программы WHONET – кнопка &lt;strong>Поля данных&lt;/strong>. Сначала необходимо получить список полей файла: выбрать файл с помощью кнопки &lt;strong>Выбрать образцовый файл данных&lt;/strong>. В результате в правой части окна появятся заголовки столбцов импортируемой таблицы с примерами данных. Для сопоставления необходимо последовательно выбирать поле из левой колонки, затем из правой и нажимать кнопку [=], чтобы создать связь.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/07.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/baclink/07.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>В файле используется формат даты ДД.ММ.ГГГГ, поэтому нужно установить формат данных D.M.Y. Часть полей отсутствует в списке &lt;strong>Поля данных&lt;/strong> в новом файле, чтобы добавить новые поля, требуется нажать кнопку &lt;strong>Изменить список данных полей&lt;/strong> и выбрать по очереди поля ESBL, CARBAPENEMASE и ADMISSION DATE, отметить галочку &lt;strong>Демонстрировать в поле списка&lt;/strong> и нажать кнопку &lt;strong>ОК&lt;/strong>.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/08.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/baclink/08.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>По окончании сопоставления всех полей нужно нажать кнопку &lt;strong>ОК&lt;/strong>. На этом определение структуры файла окончено, можно закрыть окно &lt;strong>Структура файла&lt;/strong> с помощью кнопки &lt;strong>ОК&lt;/strong>. Во время конверсии файлов программа BacLink пытается сопоставить значения полей файла со встроенными справочниками программы WHONET. Если нажать кнопку &lt;strong>Коды и даты&lt;/strong> в окне конфигурации лаборатории, можно увидеть данные настройки, а также пути сохранения файлов с правилами сопоставлений. На данном этапе можно не заполнять данные настройки целиком, а лишь определить формат дат и назначить коды для определения пола. Также стоит обратить внимание на место сохранения файлов-словарей и при необходимости изменить его. Это может быть полезным в дальнейшем.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/09.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/baclink/09.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>Далее необходимо определить, куда будет сохранен преобразованный файл – для этого нужно нажать кнопку &lt;strong>Новый файл данных&lt;/strong> и указать путь.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/10.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/baclink/10.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>C помощью кнопки &lt;strong>Сохранить&lt;/strong> необходимо сохранить конфигурацию лаборатории и структуры файла. Эти настройки можно использовать повторно, если потребуется преобразовать еще несколько файлов с такой же структурой. В таком случае не придется заново задавать все параметры, достаточно будет указать файл конфигурации. После этого можно нажать кнопку &lt;strong>Выход&lt;/strong>.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/11.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/baclink/11.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>Теперь все готово к преобразованию и можно нажать кнопку &lt;strong>Начать конверсию&lt;/strong>.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/12.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/baclink/12.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>В процессе работы программа покажет несколько изолятов для демонстрации преобразования и по окончании выведет отчет о количестве обработанных изолятов. Так как при определении структуры файла не заполнялись словари замен, будут выведены коды, которые BacLink не смог интерпретировать. Их необходимо интерпретировать вручную.&lt;/p>
-&lt;p>Окно &lt;strong>Непризнанные коды&lt;/strong> показывает, какие коды для каких полей остались нераспознанными. Необходимо последовательно выбрать каждое поле данных, нажать кнопку &lt;strong>Определить коды&lt;/strong> и указать правильную интерпретацию.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/13.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/baclink/13.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>Для примера можно взять поле &lt;strong>Антибиотик&lt;/strong>: выделить поле данных &lt;strong>Антибиотик&lt;/strong> и нажать кнопку &lt;strong>Определить код&lt;/strong>.&lt;/p>
-&lt;p>В нижней части окна предлагаются возможные варианты замен. Для антибиотиков рекомендуется выбрать значения с пометкой EUCAST. После выбора замены необходимо нажать кнопку &lt;strong>ОК&lt;/strong>. По мере сопоставления замен они будут исчезать из списка.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/14.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/baclink/14.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>Возможна ситуация, когда программа сама не сможет предложить замену, например, при определении кодов организмов. В таком случае необходимо ввести в поле &lt;strong>Поиск&lt;/strong> нужную замену и тем самым указать программе интерпретацию.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/15.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/baclink/15.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>После определения всех кодов окно &lt;strong>Непризнанные коды&lt;/strong> должно остаться пустым. Теперь можно нажать кнопку &lt;strong>Продолжить&lt;/strong>.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/16.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/baclink/16.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>Далее нужно повторить процедуру конвертации, но уже с определенными заменами для кодов, так как при первоначальной конверсии поля с нераспознанными кодами оставались пустыми. При дальнейшей конвертации подобных файлов коды заново определять не потребуется, так как они сохраняются в словарях. Для повторного запуска процедуры конвертации нужно нажать кнопку &lt;strong>Начать конверсию&lt;/strong> повторно и согласиться на перезапись файла данных.&lt;/p>
-&lt;p>Теперь созданный файл можно использовать в программе WHONET и работать с ним как с обычным датафайлом лаборатории. Для этого нужно запустить программу и выбрать лабораторию.&lt;/p>
-&lt;p>Если ее нет, можно создать новую лабораторию на основе сконвертированного файла. Для этого нужно закрыть окно выбора лаборатории, выбрать в меню &lt;strong>Файл&lt;/strong> пункт Создать лабораторию с файла данных. В открывшемся окне необходимо заполнить данные лаборатории и выбрать сконвертированный файл данных.&lt;/p>
-&lt;p>На основании этих данных программа WHONET создаст новую конфигурацию лаборатории, импортирует существующие настройки, добавит антибиотики, отделения и поля из датафайла и предложит дополнить информацию. Для лаборатории можно указать, с какими антибиотиками она работает, из каких отделений могут поступать пациенты, какие поля данных стоит заводить на изолят. Более подробно о том, как сконфигурировать лабораторию, написано в официальном руководстве программы WHONET, а также краткий обзор дается в приложении (6.3. Работа с WHONET](https://monitoring.amrcloud.net/docs/06/03/). Чтобы продолжить работу с конвертированным датафайлом, достаточно нажать кнопку &lt;strong>Сохранить&lt;/strong>.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/17.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/baclink/17.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>Для начала ввода необходимо выбрать в меню &lt;strong>Ввод данных&lt;/strong> пункт &lt;strong>Открыть файл данных&lt;/strong> и указать файл, который был получен после конвертации программой BacLink.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/18.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/baclink/18.png" alt="" >
-&lt;/a>
-&lt;/figure>
-&lt;p>Откроется окно ввода новых данных. Для просмотра списка изолятов нужно нажать кнопку &lt;strong>Посмотреть базу данных&lt;/strong>. Откроется таблица со всеми изолятами и результатами определения чувствительности.&lt;/p>
-&lt;figure >
-&lt;a data-fancybox="" href="https://monitoring.amrcloud.net/images/baclink/19.png" >
-&lt;img src="https://monitoring.amrcloud.net/images/baclink/19.png" alt="" >
-&lt;/a>
-&lt;/figure></description></item><item><title>Docs: 6.5 Стандартные эпидемиологические определения случая инфекции</title><link>https://monitoring.amrcloud.net/docs/06/05/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monitoring.amrcloud.net/docs/06/05/</guid><description>
-&lt;p>Определения случая инфекции адаптированы из следующих источников:&lt;/p>
-&lt;ul>
-&lt;li>Pan American Health Organization. Epidemiological Surveillance of Healthcare-Associated Infections
-&lt;a href="https://monitoring.amrcloud.net/docs/literature/#73">
-&lt;abbr title="Pan American Health Organization. Epidemiological Surveillance of Healthcare-Associated Infections. 2011." class="initialism">[73]&lt;/abbr>
-&lt;/a>;&lt;/li>
-&lt;li>CDC. Procedure-associated Module. Surgical Site Infection (SSI) Event
-&lt;a href="https://monitoring.amrcloud.net/docs/literature/#74">
-&lt;abbr title="CDC. Procedure-associated Module. Surgical Site Infection (SSI) Event. 2020." class="initialism">[74]&lt;/abbr>
-&lt;/a>;&lt;/li>
-&lt;li>IDSA. Clinical Practice Guideline for the Management of Asymptomatic Bacteriuria: 2019
-&lt;a href="https://monitoring.amrcloud.net/docs/literature/#75">
-&lt;abbr title="Infectious Diseases Society of America. Clinical practice guideline for the management of asymptomatic bacteriuria: 2019 update by the infectious diseases society of America. 2019." class="initialism">[75]&lt;/abbr>
-&lt;/a>.&lt;/li>
-&lt;/ul>
-&lt;h2 id="651-пневмония">6.5.1 Пневмония&lt;/h2>
-&lt;p>&lt;em>Пневмония должна удовлетворять &lt;strong>одному&lt;/strong> из следующих критериев:&lt;/em>&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">Критерий 1:&lt;/h4>
-&lt;ul>
-&lt;li>&lt;strong>один и более&lt;/strong> из следующих признаков, сохраняющихся на двух или более последовательных рентгеновских снимках грудной клетки:
-&lt;ul>
-&lt;li>новый или прогрессирующий и стойкий инфильтрат;&lt;/li>
-&lt;li>консолидация;&lt;/li>
-&lt;li>кавитация.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>Примечание. У пациентов без основной легочной патологии и/или патологии сердца (например, в отсутствии респираторного дистресс-синдрома, бронхолегочной дисплазии, отека легких, хронической обструктивной болезни легких) допускается однократное рентгенологическое исследование.&lt;/p>
-&lt;p>&lt;strong>И&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;em>&lt;strong>один и более&lt;/strong>&lt;/em> из следующих признаков:
-&lt;ul>
-&lt;li>температура тела ≥38 °С или ≤36 °С без других известных причин;&lt;/li>
-&lt;li>лейкоциты крови &amp;gt;12 × 10&lt;sup>9&lt;/sup>/мл или &amp;lt;4 × 10&lt;sup>9&lt;/sup>/мл, или незрелых форм &amp;gt;10%;&lt;/li>
-&lt;li>для взрослых &amp;gt;70 лет измененное психическое состояние без какой-либо другой установленной причины.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>И&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;em>&lt;strong>два и более&lt;/strong>&lt;/em> из следующих признаков:
-&lt;ul>
-&lt;li>вновь появившаяся гнойная мокрота, или изменение характера мокроты, или усиление дыхательной секреции, или повышенная потребность в аспирации отделяемого трахебронхиального дерева;&lt;/li>
-&lt;li>появление или ухудшение кашля и/или одышки и/или тахипноэ;&lt;/li>
-&lt;li>наличие хрипов или бронхиального дыхания;&lt;/li>
-&lt;li>ухудшение показателей газообмена [например, десатурация O2 (например, PaO2 /FiO2 &amp;lt;240), повышенная потребность в кислороде или потребность в аппарате ИВЛ].&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">Критерий 2:&lt;/h4>
-&lt;ul>
-&lt;li>&lt;strong>один и более&lt;/strong> из следующих признаков, сохраняющихся на двух или более последовательных рентгеновских снимках грудной клетки:
-&lt;ul>
-&lt;li>новый или прогрессирующий и стойкий инфильтрат;&lt;/li>
-&lt;li>консолидация;&lt;/li>
-&lt;li>кавитация.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>Примечание. У пациентов без основной легочной патологии и/или патологии сердца (например, в отсутствии респираторного дистресссиндрома, бронхолегочной дисплазии, отека легких, хронической обструктивной болезни легких) допускается однократное рентгенологическое исследование.&lt;/p>
-&lt;p>&lt;strong>И&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>один и более&lt;/strong> из следующих признаков:
-&lt;ul>
-&lt;li>температура тела ≥38 °С или ≤36 °С без других известных причин;&lt;/li>
-&lt;li>лейкоциты крови &amp;gt;12 × 10&lt;sup>9&lt;/sup>/мл или &amp;lt;4 × 10&lt;sup>9&lt;/sup>/мл, или незрелых форм &amp;gt;10%;&lt;/li>
-&lt;li>для взрослых &amp;gt;70 лет измененное психическое состояние без какой-либо другой установленной причины.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>И&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>один и более&lt;/strong> из следующих признаков:
-&lt;ul>
-&lt;li>вновь появившаяся гнойная мокрота, или изменение характера мокроты, или усиление дыхательной секреции, или повышенная потребность в аспирации отделяемого трахебронхиального дерева;&lt;/li>
-&lt;li>появление или ухудшение кашля и/или одышки и/или тахипноэ;&lt;/li>
-&lt;li>наличие хрипов или бронхиального дыхания;&lt;/li>
-&lt;li>ухудшение показателей газообмена [например, десатурация O2 (например, PaO2 /FiO2 &amp;lt;240), повышенная потребность в кислороде или потребность в аппарате ИВЛ].&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>И&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>один и более&lt;/strong> из следующих признаков:
-&lt;ul>
-&lt;li>положительная гемокультура (выявление микроорганизмов в культуре крови), не связанная с другим источником инфекции;&lt;/li>
-&lt;li>выявление микроорганизмов в культуре плевральной жидкости;&lt;/li>
-&lt;li>положительный количественный посев материала из нижних дыхательных путей из образцов, полученных с минимальной вероятностью контаминации (например, с помощью бронхоальвеолярного лаважа (&amp;gt;10&lt;sup>4&lt;/sup> КОЕ/мл), или метода защищенных щеток (&amp;gt;10&lt;sup>3&lt;/sup> КОЕ/мл), или аспирате из трахеи (&amp;gt;10&lt;sup>3&lt;/sup> КОЕ/мл);&lt;/li>
-&lt;li>≥5% клеток, полученных в бронхоальвеолярном лаваже, содержат внутриклеточно расположенные бактерии при прямом микроскопическом исследовании (например, при окрашивании по Граму);&lt;/li>
-&lt;li>&lt;strong>один и более&lt;/strong> из следующих признаков: 
-&lt;ul>
-&lt;li>образование абсцесса или очаги уплотнения с интенсивным накоплением полиморфноядерных лейкоцитов в бронхиолах и альвеолах;&lt;/li>
-&lt;li>положительный количественный посев паренхимы легкого;&lt;/li>
-&lt;li>свидетельства инвазии паренхимы легкого грибковыми гифами или псевдогифами.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;h2 id="652-лабораторно-подтвержденная-инфекция-кровотока">6.5.2 Лабораторно подтвержденная инфекция кровотока&lt;/h2>
-&lt;p>&lt;em>Лабораторно подтвержденная инфекция кровотока должна удовлетворять &lt;strong>одному&lt;/strong> из следующих критериев:&lt;/em>&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">Критерий 1:&lt;/h4>
-&lt;ul>
-&lt;li>положительная гемокультура (выявление микроорганизмов в культуре крови) в одном или нескольких образцах (не относится к контаминирующим кожные покровы микроорганизмам, см. Критерий 2).&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>И&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>выделенный из гемокультуры микроорганизм не связан с другим источником инфекции.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">Критерий 2:&lt;/h4>
-&lt;ul>
-&lt;li>&lt;strong>один и более&lt;/strong> из следующих признаков без другой установленной причины:
-&lt;ul>
-&lt;li>лихорадка (&amp;gt;38 °C);&lt;/li>
-&lt;li>озноб;&lt;/li>
-&lt;li>гипотензия.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>И&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>обнаружение условно-патогенного микроорганизма из числа обычно наблюдаемых на поверхности кожного покрова (наример дифтероиды [&lt;em>Corynebacterium&lt;/em> spp.], &lt;em>Bacillus&lt;/em> [за исключением &lt;em>B. anthracis&lt;/em>] spp., &lt;em>Propionibacterium&lt;/em> spp., коагулазонегативные стафилококки [включая &lt;em>S. epidermidis&lt;/em>], зеленящие &lt;em>Streptococci, Aerococcus&lt;/em> spp., &lt;em>Micrococcus&lt;/em> spp.) в двух или более гемокультурах, взятых в разные сроки;&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>И / ИЛИ&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>обнаружение микроорганизма из числа обычно наблюдаемых на поверхности кожного покрова хотя бы в одном посеве крови, взятой у пациента с внутривенным катетером и назначение врачом по этому поводу антимикробной терапии.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;h2 id="653-инфекция-мочевыводящих-путей">6.5.3 Инфекция мочевыводящих путей&lt;/h2>
-&lt;p>&lt;em>Клинически выраженная инфекция мочевыводящих путей должна удовлетворять &lt;strong>одному&lt;/strong> из следующих критериев:&lt;/em>&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">Критерий 1:&lt;/h4>
-&lt;ul>
-&lt;li>&lt;strong>один и более&lt;/strong> из следующих признаков без другой установленной причины:
-&lt;ul>
-&lt;li>лихорадка (≥38 °С);&lt;/li>
-&lt;li>резкие позывы к мочеиспусканию;&lt;/li>
-&lt;li>учащенное мочеиспускание;&lt;/li>
-&lt;li>дизурия или надлобковая болезненность.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>И&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>положительный количественный посев мочи (&amp;gt;10&lt;sup>5&lt;/sup> КОЕ/мл мочи).&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">Критерий 2:&lt;/h4>
-&lt;ul>
-&lt;li>&lt;strong>два и более&lt;/strong> из следующих признаков без другой установленной причины:
-&lt;ul>
-&lt;li>лихорадка (≥38 °С);&lt;/li>
-&lt;li>резкие позывы к мочеиспусканию;&lt;/li>
-&lt;li>учащенное мочеиспускание;&lt;/li>
-&lt;li>дизурия или надлобковая болезненность.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>И&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>один и более&lt;/strong> из следующих признаков:
-&lt;ul>
-&lt;li>положительный тест на лейкоцитарную эстеразу или нитрат;&lt;/li>
-&lt;li>пиурия (&amp;gt;10 лейкоцитов/мл мочи или &amp;gt;3 лейкоцитов в поле зрения микроскопии мочи высокого разрешения);&lt;/li>
-&lt;li>обнаружение микроорганизмов при окраске по Граму нецентрифугированной мочи;&lt;/li>
-&lt;li>выделение одного уропатогенного микроорганизма в количестве ≤10&lt;sup>5&lt;/sup> КОЕ/мл у пациента, получающего антимикробную терапию по поводу уроинфекции;&lt;/li>
-&lt;li>двукратно микробиологически подтвержденная бактериурия (&amp;gt;10&lt;sup>5&lt;/sup> КОЕ/мл мочи).&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;h2 id="654-бессимптомная-бактериурия">6.5.4 Бессимптомная бактериурия&lt;/h2>
-&lt;p>&lt;em>Бессимптомная бактериурия должна удовлетворять следующим критериям:&lt;/em>&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">Критерий:&lt;/h4>
-&lt;ul>
-&lt;li>микробиологически подтвержденная бактериурия (≥10&lt;sup>5&lt;/sup> КОЕ/ мл мочи) вне зависимости от наличия пиурии;&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>И&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>температура тела &amp;lt;37,5 °С, отсутствие резких позывов к мочеиспусканию, учащенного мочеиспускания, дизурии, надлобковой болезненности.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;h2 id="655-инфекция-области-хирургического-вмешательства">6.5.5 Инфекция области хирургического вмешательства&lt;/h2>
-&lt;p>&lt;strong>Поверхностная инфекция&lt;/strong> разреза возникает не позднее 30 дней после операции и вовлекает только кожу и подкожные ткани в области разреза.&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">Критерий:&lt;/h4>
-&lt;p>&lt;strong>как минимум одно&lt;/strong> из перечисленного&lt;/p>
-&lt;ul>
-&lt;li>гнойное отделяемое из поверхностного разреза;&lt;/li>
-&lt;li>выделение микроорганизмов из жидкости или ткани, полученной асептически пункцией области поверхностного разреза или из мазка из раны при наличии микроскопических признаков гнойного воспаления;&lt;/li>
-&lt;li>имеется &lt;strong>не менее двух&lt;/strong> из следующих симптомов:
-&lt;ul>
-&lt;li>боль или болезненность;&lt;/li>
-&lt;li>ограниченный отек;&lt;/li>
-&lt;li>гиперемия;&lt;/li>
-&lt;li>местное повышение температуры.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>назначение лечащим врачом антимикробной терапии по поводу нагноения послеоперационной раны.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;p>&lt;strong>Глубокая инфекция области хирургического вмешательства&lt;/strong> возникает не позднее 30 дней после операции при отсутствии имплантата или не позднее одного года при наличии имплантата в месте операции и вовлекает глубокие мягкие ткани (например, фасциальный и мышечный слой) в области разреза.&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">Критерий:&lt;/h4>
-&lt;p>&lt;strong>как минимум одно&lt;/strong> из перечисленного&lt;/p>
-&lt;ul>
-&lt;li>гнойное отделяемое из глубины разреза в месте данного хирургического вмешательства, но не из органа/полости;&lt;/li>
-&lt;li>выделение микроорганизмов из жидкости или ткани, полученное асептически пункцией области глубокого разреза или из мазка из глубины раны при наличии микроскопических признаков гнойного воспаления;&lt;/li>
-&lt;li>спонтанное расхождение краев раны или намеренное ее открытие хирургом, когда у пациента имеются следующие признаки и симптомы:
-&lt;ul>
-&lt;li>температура тела &amp;gt;37,5 °C;&lt;/li>
-&lt;li>локализованная боль и/или отек.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>при непосредственном осмотре, во время повторной операции, при гистологическом или рентгенологическом исследовании обнаружен абсцесс или иные признаки инфекции в области глубоких слоев операционной раны;&lt;/li>
-&lt;li>назначение лечащим врачом антимикробной терапии по поводу абсцесса, флегмоны в месте операции и пр.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;p>&lt;strong>Инфекция полости/органа&lt;/strong> возникает не позднее 30 дней после операции при отсутствии имплантата или не позднее одного года при наличии имплантата в месте операции, с вовлечением органа или полости.&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">Критерий:&lt;/h4>
-&lt;p>&lt;strong>как минимум одно&lt;/strong> из перечисленного&lt;/p>
-&lt;ul>
-&lt;li>гнойное отделяемое из дренажа, установленного в органе/полости через специальный разрез;&lt;/li>
-&lt;li>выделение микроорганизмов из жидкости или ткани, полученной асептически из органа/полости и лихорадка;&lt;/li>
-&lt;li>при непосредственном осмотре, во время повторной операции, при гистологическом или рентгенологическом исследовании обнаружен абсцесс или иные признаки инфекции, вовлекающие орган/полость;&lt;/li>
-&lt;li>назначение лечащим врачом антимикробной терапии по поводу перитонита, остеомиелита, эмпиемы плевры, пиелонефрита, медиастенита, эндометрита и другие, возникшие после операции на соответствующем органе.&lt;/li>
-&lt;/ul>
-&lt;/div></description></item></channel></rss>
+&lt;/div&gt;
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/whonet/05.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/whonet/05.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;6313-наборы-антибиотиков-панели-необязательно&#34;&gt;6.3.1.3 Наборы антибиотиков (Панели) (необязательно)&lt;/h3&gt;
+&lt;p&gt;В целях упрощения ввода данных присутствует возможность настроить панели тестируемых антибиотиков для каждой группы микроорганизмов с помощью кнопки &lt;strong&gt;Наборы&lt;/strong&gt;. В открывшемся окне можно указать, какие антибиотики тестируются по каждому виду микроорганизмов. Однако в момент ввода данных допускается добавление результатов для антибиотиков, не предусмотренных в панели.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/whonet/06.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/whonet/06.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;6314-отделение&#34;&gt;6.3.1.4 Отделение&lt;/h3&gt;
+&lt;p&gt;Данная опция является необязательной с точки зрения работы программы WHONET, но обязательна в рамках организации мониторинга АР.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/whonet/07.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/whonet/07.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;В рамках данного справочника можно завести несколько отделений из разных учреждений. При этом используется трехуровневая иерархическая структура: Учреждение – Отделение – Тип отделения. Справочники учреждений и отделений при этом могут быть отредактированы самим пользователем.&lt;/p&gt;
+&lt;h3 id=&#34;6315-поля-данных&#34;&gt;6.3.1.5 Поля данных&lt;/h3&gt;
+&lt;p&gt;Программа WHONET автоматически определяет набор стандартных полей данных. К стандартным полям относится такая информация, как уникальный идентификатор пациента, местонахождение, дата получения образца, тип образца, микроорганизм/возбудитель, панель антибиотиков.&lt;/p&gt;
+&lt;p&gt;Для организации полноценного мониторинга АР может потребоваться внесение дополнительных полей, таких как диагноз пациента, локализация инфекции, другие значимые данные. Чтобы добавить такие поля, требуется нажать кнопку &lt;strong&gt;Поля данных&lt;/strong&gt; в окне настройки лаборатории. Откроется окно &lt;strong&gt;Поля данных&lt;/strong&gt;, в нем необходимо нажать кнопку &lt;strong&gt;Изменить список&lt;/strong&gt;.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/whonet/08.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/whonet/08.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Слева находятся списки категорий данных WHONET (клинические данные, инфекционный контроль и т.п.) и полей данных (диагноз, дата поступления пациента и т.п.), из которых пользователь может выбирать нужные ему категории и поля. Справа – поля, которые доступны в конфигурации текущей лаборатории. Поля добавляются двойным нажатием либо кнопкой &amp;ndash;&amp;gt;.&lt;/p&gt;
+&lt;p&gt;Для того, чтобы добавить поле, которое отсутствует в списке, нужно дважды кликнуть по пункту (&lt;strong&gt;Определенный для пользователя…&lt;/strong&gt;) и в появившемся окне указать название, тип и описание нового поля.&lt;/p&gt;
+&lt;p&gt;Для полей можно определить справочники, которые будут использоваться для заполнения. Это позволит снизить количество ошибок, а также увеличит скорость ввода за счет кодов. Чтобы определить такие справочники, необходимо выбрать поле и нажать кнопку &lt;strong&gt;Код список&lt;/strong&gt;.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/whonet/09.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/whonet/09.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;На этом настройку лаборатории можно считать завершенной. После сохранения конфигурации можно приступать к вводу данных. Остальные разделы настройки являются более специфичными и не относятся к теме данного руководства. Работа с ними подробно описана в официальной документации к программе.&lt;/p&gt;
+&lt;h2 id=&#34;632-ввод-данных&#34;&gt;6.3.2 Ввод данных&lt;/h2&gt;
+&lt;p&gt;Для организации хранения и формирования интерфейса для ввода информации WHONET использует структуру данных, определенную текущими настройками лаборатории. Структура данных – это своего рода инструкции, как должен быть устроен файл с данными. На основании структуры данных для лаборатории можно создать один или несколько файлов с данными. Это может быть полезно в случаях, когда одной конфигурацией пользуется несколько лабораторий одновременно, либо одна лаборатория хранит данные за разные периоды в разных файлах на диске.&lt;/p&gt;
+&lt;p&gt;Чтобы начать ввод, необходимо создать новый или выбрать существующий файл данных.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/whonet/10.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/whonet/10.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Откроется окно ввода данных.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/whonet/11.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/whonet/11.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Данные необходимо вводить в поля, расположенные в левой половине экрана. Когда курсор переключается на то или иное поле для ввода данных, в правом нижнем углу экрана появляются краткие инструкции и рекомендуемые коды данных для этого поля. Переходить по полям можно с помощью кнопок &lt;strong&gt;Enter&lt;/strong&gt;, &lt;strong&gt;Tab&lt;/strong&gt;, стрелками. После ввода даты и перехода к следующему полю пользователю следует убедиться в том, что дата была прочитана верно: WHONET автоматически преобразует числовое обозначение месяца в название месяца. При введении даты год может быть введен как в виде двузначной, так и в виде четырехзначной цифры. Числа, обозначающие день, месяц и год, должны быть разделены косой чертой /, дефисом или пробелом.&lt;/p&gt;
+&lt;p&gt;После того как будут введены все данные об изоляте, нужно нажать кнопку &lt;strong&gt;Сохранить изолят&lt;/strong&gt; (или комбинация клавиш &lt;strong&gt;Alt+С&lt;/strong&gt;). WHONET предложит три варианта сохранения записи:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;сохранить изолят,&lt;/li&gt;
+&lt;li&gt;сохранить и продолжить работу с тем же изолятом,&lt;/li&gt;
+&lt;li&gt;сохранить и продолжить работу с тем же пациентом.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Выбор одной из этих опций сохраняет информацию и очищает экран &lt;strong&gt;Ввод данных&lt;/strong&gt; для ввода данных следующего изолята (полностью или частично).&lt;/p&gt;
+&lt;h2 id=&#34;633-просмотр-данных&#34;&gt;6.3.3 Просмотр данных&lt;/h2&gt;
+&lt;p&gt;При открытии файла данных всегда по умолчанию открывается форма для ввода нового образца. Чтобы посмотреть информацию по всем образцам в файле, нужно нажать на этой форме кнопку &lt;strong&gt;Просмотреть базу данных&lt;/strong&gt;.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/whonet/12.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/whonet/12.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;По данной таблице можно осуществлять поиск, удаление записей, вывод результатов на печать и даже осуществлять быстрое редактирование для некоторых полей. Чтобы перейти к полноценной форме редактирования, требуется выделить интересующую строку и нажать кнопку &lt;strong&gt;Редактировать&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;634-объединение-данных&#34;&gt;6.3.4 Объединение данных&lt;/h2&gt;
+&lt;p&gt;К преимуществам WHONET можно отнести концепцию разделения конфигурации лаборатории и ее файла данных. Благодаря этому на основе одной конфигурации можно создавать несколько файлов данных с одинаковой структурой и «протоколом» хранения для разных лабораторий, а затем объединять и агрегировать эти данные. На этом принципе построена работа в таких междунароных системах эпиднадзора за устойчивостью к АМП, как GLASS и CAESAR.&lt;/p&gt;
+&lt;p&gt;Порядок действий для объединения файлов WHONET, полученных от разных центров/лабораторий/стационаров:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Выбрать лабораторию с требуемой конфигурацией, нажать кнопку &lt;strong&gt;Открыть лабораторию&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;В меню &lt;strong&gt;Ввод данных&lt;/strong&gt; выбрать пункт &lt;strong&gt;Объединять, экспортировать или шифровать файлы данных&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/whonet/13.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/whonet/13.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;В появившемся окне выбрать файлы, которые требуется объединить с помощью кнопки Файлы данных, указать, куда сохранить объединенный файл данных. Если данный файл предполагается передавать в сторонние центральные лаборатории или другие организации, необходимо отметить галочку &lt;strong&gt;Зашифровать информацию о пациентах&lt;/strong&gt;. В этом случае персональные данные в объединенном файле будут удалены. Для начала процесса объединения необходимо нажать кнопку &lt;strong&gt;Совместить&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/whonet/14.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/whonet/14.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;635-экспорт-данных&#34;&gt;6.3.5 Экспорт данных&lt;/h2&gt;
+&lt;p&gt;Одно из главных преимуществ WHONET состоит в возможности обмениваться стандартизированными данными с другими лабораториями, например, в национальной сети эпиднадзора.&lt;/p&gt;
+&lt;p&gt;Однако текущая версия WHONET не имеет достаточно гибких возможностей для углубленного анализа и представления данных, а также существенно ограничена при использовании мультидисциплинарной командой с целью мониторинга АР. Получаемые отчеты лишены интерактивности и удобных возможностей быстрого переключения параметров и сравнения полученных результатов. Для этого гораздо удобнее использовать AMRcloud. Существует возможность подготовить данные, хранящиеся в датафайлах программы WHONET, к загрузке в AMRcloud.&lt;/p&gt;
+&lt;p&gt;В общем случае алгоритм следующий:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Открыть в программе лабораторию, из которой нужно получить данные, выбрать в меню &lt;strong&gt;Анализ данных&lt;/strong&gt; пункт &lt;strong&gt;Анализ данных&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/whonet/15.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/whonet/15.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Выбрать &lt;strong&gt;Тип анализа – Список изолята и сводка&lt;/strong&gt;. В разделе &lt;strong&gt;Формат отчетов&lt;/strong&gt; выбрать пункт &lt;strong&gt;Результат загрузки&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/whonet/16.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/whonet/16.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Выбрать &lt;strong&gt;Микроорганизмы&lt;/strong&gt;, которые требуется включить в анализ.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/whonet/17.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/whonet/17.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Выбрать файл данных.&lt;/li&gt;
+&lt;li&gt;Установить вывод результата в формате &lt;strong&gt;Текст (WHONET)&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Указать, куда сохранить файл экспорта.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/whonet/18.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/whonet/18.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Нажать кнопку &lt;strong&gt;Начать анализ&lt;/strong&gt;. Программа сформирует текстовый файл, который необходимо загрузить в онлайн-конвертер, доступный по ссылке &lt;a href=&#34;https://public.amrcloud.net/whonet&#34;&gt;https://public.amrcloud.net/whonet&lt;/a&gt;. После прохождения всех шагов работы конвертера появится файл, пригодный для загрузки в AMRcloud.&lt;/p&gt;
+&lt;p&gt;Более подробное описание процедуры экспорта и работы с конвертером можно найти в официальном руководстве по ссылке &lt;a href=&#34;https://amrcloud.net/ru/tutorials/whonet-converter&#34;&gt;https://amrcloud.net/ru/tutorials/whonet-converter&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 6.4 Работа с BACLINK</title>
+      <link>https://monitoring.amrcloud.net/docs/06/04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://monitoring.amrcloud.net/docs/06/04/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Программа BacLink входит в состав программы WHONET и позволяет преобразовывать табличные файлы различных форматов, чтобы затем работать с ними уже в рамках программы WHONET 
+
+
+
+
+&lt;a href=&#34;https://monitoring.amrcloud.net/docs/literature/#69&#34;&gt;
+    &lt;abbr title=&#34;Всемирная организация здравоохранения. WHONET 5. Программное обеспечение базы данных микробиологической лаборатории. 128 с.&#34; class=&#34;initialism&#34;&gt;[69]&lt;/abbr&gt;
+&lt;/a&gt;. Если решено отказаться от накопления данных в Excel и начать работать в WHONET, то программа BacLink максимально упростит этот переход и перенесет накопленные за долгое время данные 
+
+
+
+
+&lt;a href=&#34;https://monitoring.amrcloud.net/docs/literature/#72&#34;&gt;
+    &lt;abbr title=&#34;WHO. Collaborating Centre for Surveillance of Antimicrobial resistance. BacLink.Excel, text files, and other desktop applications. 2006; 35 p.&#34; class=&#34;initialism&#34;&gt;[72]&lt;/abbr&gt;
+&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Официальное руководство по работе с программой доступно на сайте &lt;a href=&#34;https://whonet.org/documentation.html&#34;&gt;https://whonet.org/documentation.html&lt;/a&gt; , а также в самой программе.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/baclink/01.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/baclink/01.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;В данном руководстве представлен алгоритм работы с программой на примере табличного файла с результатами тестирования.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/baclink/02.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/baclink/02.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Данный файл не удовлетворяет условию одна строка – один изолят. В каждой строке содержатся данные по чувствительности к отдельному антибиотику, при этом данные самого изолята повторяются. Мало того, что такой способ хранения неэффективно расходует место на диске, это затрудняет анализ полученных данных. Требуется преобразовать такой файл с помощью программы BacLink. Лучше всего программа работает с текстовыми файлами, поэтому, если данные хранятся в форматах Excel (.xls, .xlsx), необходимо их сохранение в формат CSV. Рекомендуется использовать латинские символы в именах полей.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/baclink/03.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/baclink/03.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Окно программы BacLink после запуска показано на рисунке.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/baclink/04.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/baclink/04.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Необходимо определить параметры файла с помощью кнопки &lt;strong&gt;Новый формат&lt;/strong&gt;. Регистрационные данные лаборатории можно заполнить произвольно.&lt;/p&gt;
+&lt;p&gt;Затем нужно сопоставить поля файла с внутренними полями WHONET с помощью кнопки &lt;strong&gt;Структура файла&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Файл&lt;/strong&gt; сохранен в формате CSV, значит, это текстовый файл с разбиением по полям, при этом разделителем полей служит символ точки с запятой ( ; ) и первая строка содержит заголовки полей. Если файл получен с помощью Excel, то по умолчанию используется кодировка Windows (ANSI).&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/baclink/05.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/baclink/05.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Необходимо заполнить сведения об антибиотиках – нажать кнопку ****Антибиотик&lt;strong&gt;и&lt;/strong&gt;. В файле на изолят приходится несколько строк, при этом каждый изолят может тестироваться разными антибиотиками. Результаты чувствительности представлены МПК. Интерпретировать полученные результаты необходимо согласно EUCAST.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/baclink/06.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/baclink/06.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Один из самых важных этапов – сопоставление имеющихся полей данных с полями данных программы WHONET – кнопка &lt;strong&gt;Поля данных&lt;/strong&gt;. Сначала необходимо получить список полей файла: выбрать файл с помощью кнопки &lt;strong&gt;Выбрать образцовый файл данных&lt;/strong&gt;. В результате в правой части окна появятся заголовки столбцов импортируемой таблицы с примерами данных. Для сопоставления необходимо последовательно выбирать поле из левой колонки, затем из правой и нажимать кнопку [=], чтобы создать связь.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/baclink/07.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/baclink/07.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;В файле используется формат даты ДД.ММ.ГГГГ, поэтому нужно установить формат данных D.M.Y. Часть полей отсутствует в списке &lt;strong&gt;Поля данных&lt;/strong&gt; в новом файле, чтобы добавить новые поля, требуется нажать кнопку &lt;strong&gt;Изменить список данных полей&lt;/strong&gt; и выбрать по очереди поля ESBL, CARBAPENEMASE и ADMISSION DATE, отметить галочку &lt;strong&gt;Демонстрировать в поле списка&lt;/strong&gt; и нажать кнопку &lt;strong&gt;ОК&lt;/strong&gt;.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/baclink/08.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/baclink/08.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;По окончании сопоставления всех полей нужно нажать кнопку &lt;strong&gt;ОК&lt;/strong&gt;. На этом определение структуры файла окончено, можно закрыть окно &lt;strong&gt;Структура файла&lt;/strong&gt; с помощью кнопки &lt;strong&gt;ОК&lt;/strong&gt;. Во время конверсии файлов программа BacLink пытается сопоставить значения полей файла со встроенными справочниками программы WHONET. Если нажать кнопку &lt;strong&gt;Коды и даты&lt;/strong&gt; в окне конфигурации лаборатории, можно увидеть данные настройки, а также пути сохранения файлов с правилами сопоставлений. На данном этапе можно не заполнять данные настройки целиком, а лишь определить формат дат и назначить коды для определения пола. Также стоит обратить внимание на место сохранения файлов-словарей и при необходимости изменить его. Это может быть полезным в дальнейшем.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/baclink/09.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/baclink/09.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Далее необходимо определить, куда будет сохранен преобразованный файл – для этого нужно нажать кнопку &lt;strong&gt;Новый файл данных&lt;/strong&gt; и указать путь.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/baclink/10.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/baclink/10.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;C помощью кнопки &lt;strong&gt;Сохранить&lt;/strong&gt; необходимо сохранить конфигурацию лаборатории и структуры файла. Эти настройки можно использовать повторно, если потребуется преобразовать еще несколько файлов с такой же структурой. В таком случае не придется заново задавать все параметры, достаточно будет указать файл конфигурации. После этого можно нажать кнопку &lt;strong&gt;Выход&lt;/strong&gt;.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/baclink/11.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/baclink/11.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Теперь все готово к преобразованию и можно нажать кнопку &lt;strong&gt;Начать конверсию&lt;/strong&gt;.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/baclink/12.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/baclink/12.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;В процессе работы программа покажет несколько изолятов для демонстрации преобразования и по окончании выведет отчет о количестве обработанных изолятов. Так как при определении структуры файла не заполнялись словари замен, будут выведены коды, которые BacLink не смог интерпретировать. Их необходимо интерпретировать вручную.&lt;/p&gt;
+&lt;p&gt;Окно &lt;strong&gt;Непризнанные коды&lt;/strong&gt; показывает, какие коды для каких полей остались нераспознанными. Необходимо последовательно выбрать каждое поле данных, нажать кнопку &lt;strong&gt;Определить коды&lt;/strong&gt; и указать правильную интерпретацию.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/baclink/13.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/baclink/13.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Для примера можно взять поле &lt;strong&gt;Антибиотик&lt;/strong&gt;: выделить поле данных &lt;strong&gt;Антибиотик&lt;/strong&gt; и нажать кнопку &lt;strong&gt;Определить код&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;В нижней части окна предлагаются возможные варианты замен. Для антибиотиков рекомендуется выбрать значения с пометкой EUCAST. После выбора замены необходимо нажать кнопку &lt;strong&gt;ОК&lt;/strong&gt;. По мере сопоставления замен они будут исчезать из списка.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/baclink/14.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/baclink/14.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Возможна ситуация, когда программа сама не сможет предложить замену, например, при определении кодов организмов. В таком случае необходимо ввести в поле &lt;strong&gt;Поиск&lt;/strong&gt; нужную замену и тем самым указать программе интерпретацию.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/baclink/15.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/baclink/15.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;После определения всех кодов окно &lt;strong&gt;Непризнанные коды&lt;/strong&gt; должно остаться пустым. Теперь можно нажать кнопку &lt;strong&gt;Продолжить&lt;/strong&gt;.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/baclink/16.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/baclink/16.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Далее нужно повторить процедуру конвертации, но уже с определенными заменами для кодов, так как при первоначальной конверсии поля с нераспознанными кодами оставались пустыми. При дальнейшей конвертации подобных файлов коды заново определять не потребуется, так как они сохраняются в словарях. Для повторного запуска процедуры конвертации нужно нажать кнопку &lt;strong&gt;Начать конверсию&lt;/strong&gt; повторно и согласиться на перезапись файла данных.&lt;/p&gt;
+&lt;p&gt;Теперь созданный файл можно использовать в программе WHONET и работать с ним как с обычным датафайлом лаборатории. Для этого нужно запустить программу и выбрать лабораторию.&lt;/p&gt;
+&lt;p&gt;Если ее нет, можно создать новую лабораторию на основе сконвертированного файла. Для этого нужно закрыть окно выбора лаборатории, выбрать в меню &lt;strong&gt;Файл&lt;/strong&gt; пункт Создать лабораторию с файла данных. В открывшемся окне необходимо заполнить данные лаборатории и выбрать сконвертированный файл данных.&lt;/p&gt;
+&lt;p&gt;На основании этих данных программа WHONET создаст новую конфигурацию лаборатории, импортирует существующие настройки, добавит антибиотики, отделения и поля из датафайла и предложит дополнить информацию. Для лаборатории можно указать, с какими антибиотиками она работает, из каких отделений могут поступать пациенты, какие поля данных стоит заводить на изолят. Более подробно о том, как сконфигурировать лабораторию, написано в официальном руководстве программы WHONET, а также краткий обзор дается в приложении (6.3. Работа с WHONET](https://monitoring.amrcloud.net/docs/06/03/). Чтобы продолжить работу с конвертированным датафайлом, достаточно нажать кнопку &lt;strong&gt;Сохранить&lt;/strong&gt;.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/baclink/17.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/baclink/17.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Для начала ввода необходимо выбрать в меню &lt;strong&gt;Ввод данных&lt;/strong&gt; пункт &lt;strong&gt;Открыть файл данных&lt;/strong&gt; и указать файл, который был получен после конвертации программой BacLink.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/baclink/18.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/baclink/18.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Откроется окно ввода новых данных. Для просмотра списка изолятов нужно нажать кнопку &lt;strong&gt;Посмотреть базу данных&lt;/strong&gt;. Откроется таблица со всеми изолятами и результатами определения чувствительности.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://monitoring.amrcloud.net/images/baclink/19.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://monitoring.amrcloud.net/images/baclink/19.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 6.5 Стандартные эпидемиологические определения случая инфекции</title>
+      <link>https://monitoring.amrcloud.net/docs/06/05/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://monitoring.amrcloud.net/docs/06/05/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Определения случая инфекции адаптированы из следующих источников:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pan American Health Organization. Epidemiological Surveillance of Healthcare-Associated Infections 
+
+
+
+
+&lt;a href=&#34;https://monitoring.amrcloud.net/docs/literature/#73&#34;&gt;
+    &lt;abbr title=&#34;Pan American Health Organization. Epidemiological Surveillance of Healthcare-Associated Infections. 2011.&#34; class=&#34;initialism&#34;&gt;[73]&lt;/abbr&gt;
+&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;CDC. Procedure-associated Module. Surgical Site Infection (SSI) Event 
+
+
+
+
+&lt;a href=&#34;https://monitoring.amrcloud.net/docs/literature/#74&#34;&gt;
+    &lt;abbr title=&#34;CDC. Procedure-associated Module. Surgical Site Infection (SSI) Event. 2020.&#34; class=&#34;initialism&#34;&gt;[74]&lt;/abbr&gt;
+&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;IDSA. Clinical Practice Guideline for the Management of Asymptomatic Bacteriuria: 2019 
+
+
+
+
+&lt;a href=&#34;https://monitoring.amrcloud.net/docs/literature/#75&#34;&gt;
+    &lt;abbr title=&#34;Infectious Diseases Society of America. Clinical practice guideline for the management of asymptomatic bacteriuria: 2019 update by the infectious diseases society of America. 2019.&#34; class=&#34;initialism&#34;&gt;[75]&lt;/abbr&gt;
+&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;651-пневмония&#34;&gt;6.5.1 Пневмония&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Пневмония должна удовлетворять &lt;strong&gt;одному&lt;/strong&gt; из следующих критериев:&lt;/em&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Критерий 1:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;один и более&lt;/strong&gt; из следующих признаков, сохраняющихся на двух или более последовательных рентгеновских снимках грудной клетки:
+&lt;ul&gt;
+&lt;li&gt;новый или прогрессирующий и стойкий инфильтрат;&lt;/li&gt;
+&lt;li&gt;консолидация;&lt;/li&gt;
+&lt;li&gt;кавитация.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Примечание. У пациентов без основной легочной патологии и/или патологии сердца (например, в отсутствии респираторного дистресс-синдрома, бронхолегочной дисплазии, отека легких, хронической обструктивной болезни легких) допускается однократное рентгенологическое исследование.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;И&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;один и более&lt;/strong&gt;&lt;/em&gt; из следующих признаков:
+&lt;ul&gt;
+&lt;li&gt;температура тела ≥38 °С или ≤36 °С без других известных причин;&lt;/li&gt;
+&lt;li&gt;лейкоциты крови &amp;gt;12 × 10&lt;sup&gt;9&lt;/sup&gt;/мл или &amp;lt;4 × 10&lt;sup&gt;9&lt;/sup&gt;/мл, или незрелых форм &amp;gt;10%;&lt;/li&gt;
+&lt;li&gt;для взрослых &amp;gt;70 лет измененное психическое состояние без какой-либо другой установленной причины.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;И&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;два и более&lt;/strong&gt;&lt;/em&gt; из следующих признаков:
+&lt;ul&gt;
+&lt;li&gt;вновь появившаяся гнойная мокрота, или изменение характера мокроты, или усиление дыхательной секреции, или повышенная потребность в аспирации отделяемого трахебронхиального дерева;&lt;/li&gt;
+&lt;li&gt;появление или ухудшение кашля и/или одышки и/или тахипноэ;&lt;/li&gt;
+&lt;li&gt;наличие хрипов или бронхиального дыхания;&lt;/li&gt;
+&lt;li&gt;ухудшение показателей газообмена [например, десатурация O2 (например, PaO2 /FiO2 &amp;lt;240), повышенная потребность в кислороде или потребность в аппарате ИВЛ].&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Критерий 2:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;один и более&lt;/strong&gt; из следующих признаков, сохраняющихся на двух или более последовательных рентгеновских снимках грудной клетки:
+&lt;ul&gt;
+&lt;li&gt;новый или прогрессирующий и стойкий инфильтрат;&lt;/li&gt;
+&lt;li&gt;консолидация;&lt;/li&gt;
+&lt;li&gt;кавитация.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Примечание. У пациентов без основной легочной патологии и/или патологии сердца (например, в отсутствии респираторного дистресссиндрома, бронхолегочной дисплазии, отека легких, хронической обструктивной болезни легких) допускается однократное рентгенологическое исследование.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;И&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;один и более&lt;/strong&gt; из следующих признаков:
+&lt;ul&gt;
+&lt;li&gt;температура тела ≥38 °С или ≤36 °С без других известных причин;&lt;/li&gt;
+&lt;li&gt;лейкоциты крови &amp;gt;12 × 10&lt;sup&gt;9&lt;/sup&gt;/мл или &amp;lt;4 × 10&lt;sup&gt;9&lt;/sup&gt;/мл, или незрелых форм &amp;gt;10%;&lt;/li&gt;
+&lt;li&gt;для взрослых &amp;gt;70 лет измененное психическое состояние без какой-либо другой установленной причины.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;И&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;один и более&lt;/strong&gt; из следующих признаков:
+&lt;ul&gt;
+&lt;li&gt;вновь появившаяся гнойная мокрота, или изменение характера мокроты, или усиление дыхательной секреции, или повышенная потребность в аспирации отделяемого трахебронхиального дерева;&lt;/li&gt;
+&lt;li&gt;появление или ухудшение кашля и/или одышки и/или тахипноэ;&lt;/li&gt;
+&lt;li&gt;наличие хрипов или бронхиального дыхания;&lt;/li&gt;
+&lt;li&gt;ухудшение показателей газообмена [например, десатурация O2 (например, PaO2 /FiO2 &amp;lt;240), повышенная потребность в кислороде или потребность в аппарате ИВЛ].&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;И&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;один и более&lt;/strong&gt; из следующих признаков:
+&lt;ul&gt;
+&lt;li&gt;положительная гемокультура (выявление микроорганизмов в культуре крови), не связанная с другим источником инфекции;&lt;/li&gt;
+&lt;li&gt;выявление микроорганизмов в культуре плевральной жидкости;&lt;/li&gt;
+&lt;li&gt;положительный количественный посев материала из нижних дыхательных путей из образцов, полученных с минимальной вероятностью контаминации (например, с помощью бронхоальвеолярного лаважа (&amp;gt;10&lt;sup&gt;4&lt;/sup&gt; КОЕ/мл), или метода защищенных щеток (&amp;gt;10&lt;sup&gt;3&lt;/sup&gt; КОЕ/мл), или аспирате из трахеи (&amp;gt;10&lt;sup&gt;3&lt;/sup&gt; КОЕ/мл);&lt;/li&gt;
+&lt;li&gt;≥5% клеток, полученных в бронхоальвеолярном лаваже, содержат внутриклеточно расположенные бактерии при прямом микроскопическом исследовании (например, при окрашивании по Граму);&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;один и более&lt;/strong&gt; из следующих признаков: 
+&lt;ul&gt;
+&lt;li&gt;образование абсцесса или очаги уплотнения с интенсивным накоплением полиморфноядерных лейкоцитов в бронхиолах и альвеолах;&lt;/li&gt;
+&lt;li&gt;положительный количественный посев паренхимы легкого;&lt;/li&gt;
+&lt;li&gt;свидетельства инвазии паренхимы легкого грибковыми гифами или псевдогифами.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;652-лабораторно-подтвержденная-инфекция-кровотока&#34;&gt;6.5.2 Лабораторно подтвержденная инфекция кровотока&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Лабораторно подтвержденная инфекция кровотока должна удовлетворять &lt;strong&gt;одному&lt;/strong&gt; из следующих критериев:&lt;/em&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Критерий 1:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;положительная гемокультура (выявление микроорганизмов в культуре крови) в одном или нескольких образцах (не относится к контаминирующим кожные покровы микроорганизмам, см. Критерий 2).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;И&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;выделенный из гемокультуры микроорганизм не связан с другим источником инфекции.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Критерий 2:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;один и более&lt;/strong&gt; из следующих признаков без другой установленной причины:
+&lt;ul&gt;
+&lt;li&gt;лихорадка (&amp;gt;38 °C);&lt;/li&gt;
+&lt;li&gt;озноб;&lt;/li&gt;
+&lt;li&gt;гипотензия.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;И&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;обнаружение условно-патогенного микроорганизма из числа обычно наблюдаемых на поверхности кожного покрова (наример дифтероиды [&lt;em&gt;Corynebacterium&lt;/em&gt; spp.], &lt;em&gt;Bacillus&lt;/em&gt; [за исключением &lt;em&gt;B. anthracis&lt;/em&gt;] spp., &lt;em&gt;Propionibacterium&lt;/em&gt; spp., коагулазонегативные стафилококки [включая &lt;em&gt;S. epidermidis&lt;/em&gt;], зеленящие &lt;em&gt;Streptococci, Aerococcus&lt;/em&gt; spp., &lt;em&gt;Micrococcus&lt;/em&gt; spp.) в двух или более гемокультурах, взятых в разные сроки;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;И / ИЛИ&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;обнаружение микроорганизма из числа обычно наблюдаемых на поверхности кожного покрова хотя бы в одном посеве крови, взятой у пациента с внутривенным катетером и назначение врачом по этому поводу антимикробной терапии.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;653-инфекция-мочевыводящих-путей&#34;&gt;6.5.3 Инфекция мочевыводящих путей&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Клинически выраженная инфекция мочевыводящих путей должна удовлетворять &lt;strong&gt;одному&lt;/strong&gt; из следующих критериев:&lt;/em&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Критерий 1:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;один и более&lt;/strong&gt; из следующих признаков без другой установленной причины:
+&lt;ul&gt;
+&lt;li&gt;лихорадка (≥38 °С);&lt;/li&gt;
+&lt;li&gt;резкие позывы к мочеиспусканию;&lt;/li&gt;
+&lt;li&gt;учащенное мочеиспускание;&lt;/li&gt;
+&lt;li&gt;дизурия или надлобковая болезненность.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;И&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;положительный количественный посев мочи (&amp;gt;10&lt;sup&gt;5&lt;/sup&gt; КОЕ/мл мочи).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Критерий 2:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;два и более&lt;/strong&gt; из следующих признаков без другой установленной причины:
+&lt;ul&gt;
+&lt;li&gt;лихорадка (≥38 °С);&lt;/li&gt;
+&lt;li&gt;резкие позывы к мочеиспусканию;&lt;/li&gt;
+&lt;li&gt;учащенное мочеиспускание;&lt;/li&gt;
+&lt;li&gt;дизурия или надлобковая болезненность.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;И&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;один и более&lt;/strong&gt; из следующих признаков:
+&lt;ul&gt;
+&lt;li&gt;положительный тест на лейкоцитарную эстеразу или нитрат;&lt;/li&gt;
+&lt;li&gt;пиурия (&amp;gt;10 лейкоцитов/мл мочи или &amp;gt;3 лейкоцитов в поле зрения микроскопии мочи высокого разрешения);&lt;/li&gt;
+&lt;li&gt;обнаружение микроорганизмов при окраске по Граму нецентрифугированной мочи;&lt;/li&gt;
+&lt;li&gt;выделение одного уропатогенного микроорганизма в количестве ≤10&lt;sup&gt;5&lt;/sup&gt; КОЕ/мл у пациента, получающего антимикробную терапию по поводу уроинфекции;&lt;/li&gt;
+&lt;li&gt;двукратно микробиологически подтвержденная бактериурия (&amp;gt;10&lt;sup&gt;5&lt;/sup&gt; КОЕ/мл мочи).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;654-бессимптомная-бактериурия&#34;&gt;6.5.4 Бессимптомная бактериурия&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Бессимптомная бактериурия должна удовлетворять следующим критериям:&lt;/em&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Критерий:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;микробиологически подтвержденная бактериурия (≥10&lt;sup&gt;5&lt;/sup&gt; КОЕ/ мл мочи) вне зависимости от наличия пиурии;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;И&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;температура тела &amp;lt;37,5 °С, отсутствие резких позывов к мочеиспусканию, учащенного мочеиспускания, дизурии, надлобковой болезненности.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;655-инфекция-области-хирургического-вмешательства&#34;&gt;6.5.5 Инфекция области хирургического вмешательства&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Поверхностная инфекция&lt;/strong&gt; разреза возникает не позднее 30 дней после операции и вовлекает только кожу и подкожные ткани в области разреза.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Критерий:&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;как минимум одно&lt;/strong&gt; из перечисленного&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;гнойное отделяемое из поверхностного разреза;&lt;/li&gt;
+&lt;li&gt;выделение микроорганизмов из жидкости или ткани, полученной асептически пункцией области поверхностного разреза или из мазка из раны при наличии микроскопических признаков гнойного воспаления;&lt;/li&gt;
+&lt;li&gt;имеется &lt;strong&gt;не менее двух&lt;/strong&gt; из следующих симптомов:
+&lt;ul&gt;
+&lt;li&gt;боль или болезненность;&lt;/li&gt;
+&lt;li&gt;ограниченный отек;&lt;/li&gt;
+&lt;li&gt;гиперемия;&lt;/li&gt;
+&lt;li&gt;местное повышение температуры.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;назначение лечащим врачом антимикробной терапии по поводу нагноения послеоперационной раны.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Глубокая инфекция области хирургического вмешательства&lt;/strong&gt; возникает не позднее 30 дней после операции при отсутствии имплантата или не позднее одного года при наличии имплантата в месте операции и вовлекает глубокие мягкие ткани (например, фасциальный и мышечный слой) в области разреза.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Критерий:&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;как минимум одно&lt;/strong&gt; из перечисленного&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;гнойное отделяемое из глубины разреза в месте данного хирургического вмешательства, но не из органа/полости;&lt;/li&gt;
+&lt;li&gt;выделение микроорганизмов из жидкости или ткани, полученное асептически пункцией области глубокого разреза или из мазка из глубины раны при наличии микроскопических признаков гнойного воспаления;&lt;/li&gt;
+&lt;li&gt;спонтанное расхождение краев раны или намеренное ее открытие хирургом, когда у пациента имеются следующие признаки и симптомы:
+&lt;ul&gt;
+&lt;li&gt;температура тела &amp;gt;37,5 °C;&lt;/li&gt;
+&lt;li&gt;локализованная боль и/или отек.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;при непосредственном осмотре, во время повторной операции, при гистологическом или рентгенологическом исследовании обнаружен абсцесс или иные признаки инфекции в области глубоких слоев операционной раны;&lt;/li&gt;
+&lt;li&gt;назначение лечащим врачом антимикробной терапии по поводу абсцесса, флегмоны в месте операции и пр.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Инфекция полости/органа&lt;/strong&gt; возникает не позднее 30 дней после операции при отсутствии имплантата или не позднее одного года при наличии имплантата в месте операции, с вовлечением органа или полости.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Критерий:&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;как минимум одно&lt;/strong&gt; из перечисленного&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;гнойное отделяемое из дренажа, установленного в органе/полости через специальный разрез;&lt;/li&gt;
+&lt;li&gt;выделение микроорганизмов из жидкости или ткани, полученной асептически из органа/полости и лихорадка;&lt;/li&gt;
+&lt;li&gt;при непосредственном осмотре, во время повторной операции, при гистологическом или рентгенологическом исследовании обнаружен абсцесс или иные признаки инфекции, вовлекающие орган/полость;&lt;/li&gt;
+&lt;li&gt;назначение лечащим врачом антимикробной терапии по поводу перитонита, остеомиелита, эмпиемы плевры, пиелонефрита, медиастенита, эндометрита и другие, возникшие после операции на соответствующем органе.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
