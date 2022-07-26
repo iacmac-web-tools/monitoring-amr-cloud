@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.66.0" />
+
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+<link rel="canonical" type="text/html" href="https://monitoring.amrcloud.net/docs/03/01/">
+
+<link rel="manifest" href="/manifest.json">
+<link rel="shortcut icon" href="/favicons/favicon.ico">
+
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<title>3.1 Базовые понятия | AMRcloud. Monitoring</title><meta property="og:title" content="3.1 Базовые понятия" />
+<meta property="og:description" content="Микробная колонизация это заселение участков кожи, слизистых оболочек и различных изделий медицинского назначения микроорганизмами, не сопровождающееся признаками и симптомами заболевания.  Как правило, происходит колонизация тканей организма, которые находятся в контакте с внешней средой (слизистые оболочки мочеполового и пищеварительного тракта, дыхательных путей, кожа и конъюнктива). Микроорганизмы, колонизирующие эти области, имеют различные механизмы адгезии, способны преодолевать и выдерживать постоянное сопротивление защитных механизмов макроорганизма, таким образом, находясь с последним в состоянии динамического равновесия без причинения вреда в данный момент времени." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://monitoring.amrcloud.net/docs/03/01/" /><meta property="og:image" content="https://monitoring.amrcloud.net/images/cover.png"/><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2021-09-27T18:03:18&#43;03:00" /><meta property="og:site_name" content="AMRcloud. Monitoring" />
+<meta itemprop="name" content="3.1 Базовые понятия">
+<meta itemprop="description" content="Микробная колонизация это заселение участков кожи, слизистых оболочек и различных изделий медицинского назначения микроорганизмами, не сопровождающееся признаками и симптомами заболевания.  Как правило, происходит колонизация тканей организма, которые находятся в контакте с внешней средой (слизистые оболочки мочеполового и пищеварительного тракта, дыхательных путей, кожа и конъюнктива). Микроорганизмы, колонизирующие эти области, имеют различные механизмы адгезии, способны преодолевать и выдерживать постоянное сопротивление защитных механизмов макроорганизма, таким образом, находясь с последним в состоянии динамического равновесия без причинения вреда в данный момент времени.">
+<meta itemprop="dateModified" content="2021-09-27T18:03:18&#43;03:00" />
+<meta itemprop="wordCount" content="1279">
+<meta itemprop="image" content="https://monitoring.amrcloud.net/images/cover.png"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://monitoring.amrcloud.net/images/cover.png"/>
+
+<meta name="twitter:title" content="3.1 Базовые понятия"/>
+<meta name="twitter:description" content="Микробная колонизация это заселение участков кожи, слизистых оболочек и различных изделий медицинского назначения микроорганизмами, не сопровождающееся признаками и симптомами заболевания.  Как правило, происходит колонизация тканей организма, которые находятся в контакте с внешней средой (слизистые оболочки мочеполового и пищеварительного тракта, дыхательных путей, кожа и конъюнктива). Микроорганизмы, колонизирующие эти области, имеют различные механизмы адгезии, способны преодолевать и выдерживать постоянное сопротивление защитных механизмов макроорганизма, таким образом, находясь с последним в состоянии динамического равновесия без причинения вреда в данный момент времени."/>
+
+
+
+
+
+
+
+<link rel="preload" href="/scss/main.min.03f0f9d4be39ca013404059d8f5f2ea07b71b6201669403c2122af6dd8364e92.css" as="style">
+<link href="/scss/main.min.03f0f9d4be39ca013404059d8f5f2ea07b71b6201669403c2122af6dd8364e92.css" rel="stylesheet" integrity="">
+
+<link rel="stylesheet" href="https://monitoring.amrcloud.net/css/jquery.fancybox.min.css"><link rel="stylesheet" href="https://monitoring.amrcloud.net/css/cookie.min.css">
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+
+
+
+
+<script defer src="https://monitoring.amrcloud.net/js/jquery.fancybox.min.js" ></script>
+
+<script defer src="https://monitoring.amrcloud.net/js/lunr.stemmer.support.js" ></script>
+
+<script defer src="https://monitoring.amrcloud.net/js/lunr.multi.js" ></script>
+
+<script defer src="https://monitoring.amrcloud.net/js/lunr.ru.js" ></script>
+
+<script defer src="https://monitoring.amrcloud.net/js/cookie.min.js" ></script>
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S6BVV06T8J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S6BVV06T8J');
+</script>
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">AMRcloud. Monitoring</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/docs/" ><span class="active">Руководство</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/authors/" ><span>Авторы</span></a>
+			</li>
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Поиск"
+  aria-label="Поиск"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/offline-search-index.b47da24660c56a6fe2e9d68ad386b82b.json"
+  data-offline-search-base-href="/"
+  data-offline-search-max-results="10"
+>
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+<div class="td-content">
+	<h1>3.1 Базовые понятия</h1>
+	
+	<header class="article-meta">
+		
+		
+			
+				
+
+
+			
+				
+
+
+			
+		
+		
+	</header>    
+	
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Микробная колонизация</h4>
+
+    это заселение участков кожи, слизистых оболочек и различных изделий медицинского назначения микроорганизмами, не сопровождающееся признаками и симптомами заболевания.
+
+</div>
+
+<p>Как правило, происходит колонизация тканей организма, которые находятся в контакте с внешней средой (слизистые оболочки мочеполового и пищеварительного тракта, дыхательных путей, кожа и конъюнктива). Микроорганизмы, колонизирующие эти области, имеют различные механизмы адгезии, способны преодолевать и выдерживать постоянное сопротивление защитных механизмов макроорганизма, таким образом, находясь с последним в состоянии динамического равновесия без причинения вреда в данный момент времени.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Инфекция</h4>
+
+    это инвазия и размножение чужеродных агентов в организме хозяина, приводящие к патологическому состоянию или заболеванию.
+
+</div>
+
+<p>В результате инфекции, т.е. проникновения чужеродного агента в организм хозяина, размножения в нем, высвобождения продуктов метаболизма (ферменты, эндо- и экзотоксины) нарушаются нормальные физиологические процессы, постоянство внутренней среды (гомеостаз) в организме хозяина. Это приводит к мобилизации неспецифических и специфических механизмов защиты, направленных на уменьшение или ликвидацию чужеродного агента с целью компенсации повреждения.</p>
+<h3 id="_почему-для-задач-мониторинга-ар-важно-различать-колонизацию-и-инфекцию_"><strong><em>Почему для задач мониторинга АР важно различать колонизацию и инфекцию?</em></strong></h3>
+<p>С точки зрения мониторинга АР принципиально важным является разделение всех выделенных от пациента микроорганизмов на:</p>
+<ul>
+<li>клинически значимые изоляты, т.е. изоляты являющиеся причиной инфекционного процесса конкретной локализации (например, <em>S. pneumoniae</em> при инфекциях нижних дыхательных путей, <em>E. coli</em> при глубоких инфекциях в области хирургического вмешательства);</li>
+<li>колонизирующие, т.е. микроорганизмы не являющиеся причиной инфекции конкретной локализации (например, зеленящие стрептококки в ротовой полости, <em>S. epidermidis</em> на поверхности кожи; <em>E. coli</em> на поверхности мочевого катетера при отсутствии симптомов инфекции мочевыводящих путей; микроорганизмы, выделенные из нестерильных локусов при исследовании на носительство). Следует отметить, что при наличии определенных условий (входные ворота инфекции, ослабленный иммунный статус и т.п.), колонизирующий изолят способен вызвать инфекционный процесс, т.е. стать клинически значимым.</li>
+</ul>
+<p>Клинически значимые изоляты в действительности отражают этиологическую структуру с соответствующим профилем резистентности для конкретной нозологии (т.е. при уже совершившемся случае инфекции). В свою очередь, колонизирующие изоляты отражают состояние микробиоты (с характерным профилем резистентности) и представляют потенциальных возбудителей инфекций (однако сам случай инфекции отсутствует). Данная классификация является условной. С точки зрения оценки трендов АР и последующего составления локальных протоколов по антимикробной терапии наибольшую ценность представляют клинически значимые изоляты.</p>
+<p>Следует обратить внимание, что для отдельных категорий пациентов (например, новорожденные дети, онкогематологические и иммунокомпрометированные пациенты) колонизирующие изоляты имеют особое значение, т.к. с большей вероятностью (в силу особенностей статуса макроорганизма) могут стать этиологическим агентом при наступлении случая инфекции.</p>
+<p>С понятием «клинически значимые» изоляты неразрывно связано определение случая инфекции.</p>
+<h3 id="_что-такое-эпидемиологическое-определение-случая-инфекции_"><strong><em>Что такое эпидемиологическое определение случая инфекции?</em></strong></h3>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Эпидемиологическое определение случая инфекции</h4>
+
+    это набор стандартных критериев для выявления у пациента определенного заболевания, синдрома или другого состояния с целью эпидемиологического надзора.
+
+</div>
+
+<p>Использование согласованного стандартного определения случая инфекции гарантирует, что все случаи эквивалентны, независимо от времени и места их идентификации, что обеспечивает сопоставимость данных. Стандартные эпидемиологические определения случаев инфекции представлены в <a href="https://monitoring.amrcloud.net/docs/06/05/">приложении 6.5</a>.</p>
+<h3 id="_что-такое-нозокомиальные-инфекции-и-в-чем-заключается-важность-определения-случая-нозокомиальной-инфекции-с-точки-зрения-мониторинга-ар_"><strong><em>Что такое нозокомиальные инфекции и в чем заключается важность определения случая нозокомиальной инфекции с точки зрения мониторинга АР?</em></strong></h3>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Согласно формальному определению ВОЗ, нозокомиальная инфекция (НИ)</h4>
+
+    это любое клинически распознаваемое инфекционное заболевание, которое развивается у пациента не менее чем через 48 часов после госпитализации (и не находившееся в инкубационном периоде на момент госпитализации), в течение 3 дней после выписки или 30 дней после операции (до 1 года – при наличии имплантатов), а также любое инфекционное заболевание сотрудника стационара, развившееся вследствие его работы в данном учреждении, вне зависимости от времени появления симптомов.
+
+</div>
+
+<p>Наиболее распространенными являются следующие типы НИ: инфекции нижних дыхательных путей, инфекции мочевыводящих путей, инфекции в области хирургического вмешательства, инфекции кровотока.</p>
+<p>С точки зрения мониторинга АР принципиально важным является разделение инфекций на два типа: нозокомиальные и внебольничные (т.е. не удовлетворяющие критериям нозокомиальных). Данное разделение необходимо, так как для внебольничных и нозокомиальных инфекций одних и тех же локализаций существуют значимые различия в этиологической структуре и профиле резистентности возбудителей. Поэтому при статистической обработке данных необходимо производить расчеты показателей (частоты встречаемости возбудителя, относительное количество резистентных изолятов и т.п.) отдельно для каждого типа инфекций (Рисунок 1).</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-классификация-изолятов-с-целью-последующего-эпидемиологического-анализа">
+
+
+  <a data-fancybox="" href="/images/3.1.1.png" data-caption="Классификация изолятов с целью последующего эпидемиологического анализа">
+
+
+  <img src="/images/3.1.1.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption data-pre="Рисунок  " data-post=": " class="numbered">
+    Классификация изолятов с целью последующего эпидемиологического анализа
+  </figcaption>
+
+
+</figure>
+
+<h3 id="_какие-микроорганизмы-являются-приоритетными-для-мониторинга-ар_"><strong><em>Какие микроорганизмы являются приоритетными для мониторинга АР?</em></strong></h3>
+<p>Согласно рекомендациям ВОЗ (Cистема эпиднадзора за устойчивостью к противомикробным препаратам в Центральной Азии и Восточной Европе, 2019 г.) первоочередной интерес для мониторинга АР представляют девять видов (групп) микроорганизмов 
+
+
+
+
+<a href="https://monitoring.amrcloud.net/docs/literature/#27">
+    <abbr title="European Centre for Disease Prevention and Control. Surveillance of antimicrobial resistance in Europe 2018." class="initialism">[27]</abbr>
+</a>:</p>
+<ul>
+<li><em>Escherichia coli (E. coli)</em>;</li>
+<li><em>Klebsiella pneumoniae (K. pneumoniae)</em>;</li>
+<li><em>Salmonella</em> spp.;</li>
+<li><em>Pseudomonas aeruginosa (P. aeruginosa)</em>;</li>
+<li><em>Acinetobacter</em> spp.;</li>
+<li><em>Staphylococcus aureus (S. aureus)</em>;</li>
+<li><em>Streptococcus pneumoniae (S. pneumoniae)</em>;</li>
+<li><em>Enterococcus faecalis (E. faecalis)</em>;</li>
+<li><em>Enterococcus faecium (E. faecium)</em>.</li>
+</ul>
+<p>В качестве ориентира для формирования списка приоритетных для мониторинга АР возбудителей в РФ можно также использовать данные AMRmap (<a href="https://amrmap.ru">https://amrmap.ru</a> система мониторинга АР национального уровня). Частота встречаемости различных возбудителей внебольничных и нозокомиальных инфекций в РФ (согласно данным AMRmap) представлена в таблице 3.1.1. Возбудители частота встречаемости которых не превышает 2% в таблицу не включены.</p>
+<p><strong>Таблица 3.1.1.</strong> Частота встречаемости различных видов микроорганизмов при внебольничных и нозокомиальных инфекция в РФ согласно данным AMRmap</p>
+<table>
+<thead>
+<tr>
+<th>Вид</th>
+<th>Абсолютная частота (N)</th>
+<th>Относительная частота (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><em>Нозокомиальные</em></strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><em>Pseudomonas aeruginosa</em></td>
+<td>5049</td>
+<td>19.31</td>
+</tr>
+<tr>
+<td><em>Klebsiella pneumoniae</em></td>
+<td>4975</td>
+<td>19.02</td>
+</tr>
+<tr>
+<td><em>Acinetobacter baumannii</em></td>
+<td>3583</td>
+<td>13.7</td>
+</tr>
+<tr>
+<td><em>Staphylococcus aureus</em></td>
+<td>3378</td>
+<td>12.92</td>
+</tr>
+<tr>
+<td><em>Escherichia coli</em></td>
+<td>3187</td>
+<td>12.19</td>
+</tr>
+<tr>
+<td><em>Enterococcus faecalis</em></td>
+<td>1005</td>
+<td>3.84</td>
+</tr>
+<tr>
+<td><em>Enterobacter cloacae</em></td>
+<td>744</td>
+<td>2.85</td>
+</tr>
+<tr>
+<td><em>Proteus mirabilis</em></td>
+<td>696</td>
+<td>2.66</td>
+</tr>
+<tr>
+<td><em>Stenotrophomonas maltophilia</em></td>
+<td>616</td>
+<td>2.36</td>
+</tr>
+<tr>
+<td><em>Enterococcus faecium</em></td>
+<td>603</td>
+<td>2.31</td>
+</tr>
+<tr>
+<td><em>Serratia marcescens</em></td>
+<td>528</td>
+<td>2.02</td>
+</tr>
+<tr>
+<td><strong><em>Внебольничные</em></strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><em>Escherichia coli</em></td>
+<td>3633</td>
+<td>22.43</td>
+</tr>
+<tr>
+<td><em>Streptococcus pneumoniae</em></td>
+<td>2916</td>
+<td>18.01</td>
+</tr>
+<tr>
+<td><em>Staphylococcus aureus</em></td>
+<td>2293</td>
+<td>14.16</td>
+</tr>
+<tr>
+<td><em>Streptococcus pyogenes</em></td>
+<td>2262</td>
+<td>13.97</td>
+</tr>
+<tr>
+<td><em>Haemophilus influenzae</em></td>
+<td>1105</td>
+<td>6.82</td>
+</tr>
+<tr>
+<td><em>Klebsiella pneumoniae</em></td>
+<td>925</td>
+<td>5.71</td>
+</tr>
+<tr>
+<td><em>Neisseria gonorrhoeae</em></td>
+<td>679</td>
+<td>4.19</td>
+</tr>
+<tr>
+<td><em>Pseudomonas aeruginosa</em></td>
+<td>472</td>
+<td>2.91</td>
+</tr>
+<tr>
+<td><em>Enterococcus faecalis</em></td>
+<td>335</td>
+<td>2.07</td>
+</tr>
+</tbody>
+</table>
+<p>Следует отметить, что при налаженном процессе локального мониторинга АР не представляет сложности расширить предложенный список микроорганизмов. Более того, включение всех выделяемых видов микроорганизмов в процесс мониторинга АР (учитывая тип инфекции и колонизацию) является предпочтительным, т.к. позволяет получить полное представление о локальной эпидемиологии АР.</p>
+<h3 id="_какое-количество-изолятов-является-репрезентативным-для-мониторинга-ар_"><strong><em>Какое количество изолятов является репрезентативным для мониторинга АР?</em></strong></h3>
+<p>В рамках мониторинга АР осуществляется расчет различных показателей, как правило выраженных в абсолютных и относительных частотах. Например, расчет и оценка доли (%) конкретного микроорганизма в этиологической структуре возбудителей инфекций или оценка доли резистентных изолятов. Ввиду различного объема выборки (количества изолятов) степень уверенности в достоверности полученных показателей может быть различной. Для объективной оценки степени уверенности (доверия) в полученных данных существует специальный показатель – доверительный интервал (ДИ). Наиболее часто используемым ДИ в биомедицинских исследованиях является 95%-ый ДИ 
+
+
+
+
+<a href="https://monitoring.amrcloud.net/docs/literature/#28">
+    <abbr title="Виноградова А.Г., Кузьменков А.Ю. Практическое применение AMRmap: элементы подхода «от общего к частному» на примере Klebsiella pneumoniae. Клиническая микробиология и антимикробная химиотерапия. 2019;21(2):181–186." class="initialism">[28]</abbr>
+</a>. Он представлен в виде интервальных значений, например, 50% резистентных изолятов (95%-ый ДИ: 30–70%). Доверительный интервал (95%-ый ДИ), означает, что при повторном проведении 100 исследований с таким же дизайном истинное значение оцениваемого показателя (в данном примере доли резистентных изолятов) в 95 исследованиях из 100 будет находиться в пределах указанной ширины интервала (в данном примере ширина – от 30 до 70%). Таким образом, в указанном примере несмотря на оценку доли резистентных изолятов в 50%, истинная доля может находиться в пределах 30–70%.</p>
+<p>ДИ напрямую связан с объемом выборки (количеством изолятов): чем больше объем выборки (количество изолятов), тем меньше ширина ДИ (т.е. большая точность оценки), и наоборот. ДИ рассчитывается с помощью специальных формул. Однако для приблизительной оценки необходимого объема выборки (точности оценки) можно ориентрироваться на значения, представленные в таблице 3.1.2.</p>
+<p><strong>Таблица 3.1.2.</strong> Ширина 95%-ого ДИ в зависимости от объема выборки</p>
+<table>
+<thead>
+<tr>
+<th>Объем выборки (количество изолятов)</th>
+<th>Ширина 95%-ого ДИ (в %)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20</td>
+<td>± 20,07</td>
+</tr>
+<tr>
+<td>40</td>
+<td>± 14,08</td>
+</tr>
+<tr>
+<td>80</td>
+<td>± 10,70</td>
+</tr>
+<tr>
+<td>100</td>
+<td>± 6,86</td>
+</tr>
+<tr>
+<td>200</td>
+<td>± 4,88</td>
+</tr>
+<tr>
+<td>300</td>
+<td>± 3,99</td>
+</tr>
+<tr>
+<td>500</td>
+<td>± 3,09</td>
+</tr>
+</tbody>
+</table>
+<p>Исходя из таблицы 3.1.2., при выборке в 20 изолятов истинное значение доли резистентных изолятов будет находиться в пределах ± 20,07%. Например, если 10 из 20 (т.е. 50%) протестированных изолятов резистентны к конкретному антимикробному препарату, то истинное значение доли резистентных изолятов будет находиться в пределах 50 ± 20,07%. Такой же принцип действителен при оценке этиологической структуры. Например, при инфекциях конкретной локализации идентифицировано 80 изолятов из них 40 изолятов (50%) составляет <em>Klebsiella pneumoniae</em>, используя таблицу 3.1.2. можно приблизительно оценить истинное значение доли <em>Klebsiella pneumoniae</em> в общей структуре (50 ± 10,70%).</p>
+<p>Следует отметить, что наряду с использованием ширины 95%-ого ДИ для вероятностной оценки точности и необходимого количества изолятов, с целью формирования репрезентативной выборки необходимо также учитывать «смещающие» факторы (например, включение в исследование только изолятов резистентных к конкретному АМП или включение дублей и повторных изолятов, см. <a href="https://monitoring.amrcloud.net/docs/04/03/">раздел 4.3.</a>).</p>
+
+	
+	
+	<hr class="panel-line">
+Изменено 27 сентября 2021
+
+
+	<ul class="list-unstyled d-flex justify-content-between align-items-center mb-0 pt-3">
+  
+  <li>
+    
+      
+      <a href="/docs/02/03/" class="btn btn-primary"><span class="mr-1">←</span> Назад
+      </a>
+      
+    
+  </li>
+  <li>
+    
+    <a href="/docs/03/02/" class="btn btn-primary"> Далее <span
+        class="ml-1">→</span></a>    
+    
+  </li>
+  
+</ul>
+
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col text-center ">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="МАКМАХ / IACMAC" aria-label="МАКМАХ / IACMAC">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://www.antibiotic.ru/">
+      <i class="fa fa-globe"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Vk" aria-label="Vk">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://vk.com/iacmac">
+      <i class="fab fa-vk"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://twitter.com/iacmac1997/">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Telegram" aria-label="Telegram">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://t.me/iacmac">
+      <i class="fab fa-telegram"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="YouTube" aria-label="YouTube">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/iacmac">
+      <i class="fab fa-youtube"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Комментарии, критические замечания, вопросы и пожелания можно направлять на электронную почту: support@antibiotic.ru" aria-label="Комментарии, критические замечания, вопросы и пожелания можно направлять на электронную почту: support@antibiotic.ru">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="mailto:support@antibiotic.ru">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        
+        
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <small class="text-white">&copy; 2022 МАКМАХ Все права защищены</small>
+        <small class="ml-1"><a href="https://policies.google.com/privacy/partners" target="_blank">Политика конфиденциальности</a></small>
+	
+		
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+    <script>
+window.addEventListener('load', function(){
+  window.cookieconsent.initialise({
+   revokeBtn: "<div class='cc-revoke'></div>",
+   type: "opt-in",
+   theme: "classic",
+   palette: {
+       popup: {
+           background: "#000",
+           text: "#fff"
+        },
+       button: {
+           background: "#fd0",
+           text: "#000"
+        }
+    },
+   content: {
+       message: "На нашем сайте включены cookies, потому что мы используем услуги Google Analytics",
+       link: "Узнать больше",
+       deny: "",
+       allow: "Принять",
+       href: "https:\/\/2gdpr.com\/cookies"
+    },
+    onInitialise: function(status) {
+      
+    },
+    onStatusChange: function(status) {
+      
+    }
+  })
+});
+</script>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@8.11.2/dist/mermaid.min.js" integrity="sha384-m8Pdaep6Qk8sW3J6XhPOiwUww3maU9HxZTLvEfSEB4e1UVvTdHyfJsYmEfYqvwLC" crossorigin="anonymous"></script>
+
+
+
+
+<script src='/js/tabpane-persist.js'></script>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.c3ad98592f06b673daf5f29c00d9052aad61500a3d1b76019de623b0f38ff766.js" integrity="sha256-w62YWS8GtnPa9fKcANkFKq1hUAo9G3YBneYjsPOP92Y=" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>

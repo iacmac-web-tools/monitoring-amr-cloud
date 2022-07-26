@@ -1,0 +1,1182 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.66.0" />
+
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+<link rel="alternate" type="text/html" href="https://monitoring.amrcloud.net/_print/docs/04/02/">
+
+<link rel="manifest" href="/manifest.json">
+<link rel="shortcut icon" href="/favicons/favicon.ico">
+
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<title>4.2 Шаблон для сбора и ввода данных | AMRcloud. Monitoring</title><meta property="og:title" content="4.2 Шаблон для сбора и ввода данных" />
+<meta property="og:description" content="С целью стандартизации формата хранения данных мониторинга АР и их последующего анализа необходимо разработать шаблон для сбора и ввода данных. Разработка шаблона должна осуществляться одновременно с модификацией (или разработкой) бланка направления на МИ, т.к. последний является основным источником информации для шаблона данных. В данном разделе представлен базовый вариант шаблона данных, а также принципы его заполнения. Полный вариант, а также примеры справочников и словарь наименований антимикробных препаратов представлен в приложении 6.2. Работа с шаблоном, справочниками и словарями." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://monitoring.amrcloud.net/docs/04/02/" /><meta property="og:image" content="https://monitoring.amrcloud.net/images/cover.png"/><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2021-09-27T18:03:18&#43;03:00" /><meta property="og:site_name" content="AMRcloud. Monitoring" />
+<meta itemprop="name" content="4.2 Шаблон для сбора и ввода данных">
+<meta itemprop="description" content="С целью стандартизации формата хранения данных мониторинга АР и их последующего анализа необходимо разработать шаблон для сбора и ввода данных. Разработка шаблона должна осуществляться одновременно с модификацией (или разработкой) бланка направления на МИ, т.к. последний является основным источником информации для шаблона данных. В данном разделе представлен базовый вариант шаблона данных, а также принципы его заполнения. Полный вариант, а также примеры справочников и словарь наименований антимикробных препаратов представлен в приложении 6.2. Работа с шаблоном, справочниками и словарями.">
+<meta itemprop="dateModified" content="2021-09-27T18:03:18&#43;03:00" />
+<meta itemprop="wordCount" content="524">
+<meta itemprop="image" content="https://monitoring.amrcloud.net/images/cover.png"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://monitoring.amrcloud.net/images/cover.png"/>
+
+<meta name="twitter:title" content="4.2 Шаблон для сбора и ввода данных"/>
+<meta name="twitter:description" content="С целью стандартизации формата хранения данных мониторинга АР и их последующего анализа необходимо разработать шаблон для сбора и ввода данных. Разработка шаблона должна осуществляться одновременно с модификацией (или разработкой) бланка направления на МИ, т.к. последний является основным источником информации для шаблона данных. В данном разделе представлен базовый вариант шаблона данных, а также принципы его заполнения. Полный вариант, а также примеры справочников и словарь наименований антимикробных препаратов представлен в приложении 6.2. Работа с шаблоном, справочниками и словарями."/>
+
+
+
+
+
+
+
+<link rel="preload" href="/scss/main.min.03f0f9d4be39ca013404059d8f5f2ea07b71b6201669403c2122af6dd8364e92.css" as="style">
+<link href="/scss/main.min.03f0f9d4be39ca013404059d8f5f2ea07b71b6201669403c2122af6dd8364e92.css" rel="stylesheet" integrity="">
+
+<link rel="stylesheet" href="https://monitoring.amrcloud.net/css/jquery.fancybox.min.css"><link rel="stylesheet" href="https://monitoring.amrcloud.net/css/cookie.min.css">
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+
+
+
+
+<script defer src="https://monitoring.amrcloud.net/js/jquery.fancybox.min.js" ></script>
+
+<script defer src="https://monitoring.amrcloud.net/js/lunr.stemmer.support.js" ></script>
+
+<script defer src="https://monitoring.amrcloud.net/js/lunr.multi.js" ></script>
+
+<script defer src="https://monitoring.amrcloud.net/js/lunr.ru.js" ></script>
+
+<script defer src="https://monitoring.amrcloud.net/js/cookie.min.js" ></script>
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S6BVV06T8J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S6BVV06T8J');
+</script>
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">AMRcloud. Monitoring</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/docs/" ><span class="active">Руководство</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/authors/" ><span>Авторы</span></a>
+			</li>
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Поиск"
+  aria-label="Поиск"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/offline-search-index.b47da24660c56a6fe2e9d68ad386b82b.json"
+  data-offline-search-base-href="/"
+  data-offline-search-max-results="10"
+>
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center d-lg-none">
+    
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Поиск"
+  aria-label="Поиск"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/offline-search-index.b47da24660c56a6fe2e9d68ad386b82b.json"
+  data-offline-search-base-href="/"
+  data-offline-search-max-results="10"
+>
+
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Руководство</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspre" href="/docs/pre/">Предисловие</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsabbr" href="/docs/abbr/">Список сокращений</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/01/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">1. Введение</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs01">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0101" href="/docs/01/01/">1.1 Важность мониторинга</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0102" href="/docs/01/02/">1.2 Системы мониторинга</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/02/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">2. Организация локального мониторинга</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs02">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0201" href="/docs/02/01/">2.1 Для чего нужен локальный мониторинг</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0202" href="/docs/02/02/">2.2 Основные этапы внедрения системы мониторинга</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0203" href="/docs/02/03/">2.3 Взаимодействие с лабораторией</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/03/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">3. Реализация системы мониторинга антибиотикорезистентности</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs03">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0301" href="/docs/03/01/">3.1 Базовые понятия</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0302" href="/docs/03/02/">3.2 Показания и особенности взятия биоматериала для микробиологического исследования</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0303" href="/docs/03/03/">3.3 Оформление направления на микробиологическое исследование</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0304" href="/docs/03/04/">3.4 Основные процедуры в микробиологической лаборатории</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0305" href="/docs/03/05/">3.5 Методы определения чувствительности микроорганизмов к антимикробным препаратам и интерпретация результатов</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0306" href="/docs/03/06/">3.6 Методы выявления механизмов резистентности, имеющих клиническое и эпидемиологическое значение</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/04/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">4. Подготовка данных для эпидемиологического анализа антибиотикорезистентности</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs04">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0401" href="/docs/04/01/">4.1 Сценарии потоков данных</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docs0402" href="/docs/04/02/">4.2 Шаблон для сбора и ввода данных</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0403" href="/docs/04/03/">4.3 Сопроводительная эпидемиологическая, клиническая и демографическая информация</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0404" href="/docs/04/04/">4.4 Правила оформления и хранения данных</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/05/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">5. Использование платформы AMRcloud в мониторинге антибиотикорезистентности</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs05">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0501" href="/docs/05/01/">5.1 Создание проектов и наборов данных</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0502" href="/docs/05/02/">5.2 Алгоритмы базового анализа данных</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0503" href="/docs/05/03/">5.3 Углубленный анализ данных</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0504" href="/docs/05/04/">5.4 Актуализация информации</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0505" href="/docs/05/05/">5.5 Взаимодействие участников</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0506" href="/docs/05/06/">5.6 Использование AMRcloud при формировании локальных протоколов антимикробной терапии</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/06/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">6. Приложения</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs06">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0601" href="/docs/06/01/">6.1 Шаблон направления на микробиологическое исследование</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0602" href="/docs/06/02/">6.2 Работа с шаблоном, справочниками и словарями</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0603" href="/docs/06/03/">6.3 Работа с WHONET</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0604" href="/docs/06/04/">6.4 Работа с BACLINK</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs0605" href="/docs/06/05/">6.5 Стандартные эпидемиологические определения случая инфекции</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsliterature" href="/docs/literature/">Литература</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            
+  
+  
+  
+  
+  
+  
+  <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+  
+  
+    <a id="print" href="https://monitoring.amrcloud.net/docs/04/_print/"><i class="fa fa-print fa-fw"></i> Версия для печати</a>
+  
+  
+  </div>
+  <hr class="panel-line">
+
+
+            
+
+
+
+
+            
+
+	
+		
+
+
+
+  
+  
+
+	
+		
+
+
+
+  
+  
+
+	
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://monitoring.amrcloud.net/docs/">Руководство</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://monitoring.amrcloud.net/docs/04/">4. Подготовка данных для эпидемиологического анализа антибиотикорезистентности</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="https://monitoring.amrcloud.net/docs/04/02/">4.2 Шаблон для сбора и ввода данных</a>
+</li>
+
+	</ol>
+</nav	>
+
+            
+<div class="td-content">
+	<h1>4.2 Шаблон для сбора и ввода данных</h1>
+	
+	<header class="article-meta">
+		
+		
+			
+				
+
+
+			
+				
+
+
+			
+		
+		
+	</header>    
+	<p>С целью стандартизации формата хранения данных мониторинга АР и их последующего анализа необходимо разработать шаблон для сбора и ввода данных. Разработка шаблона должна осуществляться одновременно с модификацией (или разработкой) бланка направления на МИ, т.к. последний является основным источником информации для шаблона данных. В данном разделе представлен базовый вариант шаблона данных, а также принципы его заполнения. Полный вариант, а также примеры справочников и словарь наименований антимикробных препаратов представлен в приложении <a href="https://monitoring.amrcloud.net/docs/06/02/">6.2. Работа с шаблоном, справочниками и словарями</a>.</p>
+<p><strong>Таблица 4.2.1.</strong> Пример шаблона данных (расшифровка наименований и содержимого столбцов представлена в таблице 4.2.2.)</p>
+<table>
+   <tbody>
+      <tr>
+         <td colspan="4" width="199">
+            <strong><em><u>Данные изолята</u></em></strong>
+         </td>
+         <td colspan="4" width="199">
+            <strong><em><u>Данные пациента</u></em></strong>
+         </td>
+         <td colspan="4" width="199">
+            <strong><em><u>Маркеры </u></em></strong><strong><em>(резистентности/вирулентности)</em></strong>
+         </td>
+         <td colspan="4" width="199">
+            <strong><em><u>Результаты чувствительности</u></em></strong>
+         </td>
+      </tr>
+      <tr>
+         <td width="50">
+            <strong><em>Идентификатор</em></strong>
+            <strong><em>изолята</em></strong>
+         </td>
+         <td width="50">
+            <strong><em>Дата</em></strong>
+         </td>
+         <td width="50">
+            <strong><em>Вид_МО</em></strong>
+         </td>
+         <td width="50">
+            <strong><em>Группа_МО</em></strong>
+         </td>
+         <td width="50">
+            <strong><em>Географич. локализация</em></strong>
+         </td>
+         <td width="50">
+            <strong><em>Локализация инфекции</em></strong>
+         </td>
+         <td width="50">
+            <strong><em>Клинический материал</em></strong>
+         </td>
+         <td width="50">
+            <strong><em>Географич. локализация</em></strong>
+         </td>
+         <td width="50">
+            <strong><em>Отделение</em></strong>
+         </td>
+         <td width="50">
+            <strong><em>Возраст пациента</em></strong>
+         </td>
+         <td width="50">
+            <strong><em>Симптом заболевания</em></strong>
+         </td>
+         <td width="150">
+            <strong><em>ESBL</em></strong>
+         </td>
+         <td width="50">
+            <strong><em>MRSA</em></strong>
+         </td>
+         <td width="50">
+            <strong><em>Antibiotic_mic</em></strong>
+         </td>
+         <td width="50">
+            <strong><em>Antibiotic_sir</em></strong>
+         </td>
+         <td width="50">
+            <strong><em>Antibiotic_dd</em></strong>
+         </td>
+      </tr>
+      <tr>
+         <td width="50">
+            1AB
+         </td>
+         <td width="50">
+            16.12.2018
+         </td>
+         <td width="50">
+            Klebsiella pneumoniae
+         </td>
+         <td width="50">
+            Enterobacterales
+         </td>
+         <td width="50">
+            Смоленск
+         </td>
+         <td width="50">
+            Нижние дыхательные пути
+         </td>
+         <td width="50">
+            Бронхоальвеолярный лаваж
+         </td>
+         <td width="50">
+            Смоленск
+         </td>
+         <td width="50">
+            Реанимация
+         </td>
+         <td width="50">
+            62
+         </td>
+         <td width="50">
+            Нет
+         </td>
+         <td width="150">
+            CTX-M-15
+         </td>
+         <td width="50">&nbsp;</td>
+         <td width="50">
+            8
+         </td>
+         <td width="50">
+            S
+         </td>
+         <td width="50">
+            6
+         </td>
+      </tr>
+      <tr>
+         <td width="50">
+            2CD
+         </td>
+         <td width="50">
+            16.12.2018
+         </td>
+         <td width="50">
+            Staphylococcus aureus
+         </td>
+         <td width="50">
+            Staphylococcus
+         </td>
+         <td width="50">
+            Смоленск
+         </td>
+         <td width="50">
+            Кожа и мягкие ткани
+         </td>
+         <td width="50">
+            Раневое отделяемое
+         </td>
+         <td width="50">
+            Смоленск
+         </td>
+         <td width="50">
+            Поликлиника
+         </td>
+         <td width="50">
+            20
+         </td>
+         <td width="50">
+            Нет
+         </td>
+         <td width="50">&nbsp;</td>
+         <td width="50">
+            Положительный
+         </td>
+         <td width="50">
+            16
+         </td>
+         <td width="50">
+            R
+         </td>
+         <td width="50">
+            8
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+
+<div class="alert alert-primary" role="alert">
+
+
+    Следует отметить, что верхняя строка таблицы (Данные изолята, Данные пациента, Маркеры, Результаты чувствительности) представлена для удобства восприятия таблицы и не должна использоваться в настоящем шаблоне данных.
+
+</div>
+
+<p><strong>Таблица 4.2.2.</strong> Основные характеристики столбцов и содержащихся в них данных</p>
+<table>
+   <tbody>
+      <tr>
+         <td>
+            <strong>Столбец</strong>
+         </td>
+         <td>
+            <strong>Примеры значений</strong>
+         </td>
+         <td>
+            <strong>Особенности</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Идентификатор изолята
+         </td>
+         <td>
+            1AB
+         </td>
+         <td>
+            Уникальный идентификатор
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Дата
+         </td>
+         <td>
+            16.12.2018
+         </td>
+         <td>
+            Дата взятия материала
+            Единый формат написания
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Вид МО
+         </td>
+         <td>
+            <em>Klebsiella pneumoniae</em>
+         </td>
+         <td>
+            Полное наименование микроорганизма
+            Английский вариант
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Группа МО
+         </td>
+         <td>
+            Enterobacterales
+         </td>
+         <td>
+            Указать род/порядок и т.д.
+            Единое оформление по всему столбцу
+            Английский вариант
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Antibiotic_mic
+         </td>
+         <td>
+            8
+         </td>
+         <td>
+            Указать значения МПК по основному действующему веществу (например, триметоприм/сульфаметоксазол &ndash; МПК триметоприма)
+            Согласно международному соглашению рекомендуется использовать значения, соответствующие двукратным разведениям начиная с 1 мг/л. Для значений менее 0,25 мг/л рекомендуется использовать следующие значения <br /> 0.125&rarr; 0.125, <br /> 0.0625&rarr;0.06, <br /> 0.03125&rarr;0.03, <br /> 0.015625&rarr;0.016, <br /> 0.0078125&rarr;0.008, <br /> 0.00390625&rarr;0.004 <br /> 0.001953125&rarr;0.002
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Antibiotic_sir
+         </td>
+         <td>
+            S
+         </td>
+         <td>
+            Указать один вариант:
+            <ul>
+               <li>S &ndash; чувствительный</li>
+               <li>I &ndash;чувствительный при увеличенной экспозиции</li>
+               <li>R &ndash; устойчивый</li>
+            </ul>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Antibiotic_dd
+         </td>
+         <td>
+            6
+         </td>
+         <td>
+            Указать диаметр зоны задержки роста по данным ДДМ. Целые числа, диапазон от 6 до 50 мм
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Географическая локализация
+         </td>
+         <td>
+            Смоленск
+         </td>
+         <td>
+            Не рекомендуется использовать разное написание для одного географического объекта (если использовалась аббревиатура учреждения, то данное написание должно сохраняться в рамках всей таблицы, но не изменяться на полное название)
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Локализация инфекции
+         </td>
+         <td>
+            Нижние дыхательные пути
+         </td>
+         <td>
+            Единое оформление по всему столбцу
+            Сокращенный или полный вариант
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Клинический материал
+         </td>
+         <td>
+            Бронхоальвеолярный лаваж
+         </td>
+         <td>
+            Единое оформление по всему столбцу
+            Сокращенный или полный вариант
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Отделение
+         </td>
+         <td>
+            Реанимация
+         </td>
+         <td>
+            Единое оформление по всему столбцу
+            Сокращенный или полный вариант
+            Аббревиатуры должны иметь поясняющие сноски
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Возраст пациента
+         </td>
+         <td>
+            62
+         </td>
+         <td>
+            Единое оформление по всему столбцу
+            Рекомендуется использовать количество полных лет, либо единые единицы измерения в рамках всей таблицы (годы, месяцы, дни)
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Маркеры (резистентности/вирулентности)
+         </td>
+         <td>
+            CTX-M-15
+            (указать название маркера, см. столбец &laquo;Особенности&raquo;)
+            Положительный
+            Не обнаружено
+            Не определено
+            Пустая ячейка
+         </td>
+         <td>
+            Единое оформление по всему столбцу
+            Каждая группа маркеров &ndash; отдельный столбец (например, карбапенемазы)
+            Если определение маркера неприменимо, т.е. лишено биологического смысла (например, определение ESBL для стафилококков), ячейка должна остаться пустой. Во всех остальных случаях факт отсутствия маркера необходимо фиксировать (например: не определялся, не обнаружено). Примеры наименований различных маркеров резистентности и способы их записи представлены в разделе 
+
+
+<strong>
+    <a href="https://monitoring.amrcloud.net/docs/03/06/">3.6. Методы выявления механизмов резистентности, имеющих клиническое и эпидемиологическое значение. Организация записей.</a>
+</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Симптом заболевания
+         </td>
+         <td>
+            Да
+         </td>
+         <td>
+            Единое оформление по всему столбцу
+            Особые маркеры заболевания, например симптомы, требующие регистрации среди группы пациентов/ отделений (наличие лихорадки, маркеров воспаления и т.д.)
+         </td>
+      </tr>
+   </tbody>
+</table>
+&nbsp;
+	
+	
+	<hr class="panel-line">
+Изменено 27 сентября 2021
+
+
+	<ul class="list-unstyled d-flex justify-content-between align-items-center mb-0 pt-3">
+  
+  <li>
+    
+    <a href="/docs/04/01/" class="btn btn-primary"><span class="mr-1">←</span> Назад
+    </a>
+    
+  </li>
+  <li>
+    
+    <a href="/docs/04/03/" class="btn btn-primary"> Далее <span
+        class="ml-1">→</span></a>    
+    
+  </li>
+  
+</ul>
+
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col text-center ">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="МАКМАХ / IACMAC" aria-label="МАКМАХ / IACMAC">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://www.antibiotic.ru/">
+      <i class="fa fa-globe"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Vk" aria-label="Vk">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://vk.com/iacmac">
+      <i class="fab fa-vk"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://twitter.com/iacmac1997/">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Telegram" aria-label="Telegram">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://t.me/iacmac">
+      <i class="fab fa-telegram"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="YouTube" aria-label="YouTube">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/iacmac">
+      <i class="fab fa-youtube"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Комментарии, критические замечания, вопросы и пожелания можно направлять на электронную почту: support@antibiotic.ru" aria-label="Комментарии, критические замечания, вопросы и пожелания можно направлять на электронную почту: support@antibiotic.ru">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="mailto:support@antibiotic.ru">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        
+        
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <small class="text-white">&copy; 2022 МАКМАХ Все права защищены</small>
+        <small class="ml-1"><a href="https://policies.google.com/privacy/partners" target="_blank">Политика конфиденциальности</a></small>
+	
+		
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+    <script>
+window.addEventListener('load', function(){
+  window.cookieconsent.initialise({
+   revokeBtn: "<div class='cc-revoke'></div>",
+   type: "opt-in",
+   theme: "classic",
+   palette: {
+       popup: {
+           background: "#000",
+           text: "#fff"
+        },
+       button: {
+           background: "#fd0",
+           text: "#000"
+        }
+    },
+   content: {
+       message: "На нашем сайте включены cookies, потому что мы используем услуги Google Analytics",
+       link: "Узнать больше",
+       deny: "",
+       allow: "Принять",
+       href: "https:\/\/2gdpr.com\/cookies"
+    },
+    onInitialise: function(status) {
+      
+    },
+    onStatusChange: function(status) {
+      
+    }
+  })
+});
+</script>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@8.11.2/dist/mermaid.min.js" integrity="sha384-m8Pdaep6Qk8sW3J6XhPOiwUww3maU9HxZTLvEfSEB4e1UVvTdHyfJsYmEfYqvwLC" crossorigin="anonymous"></script>
+
+
+
+
+<script src='/js/tabpane-persist.js'></script>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.c3ad98592f06b673daf5f29c00d9052aad61500a3d1b76019de623b0f38ff766.js" integrity="sha256-w62YWS8GtnPa9fKcANkFKq1hUAo9G3YBneYjsPOP92Y=" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>
